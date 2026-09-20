@@ -156,7 +156,8 @@ Turn the research into a machine-readable source of truth and ask disciplined qu
 - source metadata;
 - confidence/evidence status;
 - detector coverage;
-- gap annotations.
+- gap annotations;
+- cross-project energy accounting: system boundaries, energy roles, input/output forms, losses, power, and unknown energy-transfer status.
 
 ### Gap categories
 
@@ -165,7 +166,8 @@ Turn the research into a machine-readable source of truth and ask disciplined qu
 - **catalog gap** — project has not researched the area yet;
 - **constraint gap** — model allows a region that is not well tested;
 - **true forbidden region** — theory rules something out under stated assumptions;
-- **visual gap only** — no significance; simply no plotted item.
+- **visual gap only** — no significance; simply no plotted item;
+- **energy-accounting gap** — an interaction is claimed but the source, sink, conversion pathway, or measured energy balance is missing.
 
 ### Exit condition
 
@@ -239,7 +241,8 @@ The project is mature when a viewer can move across frequency space and distingu
 5. what is predicted under a model;
 6. what has been ruled out under stated assumptions;
 7. what is genuinely unknown;
-8. where measurement itself is missing.
+8. where measurement itself is missing;
+9. what happens to energy across the stated system boundary.
 
 The most important outcome is not finding a mysterious empty band.
 
