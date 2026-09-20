@@ -101,6 +101,8 @@ Sources:
 Phononics literature treats mechanical vibration as central to both sound and thermal transport in solids, while blackbody radiation is electromagnetic.
 
 Sources:
+- IUPAC Gold Book, *heat*: https://doi.org/10.1351/goldbook.H02752
+- NIST, *Heat Transfer*: https://www.nist.gov/glossary-term/24981
 - Maldovan, Nature 503, 209–217 (2013): https://doi.org/10.1038/nature12608
 - NIST blackbody / Planck-law metrology material: https://www.nist.gov/system/files/documents/iaao/SIM-Metrology-School-Optical-Metrology-Y-Ohno-2.pdf
 
@@ -109,6 +111,7 @@ Sources:
 The relation `E = hf` is foundational for photons/quantized modes and quantum transitions. It should not be generalized into "all classical energy equals frequency times Planck's constant."
 
 Reference hubs:
+- IUPAC Gold Book, *energy* (`E = hν` for photons): https://doi.org/10.1351/goldbook.E02101
 - NIST fundamental constants: https://physics.nist.gov/cuu/Constants/
 - Particle Data Group: https://pdg.lbl.gov/
 
