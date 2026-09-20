@@ -368,3 +368,26 @@ detector_or_conventional_range
 ```
 
 Collapsing those into a single `frequency_min` / `frequency_max` pair would create false science.
+
+
+---
+
+## P2-SRC-021 — mechanical / structural resonance
+
+NIST, *A New Harmony: NIST Researchers Develop a Universal Method for Calculating the Resonances of Oscillators* (2021):
+- https://www.nist.gov/news-events/news/2021/09/new-harmony-nist-researchers-develop-universal-method-calculating
+
+Supports:
+- physical oscillators possess system-dependent natural/resonance frequencies;
+- resonance frequency depends on properties of the oscillator/system;
+- mechanical resonators are concrete examples of parameter-dependent resonance.
+
+Additional NIST structural-dynamics context:
+- https://www.nist.gov/noac/technology/mass-force-and-acceleration/optomechanical-accelerometers
+
+Supports:
+- dimensions and support-beam properties determine a mechanical structure's fundamental resonance frequency.
+
+Project handling:
+- no universal structural-resonance band is asserted;
+- geometry, mass, stiffness, support/boundary conditions and material properties determine the modes.
