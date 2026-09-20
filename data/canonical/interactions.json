@@ -36,7 +36,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "MECH-STRUCT",
+      "target_entity_id": "ACOUSTIC-FIELD"
     },
     {
       "id": "P3-E002",
@@ -74,7 +76,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "ACOUSTIC-FIELD",
+      "target_entity_id": "MECH-STRUCT"
     },
     {
       "id": "P3-E003",
@@ -111,7 +115,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "ELECTRICAL-FIELD",
+      "target_entity_id": "MECH-PIEZO"
     },
     {
       "id": "P3-E004",
@@ -148,7 +154,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "MECH-PIEZO",
+      "target_entity_id": "ELECTRICAL-SIGNAL"
     },
     {
       "id": "P3-E005",
@@ -186,7 +194,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "EM-PHOTON",
+      "target_entity_id": "MOL-VIB"
     },
     {
       "id": "P3-E006",
@@ -223,7 +233,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "ATOMIC-ELECTRONIC-EXCITATION",
+      "target_entity_id": "EM-PHOTON"
     },
     {
       "id": "P3-E007",
@@ -261,7 +273,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "EM-PHOTON",
+      "target_entity_id": "PHONON"
     },
     {
       "id": "P3-E008",
@@ -299,7 +313,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "PHONON",
+      "target_entity_id": "EM-PHOTON"
     },
     {
       "id": "P3-E009",
@@ -337,7 +353,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "EM-CAVITY",
+      "target_entity_id": "MECH-MODE"
     },
     {
       "id": "P3-E010",
@@ -374,7 +392,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "MECH-MODE",
+      "target_entity_id": "EM-CAVITY"
     },
     {
       "id": "P3-E011",
@@ -412,7 +432,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "MICROWAVE",
+      "target_entity_id": "PHONON-GHZ"
     },
     {
       "id": "P3-E012",
@@ -450,7 +472,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "PHONON-GHZ",
+      "target_entity_id": "OPTICAL-PHOTON"
     },
     {
       "id": "P3-E013",
@@ -487,7 +511,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "MICROWAVE",
+      "target_entity_id": "OPTICAL-SIGNAL"
     },
     {
       "id": "P3-E014",
@@ -522,7 +548,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "CAVITY-PHOTON",
+      "target_entity_id": "MAGNON"
     },
     {
       "id": "P3-E015",
@@ -559,7 +587,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "OPTICAL-PHOTON",
+      "target_entity_id": "MAGNON"
     },
     {
       "id": "P3-E016",
@@ -594,7 +624,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "MAGNON-SPIN",
+      "target_entity_id": "PHONON"
     },
     {
       "id": "P3-E017",
@@ -631,7 +663,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "ELECTRONIC-EXCITATIONS",
+      "target_entity_id": "PHONON-POPULATION"
     },
     {
       "id": "P3-E018",
@@ -668,7 +702,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "PHONON-MODE-A",
+      "target_entity_id": "PHONON-MODE-B"
     },
     {
       "id": "P3-E019",
@@ -705,7 +741,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "THERMAL-MATTER",
+      "target_entity_id": "EM-RADIATION"
     },
     {
       "id": "P3-E020",
@@ -745,7 +783,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "EM-RADIATION",
+      "target_entity_id": "THERMAL-MATTER"
     },
     {
       "id": "P3-E021",
@@ -782,7 +822,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "EM-FIELD",
+      "target_entity_id": "PLASMA-MODE"
     },
     {
       "id": "P3-E022",
@@ -819,7 +861,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "GW-STRAIN",
+      "target_entity_id": "INTERFEROMETER-OPTICAL-PATH"
     },
     {
       "id": "P3-E023",
@@ -856,7 +900,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "INTERFEROMETER-OPTICAL-PATH",
+      "target_entity_id": "PHOTODETECTOR-ELECTRICAL"
     },
     {
       "id": "P3-E024",
@@ -894,7 +940,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "LASER-PHOTONS",
+      "target_entity_id": "LIGO-MIRROR"
     },
     {
       "id": "P3-E025",
@@ -931,7 +979,9 @@
       "provenance": {
         "phase": 3,
         "source_file": "data/phase3-couplings.csv"
-      }
+      },
+      "source_entity_id": "TIDAL-GRAVITATIONAL-FORCING",
+      "target_entity_id": "OCEAN-TIDE"
     }
   ]
 }
