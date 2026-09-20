@@ -71,7 +71,7 @@ The project has a source-backed table of major established families, with ranges
 
 ## Phase 3 — Coupling, conversion, resonance, and bridges
 
-**Status: NOT STARTED**
+**Status: COMPLETE**
 
 ### Goal
 
@@ -93,6 +93,8 @@ Map how families interact.
 ### Exit condition
 
 Entries no longer sit as isolated spectrum bars; the repository can represent directed, sourced relationships between them.
+
+**Completed 2026-09-20.** See [Coupling, Conversion, Resonance & Bridges](08-COUPLING-CONVERSION-MAP.md) and [Phase 3 Completion Record](PHASE-3-COMPLETE.md).
 
 ---
 
