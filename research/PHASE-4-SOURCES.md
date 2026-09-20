@@ -452,6 +452,93 @@ Project use:
 
 ---
 
+## P4-SRC-031 — constrained internal-speech neural decoding
+
+Wandelt et al., Nature Human Behaviour (2024):
+- https://doi.org/10.1038/s41562-024-01867-y
+
+Supports:
+- internal speech has decodable neural representations in the studied implanted-electrode participants;
+- a constrained set of internally spoken words/pseudowords was decoded above chance;
+- performance differed substantially between participants.
+
+Project classification:
+- ESTABLISHED proof-of-concept neural decoding;
+- not unrestricted access to arbitrary thoughts.
+
+---
+
+## P4-SRC-032 — speech neuroprostheses and brain–computer interfaces
+
+Silva et al., Nature Reviews Neuroscience 25, 473–492 (2024):
+- https://doi.org/10.1038/s41583-024-00819-9
+
+Supports:
+- cortical speech signals can be decoded for neuroprosthetic communication;
+- the field aims to restore communication in paralysis through recorded neural activity.
+
+Additional EEG imagined-speech dataset:
+- https://doi.org/10.1038/s41597-024-04114-1
+
+Project use:
+- separates physically measured neural decoding from claims of channel-free telepathy.
+
+---
+
+## P4-SRC-033 — Ganzfeld / telepathy evidence and replication dispute
+
+Tressoldi & Storm, registered meta-analysis, F1000Research (2024 version):
+- https://doi.org/10.12688/f1000research.51746.4
+
+Supports:
+- reported a small positive aggregate effect across a large historical Ganzfeld database;
+- authors reported publication-bias tests and moderator analyses.
+
+Milton & Wiseman, Psychological Bulletin (1999):
+- https://doi.org/10.1037/0033-2909.125.4.387
+
+Supports:
+- a meta-analysis of 30 studies from independent laboratories failed to replicate the earlier primary Ganzfeld effect;
+- illustrates the long-running replication dispute.
+
+Schmidt et al., British Journal of Psychology (2004):
+- https://doi.org/10.1348/000712604773952449
+
+Supports:
+- small aggregate effects were reported in distant-intentionality/remote-staring literature;
+- best-evidence subset was not significant in one analysis;
+- authors noted shortage of independent replication and theoretical concepts.
+
+Project classification:
+- CONTESTED EVIDENCE.
+- No established carrier, force, field or frequency follows from these statistics alone.
+
+---
+
+## P4-SRC-034 — 2026 critical ESP/neuroimaging reviews
+
+*Neuroimaging studies of extra-sensory perception: A systematic and critical review* (2026):
+- https://pubmed.ncbi.nlm.nih.gov/42009267/
+
+Supports:
+- ESP neuroimaging findings are heterogeneous and seldom replicated;
+- definitive neural-correlate conclusions remain premature;
+- identifies methodological recommendations for future research.
+
+*Neuroimaging findings in extrasensory perception research: A PRISMA-informed descriptive synthesis* (2026):
+- https://pubmed.ncbi.nlm.nih.gov/42456633/
+
+Supports:
+- reviews telepathy, hidden-target perception/clairvoyance, remote viewing, precognition/presentiment and related paradigms;
+- retained null, weak and nonspecific findings;
+- concluded the literature is too heterogeneous for a unified neural signature;
+- treats nonlocal/quantum interpretations as speculative frameworks, not established explanations.
+
+Project use:
+- basis for keeping telepathy, remote viewing and precognition as distinct **contested/question nodes** with unknown carrier.
+
+---
+
 # Phase 4 source conclusion
 
 The project now has four distinct kinds of frontier objects:
@@ -468,6 +555,9 @@ HUMAN-EXPERIENCE HYPOTHESIS
 
 PHILOSOPHICAL / HISTORICAL CLAIM
   requires operationalization or source verification before physics can use it
+
+UNKNOWN / UNOBSERVED CARRIER
+  reserves space for a reproducible effect whose field, particle, force, information channel or energy-transfer mechanism has not been identified
 ```
 
 This separation is essential to keep the atlas open-minded without becoming source-indifferent.
