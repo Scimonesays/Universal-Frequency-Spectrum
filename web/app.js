@@ -537,7 +537,7 @@ function renderSpectrumChart(records) {
           interval.openLeft || interval.openRight ? "open-band" : "",
         ].filter(Boolean).join(" ");
         const attrs = { x: barX, y: laneY - 10, width: barW, height: 20, class: cls };
-        if (record.family === "electromagnetic" && String(record.name).toLowerCase().includes("visible")) attrs.fill = "url(#visibleGradient)";
+        if (record.family === "electromagnetic" && String(record.name).toLowerCase().includes("visible")) attrs.style = "fill:url(#visibleGradient)";
         g.append(svgEl("rect", attrs));
 
         if (interval.openLeft) g.append(svgEl("path", { d: `M${barX + 1},${laneY} l9,-5 v10 z`, class: "open-arrow" }));
