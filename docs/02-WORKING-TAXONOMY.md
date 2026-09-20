@@ -184,7 +184,7 @@ This is a design hypothesis, not a locked UI.
 
 ## Known future additions
 
-Phase 2 should explicitly research and add at least:
+Phase 2 and the subsequent frontier work established representative coverage of the following areas; Phase 5 now treats unlisted species, materials, branches, transitions, and object-specific examples as **catalog gaps**, not evidence of physical absence:
 
 - ocean and atmospheric waves;
 - seismic normal modes;
