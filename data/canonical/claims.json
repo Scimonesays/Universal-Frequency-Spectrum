@@ -8,7 +8,11 @@
       "claim": "Frequency is a rate of recurrence measured in inverse seconds; the SI special name is hertz.",
       "status": "ESTABLISHED",
       "evidence_note": "NIST time/frequency references",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://www.nist.gov/pml/time-and-frequency-division"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-002",
@@ -17,7 +21,15 @@
       "claim": "A numerical frequency alone does not identify the physical nature of a phenomenon.",
       "status": "ESTABLISHED synthesis",
       "evidence_note": "Compare acoustic, EM, phonon, matter-wave, and GW sources below",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://www.nist.gov/news-events/news/2022/06/now-hear",
+        "https://nvlpubs.nist.gov/nistpubs/jres/100/4/j14lym.pdf",
+        "https://doi.org/10.1103/PhysRevLett.69.2799",
+        "https://doi.org/10.1103/PhysRev.30.705",
+        "https://doi.org/10.12942/lrr-2009-2"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-003",
@@ -26,7 +38,11 @@
       "claim": "Ordinary sound in air involves mechanical pressure/density variation and requires matter.",
       "status": "ESTABLISHED",
       "evidence_note": "NIST acoustics",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://www.nist.gov/news-events/news/2022/06/now-hear"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-004",
@@ -35,7 +51,12 @@
       "claim": "Maxwell's equations support electromagnetic-wave propagation; a material medium is not required in vacuum.",
       "status": "ESTABLISHED",
       "evidence_note": "Maxwell electrodynamics; NIST reference",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://nvlpubs.nist.gov/nistpubs/jres/100/4/j14lym.pdf",
+        "https://pdg.lbl.gov/"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-005",
@@ -44,7 +65,12 @@
       "claim": "Radio through gamma radiation are regions of the electromagnetic spectrum rather than separate fundamental media.",
       "status": "ESTABLISHED",
       "evidence_note": "Electrodynamics / standard spectrum classifications",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://nvlpubs.nist.gov/nistpubs/jres/100/4/j14lym.pdf",
+        "https://pdg.lbl.gov/"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-006",
@@ -53,7 +79,13 @@
       "claim": "Crystal lattice vibrations form normal modes; quantized excitations of such modes are phonons.",
       "status": "ESTABLISHED",
       "evidence_note": "Lattice-dynamics literature",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.1103/PhysRevLett.69.2799",
+        "https://doi.org/10.1103/PhysRevLett.83.3317",
+        "https://doi.org/10.1038/nature12608"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-007",
@@ -62,7 +94,12 @@
       "claim": "Molecular rotational transitions are observed in radio/microwave/millimeter-wave spectroscopy.",
       "status": "ESTABLISHED",
       "evidence_note": "NIST molecular spectral databases",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://www.nist.gov/pml/molecular-spectroscopic-data",
+        "https://doi.org/10.1038/s41570-023-00487-w"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-008",
@@ -71,7 +108,12 @@
       "claim": "Molecular and condensed-phase vibrational dynamics can occur in infrared/terahertz spectral regions; exact values are system- and mode-dependent.",
       "status": "ESTABLISHED",
       "evidence_note": "Spectroscopy reviews",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://www.nist.gov/pml/molecular-spectroscopic-data",
+        "https://doi.org/10.1038/s41570-023-00487-w"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-009",
@@ -80,7 +122,11 @@
       "claim": "Electron diffraction demonstrates wave behavior of matter consistent with de Broglie-type matter waves.",
       "status": "ESTABLISHED",
       "evidence_note": "Davisson–Germer",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.1103/PhysRev.30.705"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-010",
@@ -89,7 +135,13 @@
       "claim": "Gravitational radiation forms a spectrum physically distinct from electromagnetic radiation and can share numerical frequency ranges with other wave types.",
       "status": "ESTABLISHED",
       "evidence_note": "Living Reviews in Relativity",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.12942/lrr-2009-2",
+        "https://doi.org/10.12942/lrr-2013-7",
+        "https://doi.org/10.1007/s41114-021-00032-5"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-011",
@@ -98,7 +150,14 @@
       "claim": "\"Heat\" is not one wave family or single frequency band; thermal transport/radiation can involve multiple mechanisms.",
       "status": "ESTABLISHED",
       "evidence_note": "Thermodynamics + phononics + blackbody radiation",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.1351/goldbook.H02752",
+        "https://www.nist.gov/glossary-term/24981",
+        "https://doi.org/10.1038/nature12608",
+        "https://www.nist.gov/system/files/documents/iaao/SIM-Metrology-School-Optical-Metrology-Y-Ohno-2.pdf"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-012",
@@ -107,7 +166,13 @@
       "claim": "For photons, `E = hf`; frequency alone does not determine the total energy of an arbitrary classical wave.",
       "status": "ESTABLISHED",
       "evidence_note": "Quantum theory + classical wave mechanics",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.1351/goldbook.E02101",
+        "https://physics.nist.gov/cuu/Constants/",
+        "https://pdg.lbl.gov/"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-013",
@@ -116,7 +181,13 @@
       "claim": "The Standard Model is formulated using quantum field theory; particles can be described as excitations of quantum fields.",
       "status": "ESTABLISHED framework",
       "evidence_note": "PDG / CERN QFT references",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://pdg.lbl.gov/",
+        "https://doi.org/10.5170/CERN-2010-002.1",
+        "https://home.cern/science/physics/higgs-boson/what/"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-014",
@@ -125,7 +196,13 @@
       "claim": "The microscopic identity of dark matter is unknown; some ultralight bosonic candidate models predict coherent/wave-like oscillatory signals searchable in frequency space.",
       "status": "OPEN + MODEL-DEPENDENT",
       "evidence_note": "Atomic-clock and cavity searches",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.1038/s41550-016-0009",
+        "https://doi.org/10.1103/PhysRevLett.129.201301",
+        "https://doi.org/10.1038/s41586-026-10617-1"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-015",
@@ -134,7 +211,13 @@
       "claim": "A gap in detector sensitivity is not automatically a gap in physical existence, and an empty visual frequency interval does not by itself predict new physics.",
       "status": "ESTABLISHED methodological conclusion",
       "evidence_note": "Multi-band GW literature; evidence policy",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [
+        "https://doi.org/10.12942/lrr-2009-2",
+        "https://doi.org/10.12942/lrr-2013-7",
+        "https://doi.org/10.1007/s41114-021-00032-5"
+      ],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-FND-016",
@@ -143,7 +226,9 @@
       "claim": "The repository currently has no empirical basis for treating all phenomena as one universal physical vibration or one common propagation medium.",
       "status": "PROJECT BOUNDARY",
       "evidence_note": "Existing theories distinguish degrees of freedom; future unification must be separately evidenced",
-      "source_ids": []
+      "source_ids": [],
+      "source_urls": [],
+      "provenance_file": "docs/04-PHASE-1-CLAIMS-LEDGER.md"
     },
     {
       "id": "CLAIM-P2-GEO-TIDE-SEMI",
