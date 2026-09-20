@@ -100,7 +100,7 @@ Entries no longer sit as isolated spectrum bars; the repository can represent di
 
 ## Phase 4 — Frontier physics and detection space
 
-**Status: NOT STARTED**
+**Status: COMPLETE**
 
 ### Goal
 
@@ -133,6 +133,8 @@ theory/model
 ### Exit condition
 
 Unknowns can be plotted without the viewer confusing "hypothesized" with "detected."
+
+**Completed 2026-09-20.** Phase 4 also adds a protected human-experience/question layer for consciousness, memory, soul/afterlife hypotheses, anomalous-information claims, and Tesla/energy folklore. See [Frontier Physics, Consciousness & Deep Hypotheses](09-FRONTIER-PHYSICS-AND-DEEP-HYPOTHESES.md) and [Phase 4 Completion Record](PHASE-4-COMPLETE.md).
 
 ---
 
