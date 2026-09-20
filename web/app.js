@@ -311,15 +311,20 @@ function numericInterval(record, minExp, maxExp) {
   };
 }
 
-function filteredSpectrumRecords() {
+function semanticSpectrumRecords() {
   const f = spectrumFilters();
   return state.data.phenomena.records.filter((r) => {
     const haystack = [r.name, r.family, r.id, r.physical?.what_oscillates, r.notes].join(" ").toLowerCase();
     if (f.q && !haystack.includes(f.q)) return false;
     if (f.family !== "all" && r.family !== f.family) return false;
     if (f.energy !== "all" && !(r.energy_accounting?.roles || []).includes(f.energy)) return false;
-    return numericInterval(r, f.minExp, f.maxExp) !== null;
+    return true;
   });
+}
+
+function plottableSpectrumRecords() {
+  const f = spectrumFilters();
+  return semanticSpectrumRecords().filter((r) => numericInterval(r, f.minExp, f.maxExp) !== null);
 }
 
 function svgEl(name, attrs = {}, text = null) {
@@ -405,7 +410,7 @@ function renderSpectrumChart(records) {
         interval.openLeft || interval.openRight ? "open-band" : "",
       ].filter(Boolean).join(" ");
       g.append(svgEl("rect", { x: x1, y: y + 7, width: Math.max(3, x2 - x1), height: 14, class: cls }));
-      if (interval.openLeft) g.append(svgEl("path", { d: `M${x1 + 1},14+${y - 0} l8,-5 v10 z`.replace("14+", String(y + 14)), class: "open-arrow" }));
+      if (interval.openLeft) g.append(svgEl("path", { d: `M${x1 + 1},${y + 14} l8,-5 v10 z`, class: "open-arrow" }));
       if (interval.openRight) g.append(svgEl("path", { d: `M${x2 - 1},${y + 14} l-8,-5 v10 z`, class: "open-arrow" }));
     }
     bindAccessibleActivation(g, () => renderSpectrumInspector(record.id));
@@ -435,15 +440,16 @@ function renderSpectrum() {
   }
   $("#exp-min-label").textContent = String($("#exp-min").value).replace("-", "−");
   $("#exp-max-label").textContent = String($("#exp-max").value).replace("-", "−");
-  const records = filteredSpectrumRecords();
-  renderSpectrumChart(records);
-  renderSpectrumTable(records);
+  const semanticRecords = semanticSpectrumRecords();
+  const plottedRecords = plottableSpectrumRecords();
+  renderSpectrumChart(plottedRecords);
+  renderSpectrumTable(semanticRecords);
   $("#spectrum-metrics").innerHTML =
-    metric(String(records.length), "visible records") +
-    metric(String(new Set(records.map((r) => r.family)).size), "physical families") +
-    metric(`10^${$("#exp-min").value}`, "view min Hz") +
-    metric(`10^${$("#exp-max").value}`, "view max Hz");
-  if (state.selectedSpectrum && records.some((r) => r.id === state.selectedSpectrum)) renderSpectrumInspector(state.selectedSpectrum);
+    metric(String(plottedRecords.length), "plotted records") +
+    metric(String(semanticRecords.length - plottedRecords.length), "not on numeric axis") +
+    metric(String(new Set(semanticRecords.map((r) => r.family)).size), "physical families") +
+    metric(`10^${$("#exp-min").value} – 10^${$("#exp-max").value}`, "viewport Hz");
+  if (state.selectedSpectrum && semanticRecords.some((r) => r.id === state.selectedSpectrum)) renderSpectrumInspector(state.selectedSpectrum);
 }
 
 function interactionSearchMatch(record, q) {
