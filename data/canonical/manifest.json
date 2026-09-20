@@ -10,7 +10,8 @@
     "ranges": 27,
     "sources": 75,
     "claims": 107,
-    "gaps": 16
+    "gaps": 16,
+    "entities": 33
   },
   "files": {
     "phenomena": "phenomena.json",
@@ -19,7 +20,8 @@
     "ranges": "ranges.json",
     "sources": "sources.json",
     "claims": "claims.json",
-    "gaps": "gaps.json"
+    "gaps": "gaps.json",
+    "entities": "entities.json"
   },
   "legacy_inputs": [
     "../phase2-known-spectrum.csv",
