@@ -208,6 +208,11 @@ If this project later explores a unifying hypothesis, it will appear in the **SP
 - NIST, *Now Hear This!* — sound in air as compression/expansion and density variation: https://www.nist.gov/news-events/news/2022/06/now-hear
 - Maldovan, *Sound and heat revolutions in phononics*, Nature 503, 209–217 (2013): https://doi.org/10.1038/nature12608
 
+### Thermodynamics and heat
+- IUPAC Gold Book, *heat* — energy transfer due to a temperature gradient: https://doi.org/10.1351/goldbook.H02752
+- IUPAC Gold Book, *energy* — includes `E = hν` specifically for photons: https://doi.org/10.1351/goldbook.E02101
+- NIST, *Heat Transfer* — conduction, convection, and radiation: https://www.nist.gov/glossary-term/24981
+
 ### Phonons and condensed matter
 - Wei & Chou, *Ab initio calculation of force constants and full phonon dispersions*, Physical Review Letters 69, 2799 (1992): https://doi.org/10.1103/PhysRevLett.69.2799
 - Banks, Kleist & Ruggiero, *Investigating the function and design of molecular materials through terahertz vibrational spectroscopy*, Nature Reviews Chemistry 7, 480–495 (2023): https://doi.org/10.1038/s41570-023-00487-w
