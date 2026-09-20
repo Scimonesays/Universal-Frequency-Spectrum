@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Scimonesays/Universal-Frequency-Spectrum/schema/ufs-validation-result.schema.json",
+  "title": "UFS External Validation Result",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "provider",
+          "target_record_id",
+          "provider_repo",
+          "provider_commit",
+          "run_id",
+          "validation_type",
+          "verdict",
+          "policy",
+          "speculative",
+          "gate_results",
+          "created_utc",
+          "reviewed_for_canonical_ingest"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^UFS-VAL-[A-Za-z0-9_.-]+$"
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_claim_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provider_repo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provider_commit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "validation_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "READY_FOR_CONSTRAINT_DESIGN",
+              "NEEDS_OPERATIONALIZATION",
+              "HOLD_EVIDENCE",
+              "INCONCLUSIVE",
+              "CONSTRAINED",
+              "REJECTED_BY_TEST",
+              "SUPPORTIVE_RESULT"
+            ]
+          },
+          "policy": {
+            "type": "string",
+            "enum": [
+              "strict",
+              "normal",
+              "sandbox"
+            ]
+          },
+          "speculative": {
+            "type": "boolean"
+          },
+          "gate_results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "label",
+                "status",
+                "detail"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "PASS",
+                    "FAIL",
+                    "NA",
+                    "WARNING"
+                  ]
+                },
+                "detail": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "artifact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "created_utc": {
+            "type": "string"
+          },
+          "reviewed_for_canonical_ingest": {
+            "type": "boolean"
+          },
+          "review_notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
