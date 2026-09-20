@@ -29,6 +29,8 @@ The canonical data now lives under:
 - `data/canonical/sources.json`
 - `data/canonical/claims.json`
 - `data/canonical/gaps.json`
+- `data/canonical/energy_roles.json`
+- `data/canonical/validations.json`
 
 The earlier CSV files remain as **phase research snapshots / provenance inputs**.
 
@@ -50,7 +52,8 @@ At Phase 5 completion the canonical package contains:
 | Structured Phase 2–4 source groups | 75 |
 | Canonical claim records | 107 |
 | Classified gaps | 16 |
-| Controlled energy-role definitions | 18 |
+| Controlled energy-role definitions | 17 |
+| Energy-accounting rules | 1 |
 
 A range count smaller than the phenomenon count is intentional.
 
@@ -193,7 +196,7 @@ The controlled vocabulary includes:
 - READ OUT;
 - UNKNOWN.
 
-The project does not use "creates energy from nothing" as an ordinary role.
+The project does not use "creates energy from nothing" as an ordinary role. `NO_CREATE_FROM_NOTHING` is tracked as an **accounting rule**, not misclassified as an energy behavior.
 
 ---
 
@@ -362,7 +365,13 @@ The validator checks:
 - range ownership;
 - numeric min/max ordering;
 - gap related-record references;
-- mandatory interaction energy boundaries/fates.
+- mandatory interaction energy boundaries/fates;
+- canonical energy-role membership;
+- orphan source and Phase 2–4 claim detection;
+- entity-to-phenomenon links;
+- source URL/provenance structure;
+- canonical dataset identity/schema-version consistency;
+- external validation target/provenance integrity.
 
 The validator uses only Node.js built-ins.
 
