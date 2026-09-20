@@ -2,7 +2,7 @@
 
 This is the first auditable ledger for claims that define the project.
 
-It is deliberately conservative. Phase 2 will expand it substantially.
+It is deliberately conservative. Subsequent phases expanded the research substantially; Phase 5 preserves these foundation claims in the canonical claim registry.
 
 ## Foundation claims
 
