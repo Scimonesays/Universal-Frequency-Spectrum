@@ -1166,6 +1166,551 @@
         "P4-SRC-038"
       ],
       "record_id": "P4-F012"
+    },
+    {
+      "id": "CLAIM-P7-ASTRO-EARTH-ROT",
+      "phase": 7,
+      "claim": "Earth sidereal rotation is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-001"
+      ],
+      "record_id": "ASTRO-EARTH-ROT",
+      "evidence_note": "23.9345 h sidereal rotation period; characteristic rate, not a propagating wave",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-ASTRO-EARTH-ORBIT",
+      "phase": 7,
+      "claim": "Earth sidereal orbit is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-001"
+      ],
+      "record_id": "ASTRO-EARTH-ORBIT",
+      "evidence_note": "365.256 d sidereal orbital period",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-SUN-ROT",
+      "phase": 7,
+      "claim": "solar rotation is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-002"
+      ],
+      "record_id": "STAR-SUN-ROT",
+      "evidence_note": "~27 d as a useful representative value; solar rotation is differential with latitude",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-SUN-PMODE",
+      "phase": 7,
+      "claim": "solar five-minute oscillations is represented in UFS as normal mode or resonance; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-003"
+      ],
+      "record_id": "STAR-SUN-PMODE",
+      "evidence_note": "Representative ~5 min solar p-mode scale; the Sun has many modes, not one frequency",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-CEPHEID",
+      "phase": 7,
+      "claim": "Cepheid stellar pulsation is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-004"
+      ],
+      "record_id": "STAR-CEPHEID",
+      "evidence_note": "Representative 2–60 d Cepheid periods from cited teaching reference; individual stars occupy narrower values",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-RRLYRAE",
+      "phase": 7,
+      "claim": "RR Lyrae stellar pulsation is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-004"
+      ],
+      "record_id": "STAR-RRLYRAE",
+      "evidence_note": "Representative 4–24 h RR Lyrae periods",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-PULSAR-SLOW",
+      "phase": 7,
+      "claim": "example pulsar rotation is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-005"
+      ],
+      "record_id": "STAR-PULSAR-SLOW",
+      "evidence_note": "Example 0.467 s pulsar period; not a universal pulsar frequency",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-PULSAR-MSP",
+      "phase": 7,
+      "claim": "millisecond pulsar rotation example is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-005"
+      ],
+      "record_id": "STAR-PULSAR-MSP",
+      "evidence_note": "Example ~3.93 ms pulsar period (~254 Hz); not a universal millisecond-pulsar limit",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-BINARY-PULSAR",
+      "phase": 7,
+      "claim": "binary pulsar orbital example is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-005"
+      ],
+      "record_id": "STAR-BINARY-PULSAR",
+      "evidence_note": "Example 11.8 d binary orbital period; not a universal binary frequency",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-STAR-BH-RINGDOWN",
+      "phase": 7,
+      "claim": "stellar-mass black-hole ringdown example is represented in UFS as normal mode or resonance; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-006"
+      ],
+      "record_id": "STAR-BH-RINGDOWN",
+      "evidence_note": "Representative ~260 Hz ringdown scale for a cited ~65-solar-mass remnant; frequency depends strongly on black-hole mass and spin",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-CLIM-ENSO",
+      "phase": 7,
+      "claim": "ENSO recurrence timescale is represented in UFS as characteristic inverse timescale; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-007"
+      ],
+      "record_id": "CLIM-ENSO",
+      "evidence_note": "NOAA describes ENSO events as recurring irregularly about every 2–7 years; plotted as inverse-timescale range, not a monochromatic wave",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-OCE-SEICHE",
+      "phase": 7,
+      "claim": "seiche standing-wave periods is represented in UFS as normal mode or resonance; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-008"
+      ],
+      "record_id": "OCE-SEICHE",
+      "evidence_note": "NOAA notes seiche periods can exceed three hours; one-sided representative limit only",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-OCE-ROSSBY-TRANSIT",
+      "phase": 7,
+      "claim": "oceanic Rossby-wave basin-transit timescale is represented in UFS as characteristic inverse timescale; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-009"
+      ],
+      "record_id": "OCE-ROSSBY-TRANSIT",
+      "evidence_note": "Months-to-years basin crossing times are converted to inverse timescales here; they are NOT asserted to be Rossby oscillation periods",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-ATM-GRAVITY",
+      "phase": 7,
+      "claim": "atmospheric gravity-wave periods is represented in UFS as propagating wave; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-010"
+      ],
+      "record_id": "ATM-GRAVITY",
+      "evidence_note": "Representative 3–10 h observations from cited atmospheric-gravity-wave literature; broader gravity-wave periods exist",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-GEO-SCHUMANN",
+      "phase": 7,
+      "claim": "fundamental Schumann resonance scale is represented in UFS as normal mode or resonance; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-011"
+      ],
+      "record_id": "GEO-SCHUMANN",
+      "evidence_note": "Fundamental near ~8 Hz; lightning excites the cavity and higher modes also exist",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-ELEC-GRID-US",
+      "phase": 7,
+      "claim": "U.S. nominal power-grid frequency is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-012"
+      ],
+      "record_id": "ELEC-GRID-US",
+      "evidence_note": "60 Hz is the U.S. nominal grid frequency; actual instantaneous frequency/phase varies around nominal",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-ELEC-LC",
+      "phase": 7,
+      "claim": "LC circuit resonance is represented in UFS as parameter dependent; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-013"
+      ],
+      "record_id": "ELEC-LC",
+      "evidence_note": "No universal LC frequency; component values and losses set the resonance",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-PLASMA-ALFVEN",
+      "phase": 7,
+      "claim": "Alfvén-wave observed example is represented in UFS as propagating wave; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-014"
+      ],
+      "record_id": "PLASMA-ALFVEN",
+      "evidence_note": "Cited spacecraft study reported an Alfvén mode around 1.1–6.3 mHz in the plasma rest frame; not a universal Alfvén-wave band",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-PLASMA-ION-OSC",
+      "phase": 7,
+      "claim": "ion plasma oscillation is represented in UFS as parameter dependent; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-017"
+      ],
+      "record_id": "PLASMA-ION-OSC",
+      "evidence_note": "Ion plasma frequency depends on plasma density, charge state and ion mass; no single universal numeric value",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-PLASMA-ION-GYRO",
+      "phase": 7,
+      "claim": "ion gyrofrequency is represented in UFS as parameter dependent; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-017"
+      ],
+      "record_id": "PLASMA-ION-GYRO",
+      "evidence_note": "Ion gyrofrequency depends on charge-to-mass ratio and magnetic-field strength",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-CIRCADIAN",
+      "phase": 7,
+      "claim": "circadian rhythm is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-015"
+      ],
+      "record_id": "BIO-CIRCADIAN",
+      "evidence_note": "Approximately 24 h endogenous biological oscillation under constant conditions",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-BREATH",
+      "phase": 7,
+      "claim": "resting adult breathing rhythm is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-016"
+      ],
+      "record_id": "BIO-BREATH",
+      "evidence_note": "Typical resting adult respiratory rate 12–20 breaths/min; age, activity and health alter the range",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-HEART",
+      "phase": 7,
+      "claim": "resting adult heart rhythm is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-016"
+      ],
+      "record_id": "BIO-HEART",
+      "evidence_note": "Typical resting healthy adult heart rate 60–100 beats/min; not a universal human limit",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-HRV-VLF",
+      "phase": 7,
+      "claim": "heart-rate variability VLF band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-017"
+      ],
+      "record_id": "BIO-HRV-VLF",
+      "evidence_note": "Conventional HRV VLF analysis band; physiological interpretation is context-dependent",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-HRV-LF",
+      "phase": 7,
+      "claim": "heart-rate variability LF band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-017"
+      ],
+      "record_id": "BIO-HRV-LF",
+      "evidence_note": "Conventional HRV LF band; simplistic one-to-one autonomic interpretations are contested",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-HRV-HF",
+      "phase": 7,
+      "claim": "heart-rate variability HF band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-017"
+      ],
+      "record_id": "BIO-HRV-HF",
+      "evidence_note": "Conventional HRV HF band; strongly influenced by respiration and context",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-TREMOR",
+      "phase": 7,
+      "claim": "physiological tremor central component is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-018"
+      ],
+      "record_id": "BIO-TREMOR",
+      "evidence_note": "Consensus reference identifies a central neurogenic physiological-tremor component around 8–12 Hz",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-EEG-DELTA",
+      "phase": 7,
+      "claim": "EEG delta band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-019"
+      ],
+      "record_id": "EEG-DELTA",
+      "evidence_note": "Conventional band definition; exact cutoffs vary among studies",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-EEG-THETA",
+      "phase": 7,
+      "claim": "EEG theta band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-019"
+      ],
+      "record_id": "EEG-THETA",
+      "evidence_note": "Conventional band definition; exact cutoffs vary among studies",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-EEG-ALPHA",
+      "phase": 7,
+      "claim": "EEG alpha band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-019"
+      ],
+      "record_id": "EEG-ALPHA",
+      "evidence_note": "Conventional band definition; the alpha peak is often individually variable",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-EEG-BETA",
+      "phase": 7,
+      "claim": "EEG beta band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-019"
+      ],
+      "record_id": "EEG-BETA",
+      "evidence_note": "Conventional band definition; exact cutoffs vary among studies",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-EEG-GAMMA",
+      "phase": 7,
+      "claim": "EEG gamma band is represented in UFS as classification band; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-019"
+      ],
+      "record_id": "EEG-GAMMA",
+      "evidence_note": "30–100 Hz is a common analysis convention; gamma definitions and artifact sensitivity vary",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-CHEM-BZ",
+      "phase": 7,
+      "claim": "Belousov-Zhabotinsky chemical oscillation example is represented in UFS as periodic or rotational; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-020"
+      ],
+      "record_id": "CHEM-BZ",
+      "evidence_note": "Demonstration example with an initial period around 20 s; rate changes as reagents evolve",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-PROTEIN-DYNAMICS",
+      "phase": 7,
+      "claim": "protein conformational dynamics envelope is represented in UFS as characteristic inverse timescale; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-021"
+      ],
+      "record_id": "BIO-PROTEIN-DYNAMICS",
+      "evidence_note": "Very broad inverse-timescale envelope compiled from distinct processes spanning bond vibration through slow conformational changes; not one continuous protein oscillator",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-BIO-ENZYME-TURNOVER",
+      "phase": 7,
+      "claim": "enzyme catalytic turnover rates is represented in UFS as characteristic rate; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-022"
+      ],
+      "record_id": "BIO-ENZYME-TURNOVER",
+      "evidence_note": "Turnover number is a rate, not necessarily a periodic oscillation; cited reference notes ~1000 s^-1 is common and ~1–10,000 s^-1 are known",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-CHEM-ELECTRON-TRANSFER",
+      "phase": 7,
+      "claim": "charge-transfer dynamics timescale envelope is represented in UFS as characteristic inverse timescale; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-023"
+      ],
+      "record_id": "CHEM-ELECTRON-TRANSFER",
+      "evidence_note": "Broad microsecond-to-attosecond inverse-timescale context across different charge-transfer processes; not a single oscillation band",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-CHEM-PROTON-TRANSFER",
+      "phase": 7,
+      "claim": "excited-state proton-transfer timescale envelope is represented in UFS as characteristic inverse timescale; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-024"
+      ],
+      "record_id": "CHEM-PROTON-TRANSFER",
+      "evidence_note": "Representative tens-of-nanoseconds to ~100-fs photoacid transfer timescales mapped as inverse rates; not periodic by implication",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-CHEM-GAS-COLLISION",
+      "phase": 7,
+      "claim": "room-temperature gas molecular collision rate scale is represented in UFS as characteristic rate; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-025"
+      ],
+      "record_id": "CHEM-GAS-COLLISION",
+      "evidence_note": "OpenStax states a room-temperature gas molecule experiences billions of collisions per second; 1 GHz is an order-of-magnitude anchor, not a universal collision frequency",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-THERM-CMB-EQUIV",
+      "phase": 7,
+      "claim": "CMB thermal energy-equivalent frequency is represented in UFS as energy equivalent frequency; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-027"
+      ],
+      "record_id": "THERM-CMB-EQUIV",
+      "evidence_note": "2.725 K CMB temperature mapped through f = k_B T / h; this is NOT the CMB spectral peak and not a literal oscillator",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-THERM-ROOM-EQUIV",
+      "phase": 7,
+      "claim": "room-temperature energy-equivalent frequency is represented in UFS as energy equivalent frequency; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-028"
+      ],
+      "record_id": "THERM-ROOM-EQUIV",
+      "evidence_note": "293 K touchstone room temperature mapped through f = k_B T / h; not a claim of a single thermal oscillation",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-THERM-BODY-EQUIV",
+      "phase": 7,
+      "claim": "body-temperature energy-equivalent frequency is represented in UFS as energy equivalent frequency; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-028"
+      ],
+      "record_id": "THERM-BODY-EQUIV",
+      "evidence_note": "310 K touchstone body temperature mapped through f = k_B T / h; not a literal vibration frequency",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-THERM-SUN-EQUIV",
+      "phase": 7,
+      "claim": "solar-surface thermal energy-equivalent frequency is represented in UFS as energy equivalent frequency; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-028"
+      ],
+      "record_id": "THERM-SUN-EQUIV",
+      "evidence_note": "5772 K solar effective temperature mapped through f = k_B T / h; distinct from the Sun's blackbody spectral peak",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-ATOM-CS133-CLOCK",
+      "phase": 7,
+      "claim": "cesium-133 clock transition is represented in UFS as transition frequency; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-029"
+      ],
+      "record_id": "ATOM-CS133-CLOCK",
+      "evidence_note": "The SI second is defined using the unperturbed ground-state hyperfine transition frequency of cesium-133",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-PARTICLE-MUON-DECAY",
+      "phase": 7,
+      "claim": "muon inverse-lifetime scale is represented in UFS as characteristic inverse timescale; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-030"
+      ],
+      "record_id": "PARTICLE-MUON-DECAY",
+      "evidence_note": "Mapped as 1/τ for comparison only; radioactive/particle decay is stochastic, not an oscillation",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
+    },
+    {
+      "id": "CLAIM-P7-PARTICLE-ELECTRON-REST-EQ",
+      "phase": 7,
+      "claim": "electron rest-energy equivalent frequency is represented in UFS as energy equivalent frequency; its displayed frequency/rate values carry the stated range meaning and caveats rather than implying a universal single vibration.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-031"
+      ],
+      "record_id": "PARTICLE-ELECTRON-REST-EQ",
+      "evidence_note": "Rest-energy equivalent frequency for scale comparison; not a directly observed clock-like electron oscillation",
+      "provenance_file": "docs/15-PHASE-7-COVERAGE-EXPANSION.md"
     }
   ]
 }
