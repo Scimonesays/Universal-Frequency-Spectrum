@@ -378,6 +378,157 @@ This category is a **holding region for unknowns**, not a declaration that unkno
 
 ---
 
+# 12A. Black holes
+
+Black holes are **established astrophysical objects**.
+
+Evidence includes:
+
+- stellar and gas dynamics around compact massive objects;
+- gravitational-wave detections from black-hole mergers;
+- event-horizon-scale imaging of M87* and Sagittarius A*;
+- ringdown signals consistent with the behavior predicted for Kerr black holes.
+
+The Event Horizon Telescope's observations of Sagittarius A* provide direct evidence for a supermassive black hole at the center of the Milky Way, with the observed ring size consistent with Kerr-metric expectations.
+
+### Frequency treatment
+
+A black hole does **not** have one universal frequency.
+
+Perturbed black holes have **quasinormal modes**. Their ringdown frequencies and damping times depend primarily on:
+
+- mass;
+- spin;
+- mode index.
+
+For a given remnant black hole:
+
+```
+mass + spin
+    → allowed quasinormal-mode spectrum
+    → gravitational-wave ringdown
+```
+
+LIGO/Virgo/KAGRA observations now use black-hole spectroscopy to compare measured ringdown tones with general-relativity predictions.
+
+Black-hole systems can also show:
+
+- orbital frequencies;
+- accretion-disk variability;
+- quasi-periodic oscillations;
+- jet variability;
+- merger/inspiral gravitational-wave frequencies.
+
+These belong to the surrounding system or dynamical state, not one intrinsic "black-hole frequency."
+
+### Classification
+
+**BLACK HOLES: ESTABLISHED**
+
+**QUASINORMAL-MODE SPECTRUM: ESTABLISHED GENERAL-RELATIVITY PREDICTION WITH OBSERVATIONAL TESTS**
+
+---
+
+# 12B. The black-hole singularity
+
+Classical general relativity predicts singular behavior inside idealized black-hole solutions.
+
+In the simplest description, curvature and density become formally divergent at a singularity.
+
+However, this is **not directly observed**.
+
+NASA explicitly notes that the singularity may represent either a physical feature or a sign that classical general relativity has reached the limit of its applicability and must be replaced by a quantum theory of gravity.
+
+The atlas therefore must not draw the singularity as though it were an experimentally imaged point at the center of every black hole.
+
+A safer representation is:
+
+```
+black hole / event horizon: observed astrophysical object
+        ↓
+classical GR interior evolution
+        ↓
+singularity prediction
+        ↓
+unknown quantum-gravity completion
+```
+
+### Frequency treatment
+
+There is no established "singularity frequency."
+
+A singularity is not presently a known oscillatory degree of freedom.
+
+Specific quantum-gravity models may eventually replace the classical singularity with:
+
+- a bounce;
+- a quantum core;
+- a regularized high-curvature region;
+- new degrees of freedom;
+- some other structure.
+
+Those would require model-specific observables.
+
+### Classification
+
+**CLASSICAL SINGULARITY: THEORETICAL PREDICTION / NOT DIRECTLY OBSERVED**
+
+**PHYSICAL NATURE OF THE CENTRAL REGION: OPEN**
+
+---
+
+# 12C. Wormholes
+
+Wormholes are mathematically allowed spacetime geometries in some solutions or extensions of gravitational theory.
+
+They are **not observationally established astrophysical objects**.
+
+A traversable wormhole would, in broad terms, connect otherwise distant regions of spacetime through a throat.
+
+Theoretical difficulty is substantial.
+
+Many familiar traversable-wormhole constructions require:
+
+- exotic stress-energy;
+- violations of classical energy conditions;
+- modified gravity;
+- or special quantum effects.
+
+Recent theoretical work continues to explore whether particular configurations can exist consistently, while other analyses derive strong no-go or inaccessibility results under specified assumptions.
+
+### Frequency treatment
+
+There is no universal "wormhole frequency."
+
+A specific wormhole model could in principle predict observables such as:
+
+- gravitational-wave echoes or altered ringdown;
+- lensing signatures;
+- orbital anomalies;
+- electromagnetic/accretion signatures;
+- resonant modes of the throat;
+- characteristic instability timescales.
+
+Those predictions are model-dependent.
+
+### Atlas treatment
+
+```
+wormhole geometry
+    → model assumptions
+    → predicted observable
+    → detector / astronomical search
+    → constraint
+```
+
+### Classification
+
+**WORMHOLES: THEORETICAL / UNOBSERVED**
+
+**TRAVERSABLE WORMHOLES: HIGHLY MODEL-DEPENDENT**
+
+---
+
 # PART II — MEMORY & CONSCIOUSNESS
 
 # 13. How do we "communicate with" memory?
@@ -927,6 +1078,9 @@ Phase 4 deliberately keeps certain questions visible even where science cannot y
 | Is dark energy dynamical? | OPEN | stronger mutually consistent cosmological datasets |
 | Are there new forces? | OPEN / MODEL-DEPENDENT | reproducible deviation with mediator/coupling fit |
 | Is gravity quantum? | OPEN | discriminating experiment surviving classical alternatives |
+| What is the true interior structure of a black hole? | OPEN | observations capable of distinguishing classical GR interiors from quantum-gravity alternatives |
+| Are classical singularities physical or signs of theory breakdown? | OPEN | quantum-gravity theory plus discriminating observable |
+| Do traversable wormholes exist in nature? | THEORETICAL / UNOBSERVED | model-specific astronomical or gravitational-wave signature with independent confirmation |
 | What physical process is sufficient for consciousness? | OPEN | theory-discriminating experiments |
 | Does consciousness require special EM-field dynamics? | MODEL-DEPENDENT | unique reproducible predictions beyond standard neural models |
 | Does consciousness require quantum microtubule dynamics? | SPECULATIVE | operational quantum evidence in living neural tissue plus causal link to conscious state |
@@ -998,6 +1152,14 @@ The purpose is to make strange ideas precise enough that nature gets a vote.
 ### Vacuum / zero-point
 - NIST, *Vacuum Fluctuations: Measuring the Unreal*: https://www.nist.gov/news-events/news/2015/06/vacuum-fluctuations-measuring-unreal
 - NIST, Casimir-energy experiment: https://www.nist.gov/publications/system-probing-casimir-energy-corrections-condensation-energy
+
+### Black holes, singularities, wormholes
+- Event Horizon Telescope, M87* first image: https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole
+- Event Horizon Telescope, Sagittarius A* black-hole metric test: https://eventhorizontelescope.org/publications/first-sagittarius-event-horizon-telescope-results-vi-testing-black-hole-metric
+- LIGO, black-hole spectroscopy with GW250114: https://ligo.org/science-summaries/GW250114_TGR/
+- NASA, *Anatomy of a Black Hole*: https://science.nasa.gov/universe/black-holes/anatomy/
+- Blázquez-Salcedo et al., *Traversable Wormholes in General Relativity*, Physical Review Letters (2022): https://doi.org/10.1103/PhysRevLett.128.091104
+- Terno, *Inaccessibility of traversable wormholes*, Physical Review D (2022): https://doi.org/10.1103/PhysRevD.106.044035
 
 ### Gravitational-wave gaps / quantum gravity
 - *The moon as a gateway to discovery*, npj Space Exploration (2025): https://doi.org/10.1038/s44453-025-00021-w
