@@ -369,3 +369,34 @@ Its existence does not imply an unlimited extractable energy reservoir.
 Historical quotation or claim widely associated with a person but lacking adequate primary-source verification.
 
 The Tesla 3–6–9 quotation is tracked under this label.
+
+
+## Unknown / unobserved carrier
+
+Project category for a hypothesized physical or informational mediator not yet identified as a known field, particle, force, interaction, collective mode, or communication channel.
+
+The label does **not** imply that a new form of energy has been observed.
+
+## Telepathy
+
+Claimed transfer or acquisition of information about another person's mental state without an identified conventional sensory, technological, or inferential channel.
+
+The project classifies telepathy as contested evidence with no established physical carrier.
+
+## Neural decoding
+
+Statistical inference of intended, attempted, imagined, perceived, or internally generated content from physically measured neural activity.
+
+Unlike telepathy, neural decoding uses an identified measurement channel such as implanted electrodes, ECoG, EEG, MEG or fMRI and normally requires task/model calibration.
+
+## Remote viewing / clairvoyance
+
+Claimed acquisition of information about a hidden or distant target without an identified conventional information channel.
+
+The project does not assume that telepathy and remote viewing share a mechanism.
+
+## Precognition / presentiment
+
+Claimed acquisition of information, or a physiological response, before the relevant future target/event is conventionally available.
+
+These claims require especially strict temporal, randomization, preregistration and replication controls.
