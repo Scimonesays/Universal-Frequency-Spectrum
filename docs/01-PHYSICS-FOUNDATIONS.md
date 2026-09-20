@@ -50,6 +50,49 @@ They differ in what oscillates:
 
 This is the core reason the project needs a second organizing dimension: **what is oscillating?**
 
+## 3A. Energy accounting is a separate axis
+
+Frequency does not tell us how much total energy a system contains, whether that energy is increasing or decreasing, or where the energy came from.
+
+For ordinary laboratory and thermodynamic systems, the project uses conservation of energy / the first law as the default accounting rule.
+
+A subsystem can lose energy while another subsystem gains it. Therefore phrases such as "reduces energy," "uses energy," "makes energy," "disperses energy," or "maintains energy" must be translated into a boundary-aware description.
+
+Common project verbs are:
+
+- **stores**;
+- **carries**;
+- **receives**;
+- **supplies/releases**;
+- **transfers**;
+- **converts**;
+- **absorbs**;
+- **emits/radiates**;
+- **does work/drives**;
+- **dissipates**;
+- **thermalizes**;
+- **disperses**;
+- **maintains a steady state**;
+- **exchanges**;
+- **mediates/reads out**;
+- **unknown**.
+
+"Dissipation" means energy becomes distributed into less recoverable microscopic degrees of freedom; it does **not** mean energy is destroyed.
+
+"Maintains energy" normally means stored energy remains approximately constant because inputs and outputs balance.
+
+"Produces energy" normally means another form is converted or stored energy is released. The atlas does not use "create energy from nothing" as an ordinary mechanism.
+
+Energy and power are distinct:
+
+```
+power = energy transferred per unit time
+```
+
+For gravitation and cosmology, global energy accounting can be subtler than in laboratory systems, so the relevant general-relativistic definition and boundary conditions must be stated.
+
+See [Energy Accounting](10-ENERGY-ACCOUNTING.md).
+
 ## 4. Mechanical and acoustic oscillations
 
 Mechanical oscillations involve displacement or deformation of matter.
@@ -212,6 +255,8 @@ If this project later explores a unifying hypothesis, it will appear in the **SP
 - IUPAC Gold Book, *heat* — energy transfer due to a temperature gradient: https://doi.org/10.1351/goldbook.H02752
 - IUPAC Gold Book, *energy* — includes `E = hν` specifically for photons: https://doi.org/10.1351/goldbook.E02101
 - NIST, *Heat Transfer* — conduction, convection, and radiation: https://www.nist.gov/glossary-term/24981
+- NIST, *Conservation of Energy (First Law of Thermodynamics)*: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1018-5.pdf
+- Szabados, *Quasi-Local Energy-Momentum and Angular Momentum in General Relativity*: https://doi.org/10.12942/lrr-2009-4
 
 ### Phonons and condensed matter
 - Wei & Chou, *Ab initio calculation of force constants and full phonon dispersions*, Physical Review Letters 69, 2799 (1992): https://doi.org/10.1103/PhysRevLett.69.2799
