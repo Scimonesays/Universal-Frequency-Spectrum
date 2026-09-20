@@ -14,11 +14,11 @@ This repository is intended to make those relationships visible without blurring
 
 ## Project status
 
-**Phase 5 — Gap analysis & canonical dataset: COMPLETE**
+**Phase 6 — Visual & interactive atlas: COMPLETE**
 
-Phase 1 established the scientific rules. Phase 2 added the known-spectrum catalog. Phase 3 added the interaction graph. Phase 4 added frontier physics and protected question nodes. **Phase 5 now provides the canonical machine-readable source of truth, a normalized graph-entity registry, energy accounting, claim/source provenance, and a typed gap registry.**
+Phase 1 established the scientific rules. Phase 2 added the known-spectrum catalog. Phase 3 added the interaction graph. Phase 4 added frontier physics and protected question nodes. Phase 5 created the canonical machine-readable source of truth. **Phase 6 now adds the real interactive Universal Vibration Table / Universal Frequency Spectrum web atlas, built directly from that canonical data.**
 
-No final visual layout is being asserted yet. Phase 6 should consume the canonical dataset rather than hand-code scientific meaning.
+The next step is **Phase 7 — scientific review, corrections, release provenance and public publication.**
 
 ## Scientific ground rules
 
@@ -69,6 +69,9 @@ No final visual layout is being asserted yet. Phase 6 should consume the canonic
 | [CURV Research Validator Integration](docs/12-CURV-RESEARCH-VALIDATOR.md) | Read-only bridge from UFS frontier/question nodes into CURV falsifier-first validation |
 | [Canonical Energy Roles](data/canonical/energy_roles.json) | Controlled 17-role energy vocabulary plus conservation/accounting rule |
 | [External Validation Registry](data/canonical/validations.json) | Reviewed external validation results; never changes canonical scientific status automatically |
+| [Phase 6 Web Atlas](web/README.md) | Interactive Universal Vibration Table application, build and accessibility contract |
+| [Visual & Interactive Atlas](docs/13-VISUAL-INTERACTIVE-ATLAS.md) | Phase 6 visual semantics, architecture, export and validation |
+| [Phase 6 Completion Record](docs/PHASE-6-COMPLETE.md) | Completion checklist and final Phase 6 validation result |
 
 ## Proposed organizing dimensions
 
