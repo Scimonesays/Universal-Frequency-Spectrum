@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0.0",
+  "dataset_type": "frontier",
   "records": [
     {
       "id": "P4-F001",
