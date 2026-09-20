@@ -237,6 +237,31 @@ Relevant point:
 
 ---
 
+## Thermodynamics and heat
+
+### IUPAC Gold Book — heat
+
+- https://doi.org/10.1351/goldbook.H02752
+
+Relevant point:
+- defines heat as energy transferred from hotter to cooler due to a temperature gradient.
+
+### IUPAC Gold Book — energy
+
+- https://doi.org/10.1351/goldbook.E02101
+
+Relevant point:
+- distinguishes energy definitions by context and states `E = hν` for photons.
+
+### NIST — Heat Transfer
+
+- https://www.nist.gov/glossary-term/24981
+
+Relevant point:
+- identifies conduction, convection, and radiation as heat-transfer mechanisms.
+
+---
+
 ## Thermal radiation
 
 ### NIST optical metrology / blackbody radiation material
