@@ -260,6 +260,23 @@ Relevant point:
 Relevant point:
 - identifies conduction, convection, and radiation as heat-transfer mechanisms.
 
+### NIST — Conservation of Energy / First Law
+
+- https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication1018-5.pdf
+
+Relevant point:
+- explicit conservation-of-energy formulation;
+- distinguishes energy transport, heat release, conductive/radiative flux, and viscous dissipation;
+- useful foundation for the project's system-boundary energy ledger.
+
+### Szabados — quasi-local energy in general relativity
+
+- https://doi.org/10.12942/lrr-2009-4
+
+Relevant point:
+- reviews the subtleties of defining gravitational energy-momentum locally, quasi-locally, and globally in general relativity;
+- supports the project's warning against forcing simple closed-system laboratory accounting onto arbitrary curved spacetime.
+
 ---
 
 ## Thermal radiation
