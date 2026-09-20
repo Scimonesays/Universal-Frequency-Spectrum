@@ -1,0 +1,35 @@
+name: Validate Phase 6 web atlas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "data/canonical/**"
+      - "scripts/build-site.mjs"
+      - "scripts/test-web-app.mjs"
+      - ".github/workflows/validate-web-atlas.yml"
+  pull_request:
+    paths:
+      - "web/**"
+      - "data/canonical/**"
+      - "scripts/build-site.mjs"
+      - "scripts/test-web-app.mjs"
+      - ".github/workflows/validate-web-atlas.yml"
+
+concurrency:
+  group: ufs-web-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22.23.2"
+      - run: node scripts/validate-canonical-data.mjs
+      - run: node --check web/app.js
+      - run: node scripts/build-site.mjs
+      - run: node scripts/test-web-app.mjs
