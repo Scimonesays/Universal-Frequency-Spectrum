@@ -400,3 +400,34 @@ The project does not assume that telepathy and remote viewing share a mechanism.
 Claimed acquisition of information, or a physiological response, before the relevant future target/event is conventionally available.
 
 These claims require especially strict temporal, randomization, preregistration and replication controls.
+
+
+## Black hole
+
+Compact spacetime region bounded by an event horizon from which signals cannot escape to distant observers.
+
+Astrophysical black holes are established through multiple observational methods. A black hole does not have one universal frequency; perturbed black holes possess mass- and spin-dependent quasinormal-mode spectra.
+
+## Event horizon
+
+Causal boundary of a black hole beyond which future-directed signals cannot escape to an external observer.
+
+It is not a material surface.
+
+## Black-hole ringdown
+
+Damped gravitational-wave response of a perturbed black hole as it settles toward a stationary state.
+
+Its quasinormal-mode frequencies and decay times depend on black-hole parameters such as mass and spin.
+
+## Singularity
+
+In classical general relativity, a region or boundary associated with geodesic incompleteness and divergent behavior in idealized solutions.
+
+The project does not treat the black-hole singularity as directly observed; its physical interpretation is an open quantum-gravity problem.
+
+## Wormhole
+
+Hypothetical spacetime geometry connecting otherwise separated regions.
+
+Wormholes are mathematically studied but not observationally established. Traversability and stability depend strongly on the model and stress-energy assumptions.
