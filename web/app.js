@@ -996,7 +996,7 @@ function setupControls() {
     if (view === "connections") renderConnections();
   }));
 
-  $("[data-jump-view]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelectorAll("[data-jump-view]").forEach((button) => button.addEventListener("click", () => {
     const target = button.dataset.jumpView;
     document.querySelector(`.nav-tab[data-view="${target}"]`)?.click();
     window.scrollTo({ top: 0, behavior: "smooth" });
