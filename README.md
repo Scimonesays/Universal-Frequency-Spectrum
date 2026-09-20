@@ -14,11 +14,11 @@ This repository is intended to make those relationships visible without blurring
 
 ## Project status
 
-**Phase 4 — Frontier physics, consciousness & deep hypotheses: COMPLETE**
+**Phase 5 — Gap analysis & canonical dataset: COMPLETE**
 
-Phase 1 established the scientific rules. Phase 2 added the first source-backed catalog of established frequency-bearing phenomena. Phase 3 added the first source-backed **interaction graph**. Phase 4 now adds the frontier: dark-sector candidates, new forces, dark energy, vacuum physics, detector gaps, quantum gravity, plus a protected **human-experience/question layer** for memory, consciousness, near-death experience, terminal lucidity, soul/afterlife hypotheses, telepathy/anomalous cognition, unknown/unobserved proposed carriers, and Tesla/energy claims.
+Phase 1 established the scientific rules. Phase 2 added the known-spectrum catalog. Phase 3 added the interaction graph. Phase 4 added frontier physics and protected question nodes. **Phase 5 now provides the canonical machine-readable source of truth, a normalized graph-entity registry, energy accounting, claim/source provenance, and a typed gap registry.**
 
-No final visual layout is being asserted yet. Frontier questions are allowed into the research without being promoted to established fields or assigned invented frequencies.
+No final visual layout is being asserted yet. Phase 6 should consume the canonical dataset rather than hand-code scientific meaning.
 
 ## Scientific ground rules
 
@@ -61,6 +61,10 @@ No final visual layout is being asserted yet. Frontier questions are allowed int
 | [Phase 4 Completion Record](docs/PHASE-4-COMPLETE.md) | Completion checklist and evidence boundary for Phase 4 |
 | [Energy Accounting](docs/10-ENERGY-ACCOUNTING.md) | Cross-project rules for storage, transfer, conversion, work, dissipation, dispersion, steady state, and unknown energy behavior |
 | [Energy Role Taxonomy](data/energy-role-taxonomy.csv) | Machine-readable vocabulary for energy behavior across nodes and edges |
+| [Gap Analysis & Canonical Dataset](docs/11-GAP-ANALYSIS-AND-CANONICAL-DATASET.md) | Phase 5 canonicalization, gap taxonomy, and validation model |
+| [Canonical Data Manifest](data/canonical/manifest.json) | Counts and file registry for the machine-readable source of truth |
+| [Canonical JSON Schema](schema/ufs-canonical.schema.json) | Structural contract for canonical data records |
+| [Phase 5 Completion Record](docs/PHASE-5-COMPLETE.md) | Completion checklist and canonical validation result |
 
 ## Proposed organizing dimensions
 
