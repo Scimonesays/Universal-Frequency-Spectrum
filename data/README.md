@@ -1,12 +1,12 @@
 # Data Area
 
-This directory is reserved for the machine-readable source of truth that will be built beginning in later phases.
+This directory contains the machine-readable research data. **Beginning with Phase 5, `data/canonical/` is the preferred source of truth.**
 
 Phase 1 intentionally did **not** invent a large frequency table before the evidence model was stable. Phase 2 added a provisional known-spectrum CSV, and Phase 3 added a provisional coupling-edge CSV. These are research artifacts, not yet the Phase 5 canonical dataset.
 
 ## Planned record shape
 
-A future record should contain fields equivalent to:
+The Phase 5 canonical record model contains fields equivalent to:
 
 ```yaml
 id: UFS-...
@@ -75,17 +75,20 @@ notes: ...
 
 The Phase 3 edge file demonstrates that relationships need structured interaction metadata. Phase 4 demonstrates that **not every research object should be forced into a physical frequency record**: question nodes require status, operationalization requirements, predicted observables, and explicit caveats.
 
-## Planned Phase 5 outputs
+## Phase 5 canonical outputs
 
-Likely artifacts:
+Current artifacts:
 
-- `phenomena.json`
-- `ranges.json`
-- `sources.json`
-- `claims.json`
-- `couplings.json`
-- `energy_accounting.json` or equivalent normalized energy fields within phenomena/edges
-- generated CSV exports
-- schema validation files
+- `canonical/manifest.json`
+- `canonical/phenomena.json`
+- `canonical/interactions.json`
+- `canonical/frontier.json`
+- `canonical/entities.json`
+- `canonical/ranges.json`
+- `canonical/sources.json`
+- `canonical/claims.json`
+- `canonical/gaps.json`
+- `../schema/ufs-canonical.schema.json`
+- `../scripts/validate-canonical-data.mjs`
 
-The exact format will be decided after Phase 2 and Phase 3 reveal the real shape of the research.
+The legacy Phase 2–4 CSVs remain for provenance and research history; new visualization work should prefer canonical JSON.
