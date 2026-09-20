@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_type": "energy_roles",
+  "records": [
+    {
+      "code": "STORES",
+      "label": "Stores energy",
+      "meaning": "Energy resides in the selected system/state and can later participate in interactions",
+      "does_not_mean": "Energy is permanently trapped",
+      "example": "charged capacitor; mechanical oscillator"
+    },
+    {
+      "code": "CARRIES",
+      "label": "Carries energy",
+      "meaning": "A propagating excitation transports energy across space or a boundary",
+      "does_not_mean": "The carrier is the only possible energy form",
+      "example": "EM wave; acoustic wave; gravitational wave"
+    },
+    {
+      "code": "RECEIVES",
+      "label": "Receives / gains energy",
+      "meaning": "Selected subsystem gains energy from another system",
+      "does_not_mean": "Total closed-system energy increased",
+      "example": "molecule absorbing a photon"
+    },
+    {
+      "code": "SUPPLIES",
+      "label": "Supplies / releases energy",
+      "meaning": "Selected subsystem transfers energy outward",
+      "does_not_mean": "Creates energy from nothing",
+      "example": "battery discharging; excited atom emitting"
+    },
+    {
+      "code": "TRANSFERS",
+      "label": "Transfers energy",
+      "meaning": "Energy crosses a stated system boundary",
+      "does_not_mean": "Necessarily changes energy form",
+      "example": "heat conduction; radiation crossing a surface"
+    },
+    {
+      "code": "CONVERTS",
+      "label": "Converts energy",
+      "meaning": "Energy changes form or degree of freedom",
+      "does_not_mean": "Creates energy",
+      "example": "electrical to mechanical transduction"
+    },
+    {
+      "code": "ABSORBS",
+      "label": "Absorbs energy",
+      "meaning": "Incoming energy is taken up by the selected system",
+      "does_not_mean": "All absorbed energy remains permanently stored",
+      "example": "IR photon exciting/thermalizing in matter"
+    },
+    {
+      "code": "EMITS",
+      "label": "Emits / radiates energy",
+      "meaning": "Energy leaves in propagating excitations or radiation",
+      "does_not_mean": "Energy vanishes",
+      "example": "atomic photon emission; thermal radiation"
+    },
+    {
+      "code": "DOES_WORK",
+      "label": "Does work / drives",
+      "meaning": "Energy transfer produces controlled change in another subsystem",
+      "does_not_mean": "The driver must have the same frequency as the target",
+      "example": "motor torque; radiation-pressure actuation"
+    },
+    {
+      "code": "DISSIPATES",
+      "label": "Dissipates energy",
+      "meaning": "Organized energy becomes distributed into less recoverable microscopic forms",
+      "does_not_mean": "Destroys energy",
+      "example": "friction converting motion to heat"
+    },
+    {
+      "code": "THERMALIZES",
+      "label": "Thermalizes",
+      "meaning": "Energy redistributes among microscopic populations toward equilibrium",
+      "does_not_mean": "Energy is lost from the total accounting",
+      "example": "electron-phonon relaxation"
+    },
+    {
+      "code": "DISPERSES",
+      "label": "Disperses energy",
+      "meaning": "Energy spreads in space direction modes or spectrum",
+      "does_not_mean": "Necessarily dissipates",
+      "example": "wave spreading; radiation into many directions"
+    },
+    {
+      "code": "MAINTAINS_STEADY_STATE",
+      "label": "Maintains steady state",
+      "meaning": "Stored energy remains approximately constant through balanced inputs/outputs",
+      "does_not_mean": "No energy is flowing",
+      "example": "driven resonator at steady amplitude"
+    },
+    {
+      "code": "EXCHANGES",
+      "label": "Exchanges energy",
+      "meaning": "Energy can flow in either direction depending on state/conditions",
+      "does_not_mean": "Net transfer is always zero",
+      "example": "coupled resonators"
+    },
+    {
+      "code": "MEDIATES",
+      "label": "Mediates / enables",
+      "meaning": "System enables an energy-transfer pathway without being primary source",
+      "does_not_mean": "Provides all transferred energy",
+      "example": "phonon intermediary in microwave-optical transduction"
+    },
+    {
+      "code": "READS_OUT",
+      "label": "Reads out / modulates",
+      "meaning": "System carries information about another variable; detector power may come from elsewhere",
+      "does_not_mean": "Measured phenomenon becomes detector carrier",
+      "example": "GW phase-modulating a laser interferometer"
+    },
+    {
+      "code": "UNKNOWN",
+      "label": "Unknown energy role",
+      "meaning": "No established energy-transfer mechanism is known",
+      "does_not_mean": "A new energy form has been detected",
+      "example": "telepathy/question node"
+    }
+  ],
+  "rules": [
+    {
+      "code": "NO_CREATE_FROM_NOTHING",
+      "label": "No create-from-nothing label",
+      "meaning": "Project rule: apparent energy production must be traced to storage conversion mass-energy or external input",
+      "does_not_mean": "That new physics is impossible",
+      "example": "all ordinary generators and sources"
+    }
+  ]
+}
