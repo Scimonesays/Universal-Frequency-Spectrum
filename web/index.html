@@ -3,96 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#081019">
-  <meta name="description" content="Universal Vibration Table — an evidence-linked interactive map of waves, oscillations, fields, interactions, energy roles, frontier questions and scientific gaps.">
-  <title>Universal Vibration Table · Universal Frequency Spectrum</title>
+  <meta name="theme-color" content="#030a12">
+  <meta name="description" content="Universal Frequency Map — an evidence-linked interactive atlas of waves, oscillations, fields, interactions, energy roles, frontier questions and scientific gaps.">
+  <title>Universal Frequency Map · Universal Frequency Spectrum</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to atlas</a>
+
   <header class="masthead">
-    <div class="brand">
+    <a class="brand" href="#spectrum" aria-label="Universal Frequency Spectrum home">
       <div class="brand-mark" aria-hidden="true">UFS</div>
-      <div>
+      <div class="brand-copy">
         <p class="eyebrow">Universal Frequency Spectrum</p>
-        <h1>Universal Vibration Table</h1>
-        <p class="subtitle">The Periodic Map of Waves, Oscillations &amp; Fields</p>
+        <strong>Atlas of oscillating nature</strong>
       </div>
-    </div>
+    </a>
+
+    <nav class="primary-nav" aria-label="Atlas views">
+      <button class="nav-tab active" data-view="spectrum" type="button">Map</button>
+      <button class="nav-tab" data-view="connections" type="button">Connections</button>
+      <button class="nav-tab" data-view="frontier" type="button">Frontier</button>
+      <button class="nav-tab" data-view="gaps" type="button">Gaps</button>
+      <button class="nav-tab" data-view="method" type="button">Method</button>
+    </nav>
+
     <div class="masthead-actions">
       <span id="data-status" class="status-pill" role="status">Loading canonical data…</span>
-      <button id="print-button" class="button secondary" type="button">Print / Save PDF</button>
+      <button id="print-button" class="button secondary" type="button">Export</button>
     </div>
   </header>
 
-  <nav class="primary-nav" aria-label="Atlas views">
-    <button class="nav-tab active" data-view="spectrum" type="button">Spectrum</button>
-    <button class="nav-tab" data-view="connections" type="button">Connections</button>
-    <button class="nav-tab" data-view="frontier" type="button">Frontier</button>
-    <button class="nav-tab" data-view="gaps" type="button">Gaps</button>
-    <button class="nav-tab" data-view="method" type="button">Method / Data</button>
-  </nav>
-
   <main id="main">
-    <section id="view-spectrum" class="view active" aria-labelledby="spectrum-title">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Known-spectrum atlas</p>
-          <h2 id="spectrum-title">What is actually oscillating?</h2>
-          <p class="lede">Frequency is a coordinate, not an identity. This view places established phenomena on one logarithmic axis while keeping their physical families separate.</p>
+    <section id="view-spectrum" class="view active spectrum-view" aria-labelledby="spectrum-title">
+      <div class="spectrum-hero">
+        <div class="hero-kicker left" aria-hidden="true">
+          <span>Different phenomena</span>
+          <span>Same mathematics</span>
+          <span>A shared reality</span>
         </div>
-        <div id="spectrum-metrics" class="metric-grid" aria-label="Spectrum summary"></div>
+
+        <div class="hero-title">
+          <p class="eyebrow">One coordinate · many physical systems</p>
+          <h1 id="spectrum-title">Universal Frequency Map</h1>
+          <p class="hero-subtitle">A living map of waves, oscillations, resonances, fields, and natural scales.</p>
+        </div>
+
+        <div class="hero-kicker right" aria-hidden="true">
+          <span>Same laws</span>
+          <span>Many scales</span>
+          <span>One universe</span>
+        </div>
       </div>
 
-      <div class="control-panel" aria-label="Spectrum controls">
-        <label class="search-control">
-          <span>Search</span>
-          <input id="spectrum-search" type="search" placeholder="sound, photon, gravitational…" autocomplete="off">
-        </label>
-        <label>
-          <span>Family</span>
-          <select id="family-filter"><option value="all">All families</option></select>
-        </label>
-        <label>
-          <span>Energy role</span>
-          <select id="energy-filter"><option value="all">All roles</option></select>
-        </label>
-        <label>
-          <span>From 10<sup id="exp-min-label">−9</sup> Hz</span>
-          <input id="exp-min" type="range" min="-9" max="18" step="1" value="-9">
-        </label>
-        <label>
-          <span>To 10<sup id="exp-max-label">20</sup> Hz</span>
-          <input id="exp-max" type="range" min="-8" max="20" step="1" value="20">
-        </label>
-        <button id="reset-spectrum" class="button secondary" type="button">Reset</button>
+      <div class="spectrum-rules" aria-label="How to read the frequency direction">
+        <span>← Longer period · slower</span>
+        <span>Frequency (Hz) · logarithmic scale</span>
+        <span>Shorter period · faster →</span>
       </div>
+
+      <div id="spectrum-metrics" class="metric-grid spectrum-metrics" aria-label="Spectrum summary"></div>
+
+      <details class="explore-panel" open>
+        <summary>
+          <span>Explore the map</span>
+          <span class="summary-hint">Search · filter · zoom</span>
+        </summary>
+        <div class="control-panel" aria-label="Spectrum controls">
+          <label class="search-control">
+            <span>Search</span>
+            <input id="spectrum-search" type="search" placeholder="sound, photon, gravity, spin…" autocomplete="off">
+          </label>
+          <label>
+            <span>Family</span>
+            <select id="family-filter"><option value="all">All families</option></select>
+          </label>
+          <label>
+            <span>Energy role</span>
+            <select id="energy-filter"><option value="all">All roles</option></select>
+          </label>
+          <label>
+            <span>From 10<sup id="exp-min-label">−9</sup> Hz</span>
+            <input id="exp-min" type="range" min="-9" max="21" step="1" value="-9">
+          </label>
+          <label>
+            <span>To 10<sup id="exp-max-label">21</sup> Hz</span>
+            <input id="exp-max" type="range" min="-8" max="22" step="1" value="21">
+          </label>
+          <button id="reset-spectrum" class="button secondary" type="button">Reset</button>
+        </div>
+      </details>
 
       <div class="legend" aria-label="Spectrum legend">
-        <span><i class="legend-swatch band"></i> finite/observed range</span>
-        <span><i class="legend-swatch characteristic"></i> characteristic line</span>
-        <span><i class="legend-swatch open"></i> one-sided/open band</span>
-        <span><i class="legend-swatch detector"></i> detector/mission window</span>
+        <span><i class="legend-swatch established"></i> established / measured</span>
+        <span><i class="legend-swatch detector"></i> detector / model window</span>
+        <span><i class="legend-swatch characteristic"></i> characteristic frequency</span>
+        <span><i class="legend-swatch open"></i> open-ended band</span>
         <span><i class="legend-swatch biological"></i> biological overlay</span>
       </div>
 
       <div class="atlas-layout">
         <div>
-          <div class="chart-shell">
+          <div class="chart-shell cosmic-panel">
             <svg id="spectrum-chart" role="img" aria-labelledby="spectrum-chart-title spectrum-chart-desc"></svg>
             <div id="chart-empty" class="empty-state" hidden>No records match these filters.</div>
           </div>
-          <p class="chart-note">Open-ended bands are clipped to the current viewport and marked with an arrow. A blank interval is not evidence of missing physics.</p>
+          <p class="chart-note">Frequency is a coordinate, not an identity. Equal frequency does not mean equal physical phenomenon. Open-ended bands are clipped to the selected viewport.</p>
+
+          <section class="frontier-strip" aria-labelledby="frontier-strip-title">
+            <div class="frontier-strip-copy">
+              <div class="frontier-orb" aria-hidden="true">?</div>
+              <div>
+                <p class="eyebrow">Unmapped frontier</p>
+                <h2 id="frontier-strip-title">Interesting questions with no established place on the frequency axis.</h2>
+              </div>
+            </div>
+            <div id="spectrum-frontier-strip" class="frontier-chip-grid"></div>
+            <button class="button frontier-jump" data-jump-view="frontier" type="button">Explore the frontier →</button>
+          </section>
         </div>
+
         <aside id="inspector" class="inspector" aria-live="polite" aria-label="Selected record details">
-          <p class="eyebrow">Inspector</p>
-          <h3>Select an entry</h3>
-          <p>Choose a band, line, table row, connection, frontier node or gap to inspect its physical meaning, evidence, energy behavior and sources.</p>
+          <p class="eyebrow">Selected phenomenon</p>
+          <h3>Touch the map</h3>
+          <p>Select any band, point, or table row to reveal what is oscillating, its evidence, energy behavior, and sources.</p>
         </aside>
       </div>
 
-      <details class="data-table-wrap" open>
-        <summary>Accessible spectrum table</summary>
+      <details class="data-table-wrap">
+        <summary>Scientific data table <span class="summary-hint">Accessible canonical view</span></summary>
         <div class="table-scroll">
           <table class="data-table">
             <thead><tr><th>Phenomenon</th><th>Family</th><th>Frequency</th><th>What oscillates</th><th>Energy roles</th><th>Evidence</th></tr></thead>
@@ -103,38 +142,34 @@
     </section>
 
     <section id="view-connections" class="view" aria-labelledby="connections-title">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Interaction graph</p>
-          <h2 id="connections-title">How phenomena exchange energy, momentum, phase or information</h2>
-          <p class="lede">Frequency overlap is neither necessary nor sufficient for coupling. Every edge has a physical mediator, evidence trail and explicit energy accounting.</p>
-        </div>
+      <div class="section-hero">
+        <p class="eyebrow">Interaction graph</p>
+        <h2 id="connections-title">How nature talks to itself.</h2>
+        <p class="lede">Frequency overlap is neither necessary nor sufficient for coupling. Every connection needs a physical mediator, an evidence trail, and explicit energy accounting.</p>
         <div id="connection-metrics" class="metric-grid"></div>
       </div>
-      <div class="control-panel">
+      <div class="control-panel compact-controls">
         <label class="search-control"><span>Search interactions</span><input id="connection-search" type="search" placeholder="phonon, Raman, gravity…"></label>
         <label><span>Interaction type</span><select id="interaction-filter"><option value="all">All types</option></select></label>
         <label><span>Direction</span><select id="direction-filter"><option value="all">All directions</option></select></label>
       </div>
       <div class="connections-layout">
-        <div class="graph-shell"><svg id="connection-graph" role="img" aria-label="Physical interaction graph"></svg></div>
+        <div class="graph-shell cosmic-panel"><svg id="connection-graph" role="img" aria-label="Physical interaction graph"></svg></div>
         <aside id="connection-inspector" class="inspector" aria-live="polite">
-          <p class="eyebrow">Interaction inspector</p><h3>Select an edge</h3><p>Choose an interaction below or from the graph.</p>
+          <p class="eyebrow">Interaction inspector</p><h3>Select an edge</h3><p>Choose a connection from the graph or cards below.</p>
         </aside>
       </div>
       <div id="interaction-list" class="card-grid compact"></div>
     </section>
 
     <section id="view-frontier" class="view" aria-labelledby="frontier-title">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Frontier &amp; question nodes</p>
-          <h2 id="frontier-title">Unknowns are represented as unknowns</h2>
-          <p class="lede">Dark-sector models, quantum gravity, consciousness, anomalous cognition and other open questions remain visible without being promoted to established physics or assigned invented frequencies.</p>
-        </div>
+      <div class="section-hero frontier-hero">
+        <p class="eyebrow">Unmapped frontier</p>
+        <h2 id="frontier-title">Unknowns stay unknown until evidence earns them a place.</h2>
+        <p class="lede">Dark-sector models, quantum gravity, consciousness, anomalous cognition, and other questions remain visible without being promoted to established physics or assigned invented frequencies.</p>
         <div id="frontier-metrics" class="metric-grid"></div>
       </div>
-      <div class="control-panel">
+      <div class="control-panel compact-controls">
         <label class="search-control"><span>Search frontier</span><input id="frontier-search" type="search" placeholder="wormhole, telepathy, dark matter…"></label>
         <label><span>Domain</span><select id="frontier-domain"><option value="all">All domains</option></select></label>
         <label><span>Evidence class</span><select id="frontier-evidence"><option value="all">All classes</option></select></label>
@@ -142,56 +177,54 @@
       <div class="frontier-layout">
         <div id="frontier-list" class="card-grid"></div>
         <aside id="frontier-inspector" class="inspector" aria-live="polite">
-          <p class="eyebrow">Frontier inspector</p><h3>Select a frontier node</h3><p>Its status, proposed physical candidate, signal, required bridge, energy status and source trail will appear here.</p>
+          <p class="eyebrow">Frontier inspector</p><h3>Select a question</h3><p>Status, candidate mechanism, predicted signal, required bridge, energy status, and source trail appear here.</p>
         </aside>
       </div>
     </section>
 
     <section id="view-gaps" class="view" aria-labelledby="gaps-title">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Gap analysis</p>
-          <h2 id="gaps-title">A gap in what?</h2>
-          <p class="lede">Instrument gaps, theory gaps, mechanism gaps and blank chart space are not interchangeable. The atlas labels the kind of absence before drawing conclusions from it.</p>
-        </div>
+      <div class="section-hero">
+        <p class="eyebrow">Gap analysis</p>
+        <h2 id="gaps-title">A gap in what?</h2>
+        <p class="lede">Instrument gaps, theory gaps, mechanism gaps, and blank chart space are not interchangeable. The atlas names the kind of absence before drawing conclusions from it.</p>
         <div id="gap-metrics" class="metric-grid"></div>
       </div>
-      <div class="control-panel">
+      <div class="control-panel compact-controls">
         <label class="search-control"><span>Search gaps</span><input id="gap-search" type="search" placeholder="gravity, consciousness, carrier…"></label>
         <label><span>Gap type</span><select id="gap-filter"><option value="all">All gap types</option></select></label>
       </div>
       <div class="gaps-layout">
         <div id="gap-list" class="card-grid"></div>
         <aside id="gap-inspector" class="inspector" aria-live="polite">
-          <p class="eyebrow">Gap inspector</p><h3>Select a gap</h3><p>The scope, meaning, related canonical records and sources will appear here.</p>
+          <p class="eyebrow">Gap inspector</p><h3>Select a gap</h3><p>The scope, meaning, related canonical records, and sources appear here.</p>
         </aside>
       </div>
     </section>
 
     <section id="view-method" class="view" aria-labelledby="method-title">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Scientific contract</p>
-          <h2 id="method-title">How to read the table</h2>
-          <p class="lede">The visualization is a view over the canonical dataset—not a second source of scientific truth.</p>
-        </div>
+      <div class="section-hero">
+        <p class="eyebrow">Scientific contract</p>
+        <h2 id="method-title">How to read the universe without fooling ourselves.</h2>
+        <p class="lede">The visualization is a view over the canonical dataset—not a second source of scientific truth.</p>
         <div id="method-metrics" class="metric-grid"></div>
       </div>
       <div class="method-grid">
-        <article class="method-card"><h3>1 · Identity</h3><p>Ask <strong>what is oscillating?</strong> Equal numerical frequency does not make two phenomena physically identical.</p></article>
-        <article class="method-card"><h3>2 · Frequency</h3><p>Ranges, characteristic lines, detector bands and biological overlays keep their original meanings. Hertz does not erase context.</p></article>
-        <article class="method-card"><h3>3 · Interaction</h3><p>Coupling needs a mechanism, mediator and conservation conditions. Same-frequency overlap alone is not a bridge.</p></article>
-        <article class="method-card"><h3>4 · Energy</h3><p>Every energy claim needs a system boundary. Energy may store, transfer, convert, radiate, dissipate or disperse; ordinary processes do not create it from nothing.</p></article>
-        <article class="method-card"><h3>5 · Evidence</h3><p>Established, model-dependent, open, speculative and contested records remain visually and semantically distinct.</p></article>
-        <article class="method-card"><h3>6 · Unknowns</h3><p>Unknown carrier, unknown frequency and missing instrumentation are useful data states. They are not invitations to fabricate a bar.</p></article>
+        <article class="method-card"><span>01</span><h3>Identity</h3><p>Ask <strong>what is oscillating?</strong> Equal numerical frequency does not make two phenomena physically identical.</p></article>
+        <article class="method-card"><span>02</span><h3>Frequency</h3><p>Ranges, characteristic lines, detector bands, and biological overlays keep their original meanings. Hertz does not erase context.</p></article>
+        <article class="method-card"><span>03</span><h3>Interaction</h3><p>Coupling needs a mechanism, mediator, and conservation conditions. Same-frequency overlap alone is not a bridge.</p></article>
+        <article class="method-card"><span>04</span><h3>Energy</h3><p>Every energy claim needs a system boundary. Ordinary processes do not create energy from nothing.</p></article>
+        <article class="method-card"><span>05</span><h3>Evidence</h3><p>Established, model-dependent, open, speculative, and contested records remain visibly distinct.</p></article>
+        <article class="method-card"><span>06</span><h3>Unknowns</h3><p>Unknown carrier, unknown frequency, and missing instrumentation are useful data states—not invitations to fabricate a bar.</p></article>
       </div>
       <div class="method-grid wide">
         <article class="method-card">
-          <h3>Canonical data</h3>
+          <p class="eyebrow">Canonical data</p>
+          <h3>Machine-readable source of truth</h3>
           <div id="canonical-file-list"></div>
         </article>
         <article class="method-card">
-          <h3>CURV research validator</h3>
+          <p class="eyebrow">Research validation</p>
+          <h3>CURV validator</h3>
           <p>CURV can test whether a frontier/question record is ready for quantitative constraint design. Its readiness result never changes UFS scientific status automatically.</p>
           <div id="validation-summary"></div>
           <p><a href="https://github.com/Scimonesays/CURV" target="_blank" rel="noopener">Open CURV on GitHub ↗</a></p>
@@ -201,8 +234,14 @@
   </main>
 
   <footer>
-    <p><strong>Universal Frequency Spectrum</strong> · Canonical data schema <span id="schema-version">—</span> · <a href="https://github.com/Scimonesays/Universal-Frequency-Spectrum" target="_blank" rel="noopener">Source repository ↗</a></p>
-    <p class="muted">Scientific caution is a feature: empty space, shared mathematics and matching frequencies are not evidence of a shared physical substrate.</p>
+    <div>
+      <strong>Universal Frequency Spectrum</strong>
+      <p>One universe · many frequencies · endless discovery</p>
+    </div>
+    <div class="footer-meta">
+      <span>Canonical schema <span id="schema-version">—</span></span>
+      <a href="https://github.com/Scimonesays/Universal-Frequency-Spectrum" target="_blank" rel="noopener">Source repository ↗</a>
+    </div>
   </footer>
 
   <script type="module" src="./app.js"></script>
