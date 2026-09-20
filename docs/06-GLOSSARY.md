@@ -431,3 +431,72 @@ The project does not treat the black-hole singularity as directly observed; its 
 Hypothetical spacetime geometry connecting otherwise separated regions.
 
 Wormholes are mathematically studied but not observationally established. Traversability and stability depend strongly on the model and stress-energy assumptions.
+
+
+# Energy accounting terms
+
+## System boundary
+
+Defined physical system across which energy inputs, outputs, work, heat, radiation, or other transfers are accounted.
+
+Statements that energy "increases" or "decreases" are incomplete without a system boundary.
+
+## Stored energy
+
+Energy associated with the state/configuration of a selected system that can participate in later interactions.
+
+## Energy transfer
+
+Energy crossing a stated system boundary.
+
+Transfer may occur by work, radiation, heat, particle flow, waves, or other physical mechanisms.
+
+## Energy conversion
+
+Change in the physical form or degree of freedom carrying energy.
+
+Conversion does not create energy from nothing.
+
+## Dissipation
+
+Redistribution of organized energy into less recoverable microscopic degrees of freedom, commonly accompanied by entropy production.
+
+Dissipation does not mean destruction of energy.
+
+## Dispersion
+
+Spreading of a wave packet, excitation, or energy distribution across space, time, direction, modes, or spectrum.
+
+Dispersion is not synonymous with dissipation.
+
+## Steady state
+
+Condition in which macroscopic state variables, including stored energy where relevant, remain approximately constant over the stated interval even though continuous energy input and output may occur.
+
+## Power
+
+Rate of energy transfer or conversion.
+
+SI unit: watt (W), equal to joule per second.
+
+## Energy source
+
+System or stored degree of freedom from which energy enters the selected accounting boundary.
+
+Calling something a source does not imply creation of energy from nothing.
+
+## Energy sink
+
+System or degree of freedom receiving energy from the selected accounting boundary.
+
+A sink may store, transport, thermalize, radiate, or otherwise redistribute that energy.
+
+## Energy role
+
+Controlled project label describing what a node or edge does with energy: stores, carries, receives, supplies, transfers, converts, absorbs, emits, does work, dissipates, thermalizes, disperses, maintains steady state, exchanges, mediates/readouts, or remains unknown.
+
+## Create energy from nothing
+
+Not a normal project energy role.
+
+Ordinary apparent energy production must be traced to stored energy, external input, conversion between forms, mass/binding-energy change, or another established source. A genuine violation/modification of applicable conservation law would require extraordinary reproducible evidence.
