@@ -61,12 +61,13 @@ const validations = data.validations.records || [];
 const energyRoles = data.energy_roles.records || [];
 const energyRules = data.energy_roles.rules || [];
 
-const unique = (records, label) => {
+const unique = (records, label, key = "id") => {
   const seen = new Set();
   for (const r of records) {
-    if (!isNonEmptyString(r?.id)) fail.push(`${label}: record without id`);
-    else if (seen.has(r.id)) fail.push(`${label}: duplicate id ${r.id}`);
-    else seen.add(r.id);
+    const value = r?.[key];
+    if (!isNonEmptyString(value)) fail.push(`${label}: record without ${key}`);
+    else if (seen.has(value)) fail.push(`${label}: duplicate ${key} ${value}`);
+    else seen.add(value);
   }
   return seen;
 };
@@ -80,7 +81,7 @@ const sids = unique(sources, "sources");
 const cids = unique(claims, "claims");
 const gids = unique(gaps, "gaps");
 const vids = unique(validations, "validations");
-const roleIds = unique(energyRoles, "energy_roles");
+const roleIds = unique(energyRoles, "energy_roles", "code");
 
 const allRecordIds = new Set([...pids, ...iids, ...fids]);
 const validValidationTargets = new Set([...allRecordIds, ...gids]);
