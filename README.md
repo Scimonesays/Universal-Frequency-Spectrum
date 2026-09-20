@@ -44,6 +44,7 @@ No final visual layout is being asserted yet. Frequency ranges in later phases w
 | [Glossary](docs/06-GLOSSARY.md) | Precise working vocabulary |
 | [Source Library](research/SOURCES.md) | Curated primary papers, reviews, standards, and authoritative references |
 | [Data Area](data/README.md) | Planned machine-readable source of truth for later phases |
+| [Phase 1 Completion Record](docs/PHASE-1-COMPLETE.md) | Final checklist and scientific boundary for Phase 1 |
 
 ## Proposed organizing dimensions
 
