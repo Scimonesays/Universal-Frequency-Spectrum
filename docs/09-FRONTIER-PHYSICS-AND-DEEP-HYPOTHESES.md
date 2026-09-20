@@ -319,6 +319,65 @@ Do not assign a "quantum-gravity frequency band" unless a specific model predict
 
 ---
 
+# PART I-B — UNKNOWN / UNOBSERVED PROPOSED ENERGY & INFORMATION CARRIERS
+
+This category is deliberately broad enough to hold ideas that have **not yet earned a known physics row**.
+
+The visible label may be:
+
+> **Unknown / Unobserved Energy & Information Forms**
+
+But the technical meaning is more careful.
+
+In modern physics, **energy is a property of a physical system, not usually a substance or fluid by itself**. Therefore an unexplained phenomenon should not automatically be called "unknown energy."
+
+A future discovery might instead be:
+
+- a previously unknown field;
+- a new particle;
+- a new interaction or force;
+- a new collective excitation;
+- a hidden-sector degree of freedom;
+- an information-bearing physical substrate;
+- an unknown coupling between known systems;
+- a transient rather than periodic phenomenon;
+- or a genuinely new energy-transfer mechanism.
+
+The frontier category therefore asks:
+
+```
+UNKNOWN EFFECT?
+    ↓
+UNKNOWN CARRIER?
+    ├─ field?
+    ├─ particle?
+    ├─ force / interaction?
+    ├─ information channel?
+    ├─ collective state?
+    ├─ transient?
+    └─ no physical mechanism yet identified
+```
+
+## Admission rule
+
+An item can enter this category even before its carrier is known, but it must keep separate fields for:
+
+- **reported phenomenon**;
+- **evidence status**;
+- **known conventional explanations tested**;
+- **hypothesized carrier**;
+- **whether energy transfer is actually demonstrated**;
+- **whether information transfer is claimed**;
+- **distance dependence**;
+- **shielding dependence**;
+- **time dependence / frequency**, if any;
+- **reproducibility**;
+- **falsification test**.
+
+This category is a **holding region for unknowns**, not a declaration that unknown energy has been detected.
+
+---
+
 # PART II — MEMORY & CONSCIOUSNESS
 
 # 13. How do we "communicate with" memory?
@@ -640,6 +699,136 @@ This is a useful placeholder because it states exactly what evidence would be ne
 
 ---
 
+# 22A. Telepathy, "mind reading," remote viewing and anomalous cognition
+
+The phrase **mind reading** currently refers to at least two fundamentally different things.
+
+## A. Technological neural decoding — established, but limited
+
+Brain–computer-interface research can decode **measured neural activity** under constrained experimental conditions.
+
+Examples include:
+
+- decoding a small set of internally spoken words from implanted neural electrodes;
+- decoding attempted or imagined speech for communication BCIs;
+- classifying imagined speech from EEG with trained subject-specific models.
+
+A 2024 Nature Human Behaviour study decoded internally spoken words from implanted recordings in two participants. Performance was above chance but varied substantially by participant and task.
+
+This is genuine technological "mind reading" in a loose popular sense, but it requires:
+
+```
+physical access to brain signals
++ calibration/training
++ a constrained task vocabulary or statistical model
++ measurable neural activity
+```
+
+It is **not** unrestricted access to every thought, memory, belief or private mental image.
+
+### Classification
+
+**NEURAL DECODING: ESTABLISHED TECHNOLOGY / LIMITED DOMAIN**
+
+---
+
+## B. Telepathy — claimed person-to-person information transfer without known sensory channel
+
+Telepathy proposes that information about one person's thoughts or target state can be acquired by another person without an established sensory, technological or inferential channel.
+
+A major experimental tradition is the **Ganzfeld** paradigm.
+
+The literature is contested.
+
+A 2024 registered meta-analysis of more than four decades of Ganzfeld studies reported a small positive average effect.
+
+However:
+
+- earlier meta-analyses have produced both positive and null replication conclusions;
+- methodological critiques have raised sensory-leakage, multiple-testing, publication, analytical and replication concerns;
+- a 2026 critical review of neuroimaging ESP studies concluded that reported neural findings were heterogeneous and seldom replicated, and that definitive neural conclusions remain premature.
+
+Therefore the project does not collapse "statistically interesting literature" into "telepathy established."
+
+### Classification
+
+**TELEPATHY: CONTESTED EVIDENCE / NO ESTABLISHED PHYSICAL CARRIER**
+
+If telepathy were eventually established, the atlas would then ask:
+
+```
+What carries the information?
+Does energy transfer occur?
+Does signal strength depend on distance?
+Can shielding alter it?
+Is there a propagation speed?
+Is there a spectrum or bandwidth?
+Can the sender/receiver channel be independently detected?
+Does it obey known information and thermodynamic constraints?
+```
+
+Until then, **frequency = unknown**.
+
+---
+
+## C. Remote viewing / clairvoyance
+
+Remote-viewing and clairvoyance paradigms claim acquisition of information about a hidden or distant target without an identified conventional sensory channel.
+
+Published studies include positive, null and controversial results.
+
+A 2026 critical neuroimaging review retained both positive and null reports and concluded that the literature was too heterogeneous for a definitive neural signature.
+
+### Classification
+
+**ANOMALOUS COGNITION CLAIM: CONTESTED EVIDENCE / MECHANISM UNKNOWN**
+
+Remote viewing should not automatically be merged with telepathy because a human "sender" is not required in every protocol.
+
+---
+
+## D. Precognition / presentiment
+
+Precognition claims information about a future target or event before the ordinary causal information becomes available.
+
+Presentiment experiments instead look for physiological changes before a later randomly selected stimulus.
+
+These claims have a parapsychology literature but no established physical mechanism.
+
+Because temporal ordering is central to the hypothesis, this category would require especially strict controls for:
+
+- randomization;
+- information leakage;
+- optional stopping;
+- analytical flexibility;
+- expectation effects;
+- multiple comparisons;
+- preregistration;
+- independent replication.
+
+### Classification
+
+**CONTESTED / SPECULATIVE MECHANISM**
+
+---
+
+## E. Why this belongs in the Universal Frequency Spectrum
+
+If any anomalous-information effect were robustly demonstrated, one of the first physics questions would be whether it involves:
+
+- an unknown field;
+- a known field used in an unknown regime;
+- a quantum-information effect;
+- an emergent biological coupling;
+- a non-wave/non-energy information mechanism;
+- or a currently unidentified experimental artifact.
+
+So the project should **reserve the space without filling in the answer**.
+
+That is exactly what the unknown-carrier layer is for.
+
+---
+
 # PART III — TESLA, 3–6–9 & "ENERGY ALL AROUND US"
 
 # 23. Did Tesla say 3, 6 and 9 were the key to the universe?
@@ -747,6 +936,11 @@ Phase 4 deliberately keeps certain questions visible even where science cannot y
 | Does personal consciousness survive irreversible death? | SPECULATIVE / NOT ESTABLISHED | reproducible information-bearing evidence independent of brain function |
 | Is there a physically interacting soul? | NOT OPERATIONALIZED | define measurable carrier/coupling and obtain reproducible evidence |
 | Is memory stored nonlocally? | SPECULATIVE | identify substrate, coupling and falsifiable information-transfer effect |
+| Can measured brain signals be decoded into intended/internal speech? | ESTABLISHED IN CONSTRAINED SETTINGS | improve accuracy, vocabulary, generalization and privacy safeguards |
+| Does telepathy occur? | CONTESTED EVIDENCE | preregistered, independently replicated anomalous information transfer with conventional channels excluded |
+| Does remote viewing/clairvoyance occur? | CONTESTED EVIDENCE | robust independent replication under leakage-resistant protocols |
+| Does precognition/presentiment occur? | CONTESTED / SPECULATIVE MECHANISM | prospective preregistration, strong randomization and independent replication |
+| If anomalous information transfer exists, what carries it? | UNKNOWN / NOT OPERATIONALIZED | identify measurable carrier, coupling, distance/shielding behavior and information accounting |
 | Does 3–6–9 encode a fundamental law? | NO EVIDENCE IDENTIFIED | define quantitative prediction distinct from known math/physics |
 | Can usable unlimited energy be extracted from vacuum? | NOT ESTABLISHED | reproducible net-energy output consistent with full thermodynamic accounting |
 
@@ -826,6 +1020,14 @@ The purpose is to make strange ideas precise enough that nature gets a vote.
 - *A new variant of the electromagnetic field theory of consciousness*, Frontiers in Neurology (2024): https://doi.org/10.3389/fneur.2024.1420676
 - *Quantum-Inspired and Non-Classical Approaches to Consciousness: Models, Evidence and Constraints* (2026): https://doi.org/10.3390/brainsci16040386
 - Reimers et al., critique of Orch OR biological feasibility: https://pubmed.ncbi.nlm.nih.gov/19792156/
+
+### Neural decoding / telepathy / anomalous cognition
+- Wandelt et al., *Representation of internal speech by single neurons in human supramarginal gyrus*, Nature Human Behaviour (2024): https://doi.org/10.1038/s41562-024-01867-y
+- Silva et al., *The speech neuroprosthesis*, Nature Reviews Neuroscience (2024): https://doi.org/10.1038/s41583-024-00819-9
+- Tressoldi & Storm, Ganzfeld registered meta-analysis (2024 version): https://doi.org/10.12688/f1000research.51746.4
+- Milton & Wiseman, *Does Psi Exist? Lack of Replication of an Anomalous Process of Information Transfer*, Psychological Bulletin (1999): https://doi.org/10.1037/0033-2909.125.4.387
+- *Neuroimaging studies of extra-sensory perception: A systematic and critical review* (2026): https://pubmed.ncbi.nlm.nih.gov/42009267/
+- *Neuroimaging findings in extrasensory perception research: A PRISMA-informed descriptive synthesis* (2026): https://pubmed.ncbi.nlm.nih.gov/42456633/
 
 ### Near-death experience / terminal lucidity / afterlife claims
 - Parnia et al., AWARE-II, Resuscitation (2023): https://doi.org/10.1016/j.resuscitation.2023.109903
