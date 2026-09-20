@@ -33,6 +33,9 @@
     },
     {
       "$ref": "#/$defs/energyRolesDataset"
+    },
+    {
+      "$ref": "ufs-validation-result.schema.json"
     }
   ],
   "$defs": {
@@ -813,10 +816,10 @@
                 "$ref": "#/$defs/phenomenon"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "interactionsDataset": {
       "allOf": [
@@ -833,10 +836,10 @@
                 "$ref": "#/$defs/interaction"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "frontierDataset": {
       "allOf": [
@@ -853,10 +856,10 @@
                 "$ref": "#/$defs/frontier"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "entitiesDataset": {
       "allOf": [
@@ -873,10 +876,10 @@
                 "$ref": "#/$defs/entity"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "rangesDataset": {
       "allOf": [
@@ -893,10 +896,10 @@
                 "$ref": "#/$defs/range"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "sourcesDataset": {
       "allOf": [
@@ -913,10 +916,10 @@
                 "$ref": "#/$defs/source"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "claimsDataset": {
       "allOf": [
@@ -933,10 +936,10 @@
                 "$ref": "#/$defs/claim"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "gapsDataset": {
       "allOf": [
@@ -953,10 +956,10 @@
                 "$ref": "#/$defs/gap"
               }
             }
-          },
-          "additionalProperties": false
+          }
         }
-      ]
+      ],
+      "unevaluatedProperties": false
     },
     "energyRolesDataset": {
       "type": "object",
