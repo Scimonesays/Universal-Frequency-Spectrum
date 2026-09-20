@@ -2,7 +2,7 @@
 
 This directory is reserved for the machine-readable source of truth that will be built beginning in later phases.
 
-Phase 1 intentionally does **not** invent a large frequency table before the evidence model is stable.
+Phase 1 intentionally did **not** invent a large frequency table before the evidence model was stable. Phase 2 added a provisional known-spectrum CSV, and Phase 3 added a provisional coupling-edge CSV. These are research artifacts, not yet the Phase 5 canonical dataset.
 
 ## Planned record shape
 
@@ -46,6 +46,13 @@ notes: ...
 - Do not apply `E = hf` indiscriminately to classical total wave energy.
 - Every frontier record must name the underlying model.
 - Every record that appears in the final atlas must be traceable to sources.
+
+## Current provisional research datasets
+
+- `phase2-known-spectrum.csv` — Phase 2 node/frequency catalog.
+- `phase3-couplings.csv` — Phase 3 directed interaction graph.
+
+The Phase 3 edge file demonstrates that relationships also need structured metadata for interaction type, directionality, mediator, energy transfer, coherence, frequency constraints, evidence, sources, and caveats.
 
 ## Planned Phase 5 outputs
 
