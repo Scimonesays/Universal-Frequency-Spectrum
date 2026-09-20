@@ -1,0 +1,1307 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "GEO-TIDE-SEMI",
+      "claim_id": "CLAIM-P2-GEO-TIDE-SEMI",
+      "record_type": "phenomenon",
+      "name": "semidiurnal tidal scale",
+      "family": "ocean/geophysical",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 0.00002237,
+        "range_kind": "characteristic geophysical period"
+      },
+      "physical": {
+        "what_oscillates": "ocean surface and water mass"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-001"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "12 h 25 min; representative tidal constituent scale, not full tide spectrum",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "GEO-TIDE-LUNAR",
+      "claim_id": "CLAIM-P2-GEO-TIDE-LUNAR",
+      "record_type": "phenomenon",
+      "name": "lunar-day tidal scale",
+      "family": "ocean/geophysical",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 0.00001119,
+        "range_kind": "characteristic geophysical period"
+      },
+      "physical": {
+        "what_oscillates": "ocean response to Earth-Moon geometry"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-001"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "24 h 50 min",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "ATM-EQUATORIAL",
+      "claim_id": "CLAIM-P2-ATM-EQUATORIAL",
+      "record_type": "phenomenon",
+      "name": "equatorial planetary waves",
+      "family": "atmospheric",
+      "spectral": {
+        "min_hz": 5e-7,
+        "max_hz": 0.000004,
+        "characteristic_hz": null,
+        "range_kind": "observed/representative"
+      },
+      "physical": {
+        "what_oscillates": "wind pressure geopotential thermodynamic fields"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-002"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "few days to several weeks; family contains multiple dispersive modes",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "OCE-SURFACE",
+      "claim_id": "CLAIM-P2-OCE-SURFACE",
+      "record_type": "phenomenon",
+      "name": "wind waves and swell",
+      "family": "ocean surface",
+      "spectral": {
+        "min_hz": 0.05,
+        "max_hz": 0.2,
+        "characteristic_hz": null,
+        "range_kind": "observational/practical"
+      },
+      "physical": {
+        "what_oscillates": "free-surface elevation and water velocity"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-003"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "5-20 s representative familiar wave periods; not universal limits",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "SEIS-GROUND",
+      "claim_id": "CLAIM-P2-SEIS-GROUND",
+      "record_type": "phenomenon",
+      "name": "earthquake ground shaking",
+      "family": "geophysical/seismic",
+      "spectral": {
+        "min_hz": 0.1,
+        "max_hz": 30,
+        "characteristic_hz": null,
+        "range_kind": "observed/representative"
+      },
+      "physical": {
+        "what_oscillates": "elastic displacement and strain in Earth"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-004"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "USGS cited ground-motion context; larger events extend lower",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "ACOU-INFRA",
+      "claim_id": "CLAIM-P2-ACOU-INFRA",
+      "record_type": "phenomenon",
+      "name": "infrasound",
+      "family": "acoustic",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": 20,
+        "characteristic_hz": null,
+        "range_kind": "conventional upper boundary"
+      },
+      "physical": {
+        "what_oscillates": "pressure density particle motion in matter"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-005"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "frequencies below 20 Hz; volcanic monitoring often 0.5-20 Hz",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "ACOU-HEARING",
+      "claim_id": "CLAIM-P2-ACOU-HEARING",
+      "record_type": "phenomenon",
+      "name": "human auditory sensitivity",
+      "family": "biological overlay",
+      "spectral": {
+        "min_hz": 20,
+        "max_hz": 20000,
+        "characteristic_hz": null,
+        "range_kind": "biological sensitivity"
+      },
+      "physical": {
+        "what_oscillates": "auditory response to acoustic pressure"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-004"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "overlay only; not physical limit of sound",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "ACOU-ULTRA",
+      "claim_id": "CLAIM-P2-ACOU-ULTRA",
+      "record_type": "phenomenon",
+      "name": "ultrasound",
+      "family": "acoustic",
+      "spectral": {
+        "min_hz": 20000,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "conventional lower boundary"
+      },
+      "physical": {
+        "what_oscillates": "pressure density particle motion in matter"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-006"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "above 20 kHz by common usage; no universal upper cutoff",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MECH-STRUCT",
+      "claim_id": "CLAIM-P2-MECH-STRUCT",
+      "record_type": "phenomenon",
+      "name": "structural mechanical resonance",
+      "family": "mechanical",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "parameter-dependent"
+      },
+      "physical": {
+        "what_oscillates": "position strain deformation rotation"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-021"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "geometry mass stiffness material and boundaries set modes",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "PHONON-SI",
+      "claim_id": "CLAIM-P2-PHONON-SI",
+      "record_type": "phenomenon",
+      "name": "bulk silicon phonon branches",
+      "family": "condensed matter",
+      "spectral": {
+        "min_hz": 0,
+        "max_hz": 15000000000000,
+        "characteristic_hz": null,
+        "range_kind": "material-specific dispersion"
+      },
+      "physical": {
+        "what_oscillates": "collective silicon lattice displacement"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-007"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "illustrative silicon scale only",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "PHONON-SI-OPT",
+      "claim_id": "CLAIM-P2-PHONON-SI-OPT",
+      "record_type": "phenomenon",
+      "name": "silicon optical phonon",
+      "family": "condensed matter",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 15500000000000,
+        "range_kind": "characteristic material mode"
+      },
+      "physical": {
+        "what_oscillates": "relative lattice displacement"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-007"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "representative ~15-16 THz",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MAGNON-YIG-DIP",
+      "claim_id": "CLAIM-P2-MAGNON-YIG-DIP",
+      "record_type": "phenomenon",
+      "name": "YIG dipolar magnon example",
+      "family": "condensed matter",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 7000000000,
+        "range_kind": "characteristic material example"
+      },
+      "physical": {
+        "what_oscillates": "collective spin/magnetization"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-008"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "cited experiment operates around 7 GHz; not a universal magnon frequency",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MAGNON-YIG-EDGE",
+      "claim_id": "CLAIM-P2-MAGNON-YIG-EDGE",
+      "record_type": "phenomenon",
+      "name": "YIG Brillouin-zone-edge magnon scale",
+      "family": "condensed matter",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 7000000000000,
+        "range_kind": "characteristic material example"
+      },
+      "physical": {
+        "what_oscillates": "collective spin/magnetization"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-008"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES",
+          "DISSIPATES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "cited neutron-scattering context places edge around 7 THz; not a universal magnon limit",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MOL-ROT",
+      "claim_id": "CLAIM-P2-MOL-ROT",
+      "record_type": "phenomenon",
+      "name": "molecular rotational transitions",
+      "family": "molecular",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "transition family"
+      },
+      "physical": {
+        "what_oscillates": "molecular rotational quantum state"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-009"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "primarily radio/microwave MHz-GHz in cited NIST catalogs; no universal endpoints",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MOL-VIB-THZ",
+      "claim_id": "CLAIM-P2-MOL-VIB-THZ",
+      "record_type": "phenomenon",
+      "name": "low-frequency molecular vibration",
+      "family": "molecular/condensed",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "spectroscopy domain"
+      },
+      "physical": {
+        "what_oscillates": "inter/intramolecular coordinates and librations"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-010"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "terahertz probing domain; system dependent",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MOL-IR-NIST",
+      "claim_id": "CLAIM-P2-MOL-IR-NIST",
+      "record_type": "phenomenon",
+      "name": "representative NIST IR calibration spectra",
+      "family": "molecular",
+      "spectral": {
+        "min_hz": 14630000000000,
+        "max_hz": 131900000000000,
+        "characteristic_hz": null,
+        "range_kind": "dataset envelope with internal gap"
+      },
+      "physical": {
+        "what_oscillates": "molecular spectroscopic transitions"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-010"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "cited regions are 488-3120 and 4000-4400 cm^-1; min/max are envelope only, not continuous coverage or universal limits",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "ATOM-ELECTRON",
+      "claim_id": "CLAIM-P2-ATOM-ELECTRON",
+      "record_type": "phenomenon",
+      "name": "atomic electronic transitions",
+      "family": "atomic",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "transition family"
+      },
+      "physical": {
+        "what_oscillates": "electronic quantum state"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-011"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "broad EM coverage through soft X-ray depending on atom/ion and transition",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "H-HYPERFINE",
+      "claim_id": "CLAIM-P2-H-HYPERFINE",
+      "record_type": "phenomenon",
+      "name": "neutral hydrogen 21 cm hyperfine line",
+      "family": "atomic/spin",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 1420000000,
+        "range_kind": "characteristic transition"
+      },
+      "physical": {
+        "what_oscillates": "hyperfine spin configuration"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-012"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximately 1420 MHz",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "NMR-EXAMPLE",
+      "claim_id": "CLAIM-P2-NMR-EXAMPLE",
+      "record_type": "phenomenon",
+      "name": "NMR instrument examples",
+      "family": "spin",
+      "spectral": {
+        "min_hz": 700000000,
+        "max_hz": 800000000,
+        "characteristic_hz": null,
+        "range_kind": "instrument examples"
+      },
+      "physical": {
+        "what_oscillates": "nuclear spin/magnetization"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-013"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "NIST 700 and 800 MHz instruments; resonance is field/nucleus dependent",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "ESR-EXAMPLE",
+      "claim_id": "CLAIM-P2-ESR-EXAMPLE",
+      "record_type": "phenomenon",
+      "name": "ESR/EPR examples",
+      "family": "spin",
+      "spectral": {
+        "min_hz": 5000000000,
+        "max_hz": 34000000000,
+        "characteristic_hz": null,
+        "range_kind": "instrument/experiment examples"
+      },
+      "physical": {
+        "what_oscillates": "electron spin/magnetization"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-014"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "NIST examples 5-25 GHz and 9/34 GHz; not universal",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "NUC-FE57",
+      "claim_id": "CLAIM-P2-NUC-FE57",
+      "record_type": "phenomenon",
+      "name": "Fe-57 Mossbauer 14.4 keV transition",
+      "family": "nuclear",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": 3480000000000000000,
+        "range_kind": "characteristic transition"
+      },
+      "physical": {
+        "what_oscillates": "nuclear quantum state"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-015"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "ABSORBS",
+          "EMITS",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "E/h conversion; representative line",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-RADIO",
+      "claim_id": "CLAIM-P2-EM-RADIO",
+      "record_type": "phenomenon",
+      "name": "radio",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": 3000000000,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-MICROWAVE",
+      "claim_id": "CLAIM-P2-EM-MICROWAVE",
+      "record_type": "phenomenon",
+      "name": "microwave",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": 3000000000,
+        "max_hz": 300000000000,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-INFRARED",
+      "claim_id": "CLAIM-P2-EM-INFRARED",
+      "record_type": "phenomenon",
+      "name": "infrared",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": 300000000000,
+        "max_hz": 400000000000000,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-VISIBLE",
+      "claim_id": "CLAIM-P2-EM-VISIBLE",
+      "record_type": "phenomenon",
+      "name": "visible/optical",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": 400000000000000,
+        "max_hz": 750000000000000,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-UV",
+      "claim_id": "CLAIM-P2-EM-UV",
+      "record_type": "phenomenon",
+      "name": "ultraviolet",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": 750000000000000,
+        "max_hz": 30000000000000000,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-XRAY",
+      "claim_id": "CLAIM-P2-EM-XRAY",
+      "record_type": "phenomenon",
+      "name": "X-ray",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": 30000000000000000,
+        "max_hz": 30000000000000000000,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "EM-GAMMA",
+      "claim_id": "CLAIM-P2-EM-GAMMA",
+      "record_type": "phenomenon",
+      "name": "gamma ray",
+      "family": "electromagnetic",
+      "spectral": {
+        "min_hz": 30000000000000000000,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "conventional EM band"
+      },
+      "physical": {
+        "what_oscillates": "electromagnetic field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "approximate NASA/GSFC boundary; X/gamma naming may also depend on origin",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "PLASMA-ELECTRON",
+      "claim_id": "CLAIM-P2-PLASMA-ELECTRON",
+      "record_type": "phenomenon",
+      "name": "electron plasma oscillation",
+      "family": "plasma",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "parameter-dependent formula"
+      },
+      "physical": {
+        "what_oscillates": "electron charge density and electric field"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-017"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "f_pe ≈ 8.98e3 sqrt(n_e[cm^-3]) Hz in cited NRL convention",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "PLASMA-GYRO",
+      "claim_id": "CLAIM-P2-PLASMA-GYRO",
+      "record_type": "phenomenon",
+      "name": "electron gyrofrequency",
+      "family": "plasma",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "parameter-dependent formula"
+      },
+      "physical": {
+        "what_oscillates": "charged-particle gyromotion"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-017"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "STORES",
+          "CARRIES",
+          "EXCHANGES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "f_ce ≈ 2.80e6 B[G] Hz in cited NRL convention",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "MATTER-WAVE",
+      "claim_id": "CLAIM-P2-MATTER-WAVE",
+      "record_type": "phenomenon",
+      "name": "matter-wave behavior",
+      "family": "quantum matter",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "state-dependent"
+      },
+      "physical": {
+        "what_oscillates": "quantum state phase/wavefunction"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-018"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "no universal frequency band; de Broglie wavelength depends on momentum",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "NEUTRINO-OSC",
+      "claim_id": "CLAIM-P2-NEUTRINO-OSC",
+      "record_type": "phenomenon",
+      "name": "neutrino flavor oscillation",
+      "family": "particle/quantum",
+      "spectral": {
+        "min_hz": null,
+        "max_hz": null,
+        "characteristic_hz": null,
+        "range_kind": "not a simple universal Hz axis"
+      },
+      "physical": {
+        "what_oscillates": "relative phase of neutrino mass eigenstates"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-019"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "oscillation depends on mass-squared splitting and L/E",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "GW-PTA",
+      "claim_id": "CLAIM-P2-GW-PTA",
+      "record_type": "phenomenon",
+      "name": "pulsar-timing gravitational-wave band",
+      "family": "gravitational",
+      "spectral": {
+        "min_hz": 1e-9,
+        "max_hz": 1e-7,
+        "characteristic_hz": null,
+        "range_kind": "detector/observational band"
+      },
+      "physical": {
+        "what_oscillates": "spacetime metric perturbation"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "PTA search regime; not physical existence limit",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "GW-LISA",
+      "claim_id": "CLAIM-P2-GW-LISA",
+      "record_type": "phenomenon",
+      "name": "LISA low-frequency band",
+      "family": "gravitational",
+      "spectral": {
+        "min_hz": 0.0001,
+        "max_hz": 0.1,
+        "characteristic_hz": null,
+        "range_kind": "detector/mission band"
+      },
+      "physical": {
+        "what_oscillates": "spacetime metric perturbation"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "NASA reference band ~0.1 mHz-0.1 Hz",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    },
+    {
+      "id": "GW-LIGO",
+      "claim_id": "CLAIM-P2-GW-LIGO",
+      "record_type": "phenomenon",
+      "name": "Advanced LIGO detector band",
+      "family": "gravitational",
+      "spectral": {
+        "min_hz": 10,
+        "max_hz": 5000,
+        "characteristic_hz": null,
+        "range_kind": "detector band"
+      },
+      "physical": {
+        "what_oscillates": "spacetime metric perturbation"
+      },
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "energy_accounting": {
+        "system_boundary": "phenomenon / environment; refine for a specific process",
+        "roles": [
+          "CARRIES",
+          "TRANSFERS"
+        ],
+        "balance_state": "context-dependent"
+      },
+      "notes": "cited instrument design/calibration domain; not physical existence limit",
+      "provenance": {
+        "phase": 2,
+        "source_file": "data/phase2-known-spectrum.csv"
+      }
+    }
+  ]
+}
