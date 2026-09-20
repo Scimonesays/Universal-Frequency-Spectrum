@@ -65,6 +65,7 @@ No final visual layout is being asserted yet. Phase 6 should consume the canonic
 | [Canonical Data Manifest](data/canonical/manifest.json) | Counts and file registry for the machine-readable source of truth |
 | [Canonical JSON Schema](schema/ufs-canonical.schema.json) | Structural contract for canonical data records |
 | [Phase 5 Completion Record](docs/PHASE-5-COMPLETE.md) | Completion checklist and canonical validation result |
+| [Post-Phase-5 Repository Audit](docs/REPOSITORY-AUDIT-2026-09-20.md) | Repo-wide integrity, provenance, link, data, and validation audit |
 
 ## Proposed organizing dimensions
 
