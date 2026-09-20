@@ -14,11 +14,9 @@ This repository is intended to make those relationships visible without blurring
 
 ## Project status
 
-**Phase 6 — Visual & interactive atlas: COMPLETE**
+**Phase 7 — Scientific review, cross-scale coverage & release provenance: IN PROGRESS**
 
-Phase 1 established the scientific rules. Phase 2 added the known-spectrum catalog. Phase 3 added the interaction graph. Phase 4 added frontier physics and protected question nodes. Phase 5 created the canonical machine-readable source of truth. **Phase 6 now adds the real interactive Universal Vibration Table / Universal Frequency Spectrum web atlas, built directly from that canonical data.**
-
-The next step is **Phase 7 — scientific review, corrections, release provenance and public publication.**
+Phase 1 established the scientific rules. Phase 2 added the known-spectrum catalog. Phase 3 added the interaction graph. Phase 4 added frontier physics and protected question nodes. Phase 5 created the canonical machine-readable source of truth. Phase 6 added the interactive web atlas. **Phase 7 is now expanding cross-scale coverage, making frequency semantics explicit, reviewing corrections, and preparing release provenance for public publication.**
 
 ## Scientific ground rules
 
@@ -72,6 +70,8 @@ The next step is **Phase 7 — scientific review, corrections, release provenanc
 | [Phase 6 Web Atlas](web/README.md) | Interactive Universal Vibration Table application, build and accessibility contract |
 | [Visual & Interactive Atlas](docs/13-VISUAL-INTERACTIVE-ATLAS.md) | Phase 6 visual semantics, architecture, export and validation |
 | [Frequency-Scale Patterns & Cross-Domain Observations](docs/14-FREQUENCY-SCALE-PATTERNS.md) | Universal relations, conditional laws, cross-scale trends, frequency crossroads, false friends, and future analysis questions |
+| [Phase 7 Coverage Expansion](docs/15-PHASE-7-COVERAGE-EXPANSION.md) | Adds the missing astronomy, stellar, climate, plasma, biological, chemical, thermal-derived and particle bridges with explicit frequency semantics |
+| [Phase 7 Source Notes](research/PHASE-7-SOURCES.md) | Source groups and interpretation caveats for the cross-scale expansion |
 | [Phase 6 Completion Record](docs/PHASE-6-COMPLETE.md) | Completion checklist and final Phase 6 validation result |
 
 ## Proposed organizing dimensions
@@ -79,6 +79,7 @@ The next step is **Phase 7 — scientific review, corrections, release provenanc
 The final representation should not be a single "low frequency → high frequency" line. A more defensible structure is multidimensional:
 
 - **Frequency / period** — common horizontal coordinate, normally logarithmic.
+- **Frequency semantics** — whether the number is an oscillation, wave, resonance, transition, detector band, rate, inverse timescale, classification band, or energy-equivalent frequency.
 - **What oscillates?** — the primary physical family.
 - **Medium or substrate** — if one is required.
 - **Propagation speed / dispersion relation** — where meaningful.
