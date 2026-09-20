@@ -5,6 +5,7 @@
   "type": "object",
   "required": [
     "schema_version",
+    "dataset_type",
     "records"
   ],
   "properties": {
@@ -55,7 +56,7 @@
           },
           "provider_commit": {
             "type": "string",
-            "minLength": 1
+            "minLength": 7
           },
           "run_id": {
             "type": "string",
@@ -125,16 +126,19 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "uniqueItems": true
           },
           "artifact_refs": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "uniqueItems": true
           },
           "created_utc": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time"
           },
           "reviewed_for_canonical_ingest": {
             "type": "boolean"
@@ -148,6 +152,9 @@
         },
         "additionalProperties": false
       }
+    },
+    "dataset_type": {
+      "const": "validations"
     }
   },
   "additionalProperties": false
