@@ -39,7 +39,8 @@
 - **75** structured Phase 2–4 source groups
 - **107** canonical claims
 - **16** gap records
-- **18** controlled energy roles
+- **17** controlled energy roles
+- **1** energy-accounting rule
 
 ## Canonical authority
 
@@ -63,7 +64,10 @@ ranges:       27
 sources:      75
 claims:       107
 gaps:         16
-failures:      0
+energy_roles:  17
+energy_rules:   1
+validations:    0
+failures:       0
 ```
 
 ## Post-phase repository audit
