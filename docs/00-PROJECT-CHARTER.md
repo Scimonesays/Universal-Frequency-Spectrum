@@ -20,6 +20,7 @@ The analogy has limits. There is no expectation that oscillatory physics must fo
 8. What frequencies are experimentally measured, theoretically predicted, or poorly constrained?
 9. Where do gravity, gravitational waves, dark-matter candidates, quantum fields, and other frontier ideas fit without overstating what is known?
 10. Can a rigorous map reveal useful research gaps that are otherwise hidden by discipline-specific charts?
+11. For each phenomenon or interaction, what happens to energy: storage, gain/loss, transport, conversion, work, emission, dissipation, dispersion, steady-state maintenance, or an unknown role?
 
 ## Primary deliverables
 
@@ -49,6 +50,8 @@ This project does **not** begin by assuming that:
 
 Any later unifying proposal must survive the same evidence rules as every other claim.
 
+The project also does **not** use "creates energy" as an ordinary descriptive category. Apparent energy production must be traced to stored energy, external input, conversion between forms, mass/binding-energy change, or a genuinely new experimentally established violation/modification of the applicable conservation law.
+
 ## Core scientific principle
 
 > **Frequency answers "how often?" It does not, by itself, answer "what is it?"**
@@ -72,6 +75,9 @@ Every atlas entry should eventually answer:
 - **Wavelength / wavevector**, where meaningful
 - **Dispersion relation / propagation speed**, where meaningful
 - **Energy relationship**, where meaningful
+- **System boundary for energy accounting**, where energy language is used
+- **Energy roles** — store, carry, receive, supply, transfer, convert, absorb, emit, do work, dissipate, thermalize, disperse, maintain steady state, exchange, mediate/read out, or unknown
+- **Energy inputs / outputs / loss channels**, where meaningful
 - **Scale**
 - **Excitation / source mechanism**
 - **Detection method**
