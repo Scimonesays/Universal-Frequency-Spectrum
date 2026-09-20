@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0.0",
+  "dataset_type": "interactions",
   "records": [
     {
       "id": "P3-E001",
