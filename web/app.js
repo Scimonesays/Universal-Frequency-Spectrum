@@ -156,6 +156,69 @@ function formatFrequency(record) {
   return spectral.status || "No universal frequency";
 }
 
+function frequencySemanticLabel(record) {
+  const value = record.spectral?.semantic_type || "other";
+  const labels = {
+    periodic_or_rotational: "Periodic / rotational",
+    propagating_wave: "Propagating wave",
+    normal_mode_or_resonance: "Normal mode / resonance",
+    transition_frequency: "Quantum transition frequency",
+    detector_band: "Detector / sensitivity band",
+    characteristic_inverse_timescale: "Inverse characteristic timescale",
+    characteristic_rate: "Characteristic rate",
+    energy_equivalent_frequency: "Energy-equivalent frequency",
+    classification_band: "Classification / analysis band",
+    biological_sensitivity: "Biological sensitivity",
+    parameter_dependent: "Parameter-dependent frequency",
+    state_dependent: "State-dependent frequency",
+    other: "Other frequency coordinate",
+  };
+  return labels[value] || titleCase(value);
+}
+
+function frequencySemanticGlyph(record) {
+  const value = record.spectral?.semantic_type || "other";
+  if (value === "periodic_or_rotational") return "○";
+  if (value === "propagating_wave") return "〰";
+  if (value === "normal_mode_or_resonance") return "◇";
+  if (value === "transition_frequency") return "↕";
+  if (value === "detector_band") return "⌖";
+  if (value === "characteristic_inverse_timescale" || value === "characteristic_rate") return "│";
+  if (value === "energy_equivalent_frequency") return "✦";
+  if (value === "biological_sensitivity") return "♥";
+  if (value === "parameter_dependent") return "ƒ";
+  if (value === "state_dependent") return "ψ";
+  if (value === "classification_band") return "≡";
+  return "•";
+}
+
+function formatPeriodSeconds(seconds) {
+  if (!Number.isFinite(seconds) || seconds <= 0) return "—";
+  const year = 365.25 * 86400;
+  const units = [
+    [year, "yr"],
+    [86400, "d"],
+    [3600, "h"],
+    [60, "min"],
+    [1, "s"],
+    [1e-3, "ms"],
+    [1e-6, "µs"],
+    [1e-9, "ns"],
+    [1e-12, "ps"],
+    [1e-15, "fs"],
+    [1e-18, "as"],
+  ];
+  for (const [scale, label] of units) {
+    if (seconds >= scale) return `${compactNumber(seconds / scale, 4)} ${label}`;
+  }
+  return `${seconds.toExponential(3)} s`;
+}
+
+function representativePeriod(record) {
+  const rep = representativeFrequency(record);
+  return rep?.value > 0 ? 1 / rep.value : null;
+}
+
 function representativeFrequency(record) {
   const spectral = record.spectral || {};
   if (Number.isFinite(spectral.characteristic_hz) && spectral.characteristic_hz > 0) {
@@ -264,6 +327,8 @@ function renderSpectrumInspector(id) {
     <div class="pill-row">${evidenceBadge(record.evidence)}<span class="badge">${escapeHtml(record.family)}</span>${detector ? '<span class="badge model-dependent">DETECTOR WINDOW</span>' : ""}</div>
     <dl>
       ${field("Frequency", escapeHtml(formatFrequency(record)))}
+      ${field("Frequency semantics", `${escapeHtml(frequencySemanticGlyph(record))} ${escapeHtml(frequencySemanticLabel(record))}`)}
+      ${representativePeriod(record) ? field("Representative period", escapeHtml(formatPeriodSeconds(representativePeriod(record)))) : ""}
       ${field("Range meaning", escapeHtml(record.spectral?.range_kind || "—"))}
       ${field("What is oscillating?", escapeHtml(record.physical?.what_oscillates || "—"))}
       ${field("Energy roles", roles.length ? roles.map((r) => `<span class="badge">${escapeHtml(r)}</span>`).join(" ") : "—")}
@@ -346,18 +411,25 @@ function bindAccessibleActivation(el, fn) {
 
 function visualFamily(record) {
   const family = String(record.family || "").toLowerCase();
-  if (family.includes("gravitational")) return { key: "gravitational", label: "Gravitational", sub: "SPACETIME · COSMIC EVENTS", icon: "◎", order: 7 };
-  if (family.includes("nuclear") || family.includes("particle")) return { key: "nuclear", label: "Nuclear / Particle", sub: "NUCLEI · FUNDAMENTAL PARTICLES", icon: "⊙", order: 6 };
-  if (family.includes("electromagnetic") || family.includes("plasma")) return { key: "electromagnetic", label: "Electromagnetic / Plasma", sub: "FIELDS · LIGHT · RADIATION", icon: "✦", order: 4 };
-  if (family.includes("atomic") || family.includes("molecular") || family.includes("condensed") || family.includes("quantum") || family.includes("spin")) {
-    return { key: "atomic", label: "Atomic / Molecular", sub: "ATOMS · MOLECULES · SOLID STATE", icon: "◌", order: 5 };
+  if (family.includes("astronomical") || family.includes("orbital")) return { key: "cosmic", label: "Cosmic / Orbital", sub: "ORBITS · ROTATION · LONG TIMESCALES", icon: "◉", order: 1 };
+  if (family.includes("stellar")) return { key: "stellar", label: "Stellar", sub: "STARS · PULSATION · COMPACT OBJECTS", icon: "★", order: 2 };
+  if (family.includes("ocean") || family.includes("geophysical") || family.includes("atmospheric") || family.includes("seismic") || family.includes("climate")) {
+    return { key: "geophysical", label: "Atmospheric / Oceanic / Geophysical", sub: "PLANET · OCEAN · ATMOSPHERE", icon: "◎", order: 3 };
   }
-  if (family.includes("biological") || family.includes("neural")) return { key: "biological", label: "Biological / Neural", sub: "LIFE · BRAINS · BODIES", icon: "⌁", order: 3 };
-  if (family.includes("acoustic") || family.includes("mechanical")) return { key: "mechanical", label: "Mechanical / Acoustic", sub: "MOTION · PRESSURE WAVES", icon: "∿", order: 2 };
-  if (family.includes("ocean") || family.includes("geophysical") || family.includes("atmospheric") || family.includes("seismic")) {
-    return { key: "geophysical", label: "Geophysical / Orbital", sub: "PLANET · OCEAN · ATMOSPHERE", icon: "◉", order: 1 };
+  if (family.includes("gravitational")) return { key: "gravitational", label: "Gravitational", sub: "SPACETIME · DETECTOR BANDS", icon: "◌", order: 4 };
+  if (family.includes("acoustic") || family.includes("mechanical")) return { key: "mechanical", label: "Mechanical / Acoustic", sub: "MOTION · PRESSURE · ELASTIC WAVES", icon: "∿", order: 5 };
+  if (family.includes("biological") || family.includes("neural")) return { key: "biological", label: "Biological / Neural", sub: "LIFE · BRAINS · BODIES", icon: "⌁", order: 6 };
+  if (family.includes("chemical") || family.includes("biochemical") || family.includes("cellular")) return { key: "chemical", label: "Chemical / Cellular", sub: "REACTIONS · PROTEINS · TRANSFER RATES", icon: "⬡", order: 7 };
+  if (family.includes("electrical") || family === "plasma") return { key: "electrical", label: "Electrical / Plasma", sub: "CIRCUITS · CHARGED MATTER · MHD", icon: "ϟ", order: 8 };
+  if (family.includes("electromagnetic")) return { key: "electromagnetic", label: "Electromagnetic", sub: "FIELDS · LIGHT · RADIATION", icon: "✦", order: 9 };
+  if (family.includes("molecular") || family.includes("condensed") || family.includes("spin")) {
+    return { key: "molecular", label: "Molecular / Solid-State", sub: "MOLECULES · PHONONS · MAGNONS · SPINS", icon: "◇", order: 10 };
   }
-  return { key: "other", label: "Other Physical Systems", sub: "CANONICAL PHENOMENA", icon: "◇", order: 8 };
+  if (family.includes("atomic")) return { key: "atomic", label: "Atomic / Electronic", sub: "ATOMS · ELECTRONS · CLOCK TRANSITIONS", icon: "◍", order: 11 };
+  if (family.includes("nuclear")) return { key: "nuclear", label: "Nuclear", sub: "NUCLEI · NUCLEAR TRANSITIONS", icon: "⊙", order: 12 };
+  if (family.includes("particle") || family.includes("quantum")) return { key: "particle", label: "Particle / Quantum", sub: "PARTICLES · STATES · CHARACTERISTIC SCALES", icon: "ψ", order: 13 };
+  if (family.includes("thermal")) return { key: "thermal", label: "Thermal / Derived", sub: "ENERGY-EQUIVALENT FREQUENCIES · NOT LITERAL OSCILLATIONS", icon: "△", order: 14 };
+  return { key: "other", label: "Other Physical Systems", sub: "CANONICAL PHENOMENA", icon: "•", order: 15 };
 }
 
 function shortenLabel(value, max = 28) {
@@ -381,7 +453,7 @@ function renderSpectrumChart(records) {
   const width = 1440;
   const left = 245;
   const right = 34;
-  const top = 72;
+  const top = 90;
   const bottom = 26;
   const plotW = width - left - right;
   const x = (hz) => left + ((Math.log10(hz) - minExp) / (maxExp - minExp)) * plotW;
@@ -489,11 +561,12 @@ function renderSpectrumChart(records) {
   for (let exp = Math.ceil(minExp / tickStep) * tickStep; exp <= maxExp; exp += tickStep) {
     const tx = left + ((exp - minExp) / span) * plotW;
     svg.append(svgEl("line", { x1: tx, y1: top - 30, x2: tx, y2: height - bottom, class: "axis-grid" }));
-    svg.append(svgEl("text", { x: tx, y: 27, "text-anchor": "middle", class: "axis-text" }, `10^${exp}`));
+    svg.append(svgEl("text", { x: tx, y: 27, "text-anchor": "middle", class: "axis-text" }, `10^${exp} Hz`));
+    svg.append(svgEl("text", { x: tx, y: 75, "text-anchor": "middle", class: "axis-text" }, `T=10^${-exp} s`));
   }
   svg.append(svgEl("line", { x1: left, y1: top - 30, x2: width - right, y2: top - 30, class: "axis-line" }));
-  svg.append(svgEl("text", { x: left, y: 49, class: "axis-text", "text-anchor": "start" }, "LOWER FREQUENCY · LONGER PERIOD"));
-  svg.append(svgEl("text", { x: width - right, y: 49, class: "axis-text", "text-anchor": "end" }, "HIGHER FREQUENCY · SHORTER PERIOD"));
+  svg.append(svgEl("text", { x: left, y: 49, class: "axis-text", "text-anchor": "start" }, "FREQUENCY →"));
+  svg.append(svgEl("text", { x: width - right, y: 49, class: "axis-text", "text-anchor": "end" }, "← PERIOD T = 1/f"));
 
   for (const group of layouts) {
     const y = group.y;
@@ -523,7 +596,7 @@ function renderSpectrumChart(records) {
         const cx = x(interval.value);
         g.append(svgEl("circle", { cx, cy: laneY, r: 6, class: "characteristic-dot" }));
         g.append(svgEl("line", { x1: cx, y1: laneY - 11, x2: cx, y2: laneY + 11, stroke: "#ffe99a", "stroke-width": 1, opacity: .34 }));
-        g.append(svgEl("text", { x: Math.min(cx + 11, width - 185), y: laneY + 3, class: "point-label" }, shortenLabel(record.name, 31)));
+        g.append(svgEl("text", { x: Math.min(cx + 11, width - 185), y: laneY + 3, class: "point-label" }, `${frequencySemanticGlyph(record)} ${shortenLabel(record.name, 29)}`));
       } else {
         const rawX1 = x(interval.min);
         const rawX2 = x(interval.max);
@@ -549,7 +622,7 @@ function renderSpectrumChart(records) {
           if (barW >= 135) g.append(svgEl("text", { x: centerX, y: laneY + 8, class: "band-sublabel" }, formatFrequency(record)));
         } else {
           const labelX = Math.min(width - right - 4, barX + barW + 8);
-          g.append(svgEl("text", { x: labelX, y: laneY + 3, class: "point-label" }, shortenLabel(record.name, 23)));
+          g.append(svgEl("text", { x: labelX, y: laneY + 3, class: "point-label" }, `${frequencySemanticGlyph(record)} ${shortenLabel(record.name, 21)}`));
         }
       }
 
@@ -903,8 +976,8 @@ function setupControls() {
     $("#spectrum-search").value = "";
     $("#family-filter").value = "all";
     $("#energy-filter").value = "all";
-    $("#exp-min").value = "-9";
-    $("#exp-max").value = "21";
+    $("#exp-min").value = "-18";
+    $("#exp-max").value = "24";
     renderSpectrum();
   });
 
