@@ -71,6 +71,7 @@ The next step is **Phase 7 — scientific review, corrections, release provenanc
 | [External Validation Registry](data/canonical/validations.json) | Reviewed external validation results; never changes canonical scientific status automatically |
 | [Phase 6 Web Atlas](web/README.md) | Interactive Universal Vibration Table application, build and accessibility contract |
 | [Visual & Interactive Atlas](docs/13-VISUAL-INTERACTIVE-ATLAS.md) | Phase 6 visual semantics, architecture, export and validation |
+| [Frequency-Scale Patterns & Cross-Domain Observations](docs/14-FREQUENCY-SCALE-PATTERNS.md) | Universal relations, conditional laws, cross-scale trends, frequency crossroads, false friends, and future analysis questions |
 | [Phase 6 Completion Record](docs/PHASE-6-COMPLETE.md) | Completion checklist and final Phase 6 validation result |
 
 ## Proposed organizing dimensions
