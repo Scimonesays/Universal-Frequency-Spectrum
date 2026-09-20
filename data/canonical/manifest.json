@@ -3,14 +3,14 @@
   "schema_version": "1.0.0",
   "dataset_type": "manifest",
   "canonicalized_on": "2026-09-20",
-  "status": "Phase 5 canonical source of truth",
+  "status": "Phase 7 coverage expansion integrated; scientific review and release provenance ongoing",
   "counts": {
-    "phenomena": 35,
+    "phenomena": 80,
     "interactions": 25,
     "frontier": 31,
-    "ranges": 27,
-    "sources": 75,
-    "claims": 107,
+    "ranges": 69,
+    "sources": 106,
+    "claims": 152,
     "gaps": 16,
     "entities": 33,
     "validations": 0,
@@ -37,11 +37,12 @@
   ],
   "audit": {
     "date": "2026-09-20",
-    "status": "PASS",
+    "status": "REVALIDATION_REQUIRED_AFTER_PHASE_7_EXPANSION",
     "report": "../../docs/REPOSITORY-AUDIT-2026-09-20.md",
     "canonical_cross_reference_failures": 0,
     "broken_internal_links": 0,
-    "github_actions_validation": "PASS"
+    "github_actions_validation": "PASS",
+    "note": "Phase 5 audit remains historical; Phase 7 changes require fresh canonical and web validation."
   },
   "integrations": {
     "curv": {
