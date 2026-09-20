@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "GAP-INSTR-001",
+      "type": "instrument_gap",
+      "name": "Decihertz gravitational-wave sensitivity",
+      "status": "OPEN",
+      "scope": "approximately 0.1–1 Hz detector coverage",
+      "related_ids": [
+        "P4-F008"
+      ],
+      "source_ids": [
+        "P4-SRC-011"
+      ],
+      "meaning": "Poor present sensitivity between major space- and ground-based concepts; not a physical existence gap."
+    },
+    {
+      "id": "GAP-INSTR-002",
+      "type": "instrument_gap",
+      "name": "Ultra-high-frequency gravitational-wave coverage",
+      "status": "OPEN",
+      "scope": "MHz–GHz searches",
+      "related_ids": [
+        "GW-LIGO"
+      ],
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "meaning": "Experimental sensitivity is sparse compared with established ground-based bands."
+    },
+    {
+      "id": "GAP-CONSTRAINT-001",
+      "type": "constraint_gap",
+      "name": "Dark-matter candidate parameter space",
+      "status": "OPEN",
+      "scope": "candidate-specific mass/coupling regions",
+      "related_ids": [
+        "P4-F001",
+        "P4-F002",
+        "P4-F003",
+        "P4-F004"
+      ],
+      "source_ids": [
+        "P4-SRC-001",
+        "P4-SRC-002",
+        "P4-SRC-003",
+        "P4-SRC-004"
+      ],
+      "meaning": "Large portions of candidate parameter space remain model-dependent and incompletely constrained."
+    },
+    {
+      "id": "GAP-CONSTRAINT-002",
+      "type": "constraint_gap",
+      "name": "Dynamical dark-energy interpretation",
+      "status": "OPEN",
+      "scope": "cosmological model comparison",
+      "related_ids": [
+        "P4-F006"
+      ],
+      "source_ids": [
+        "P4-SRC-007",
+        "P4-SRC-008"
+      ],
+      "meaning": "Current datasets do not establish evolving dark energy; competing models remain under comparison."
+    },
+    {
+      "id": "GAP-THEORY-001",
+      "type": "theory_gap",
+      "name": "Quantum nature of gravity",
+      "status": "OPEN",
+      "scope": "fundamental theory and discriminating experiments",
+      "related_ids": [
+        "P4-F009"
+      ],
+      "source_ids": [
+        "P4-SRC-012",
+        "P4-SRC-013"
+      ],
+      "meaning": "No experimentally established quantum theory of gravity or universally decisive test."
+    },
+    {
+      "id": "GAP-THEORY-002",
+      "type": "theory_gap",
+      "name": "Black-hole interior / singularity resolution",
+      "status": "OPEN",
+      "scope": "high-curvature interior",
+      "related_ids": [
+        "P4-F011"
+      ],
+      "source_ids": [
+        "P4-SRC-037"
+      ],
+      "meaning": "Classical singularity prediction lacks a confirmed quantum-gravity completion."
+    },
+    {
+      "id": "GAP-CONSTRAINT-003",
+      "type": "constraint_gap",
+      "name": "Natural wormhole existence",
+      "status": "OPEN",
+      "scope": "astrophysical spacetime",
+      "related_ids": [
+        "P4-F012"
+      ],
+      "source_ids": [
+        "P4-SRC-038"
+      ],
+      "meaning": "Wormholes are theoretical and unobserved; realizability and signatures are model-dependent."
+    },
+    {
+      "id": "GAP-MECH-001",
+      "type": "mechanism_gap",
+      "name": "Physical mechanism sufficient for consciousness",
+      "status": "OPEN",
+      "scope": "conscious experience",
+      "related_ids": [
+        "P4-H003",
+        "P4-H004",
+        "P4-H005"
+      ],
+      "source_ids": [
+        "P4-SRC-017",
+        "P4-SRC-018",
+        "P4-SRC-020",
+        "P4-SRC-021",
+        "P4-SRC-022"
+      ],
+      "meaning": "Competing theories make different claims; no single mechanism is established."
+    },
+    {
+      "id": "GAP-MECH-002",
+      "type": "mechanism_gap",
+      "name": "Terminal/paradoxical lucidity mechanism",
+      "status": "OPEN",
+      "scope": "severe neurological impairment / end of life",
+      "related_ids": [
+        "P4-H006"
+      ],
+      "source_ids": [
+        "P4-SRC-025",
+        "P4-SRC-026"
+      ],
+      "meaning": "Phenomenology is reported but prospective physiological mechanism remains incomplete."
+    },
+    {
+      "id": "GAP-MECH-003",
+      "type": "mechanism_gap",
+      "name": "Near-death experience mechanism",
+      "status": "OPEN",
+      "scope": "resuscitation / extreme physiological states",
+      "related_ids": [
+        "P4-H007"
+      ],
+      "source_ids": [
+        "P4-SRC-023",
+        "P4-SRC-024"
+      ],
+      "meaning": "Reported experiences are studied; mechanism and interpretation remain unresolved."
+    },
+    {
+      "id": "GAP-REPL-001",
+      "type": "replication_gap",
+      "name": "Anomalous cognition / telepathy",
+      "status": "CONTESTED",
+      "scope": "telepathy, remote viewing, precognition",
+      "related_ids": [
+        "P4-H013",
+        "P4-H014",
+        "P4-H015"
+      ],
+      "source_ids": [
+        "P4-SRC-033",
+        "P4-SRC-034"
+      ],
+      "meaning": "Literature is heterogeneous and lacks an established reproducible physical carrier."
+    },
+    {
+      "id": "GAP-OPER-001",
+      "type": "operationalization_gap",
+      "name": "Physically interacting soul",
+      "status": "NOT_OPERATIONALIZED",
+      "scope": "soul hypothesis",
+      "related_ids": [
+        "P4-H010"
+      ],
+      "source_ids": [
+        "P4-SRC-028"
+      ],
+      "meaning": "No measurable state variable, carrier, coupling, or falsification condition is established."
+    },
+    {
+      "id": "GAP-OPER-002",
+      "type": "operationalization_gap",
+      "name": "Postmortem personal survival carrier",
+      "status": "NOT_ESTABLISHED",
+      "scope": "afterlife / survival hypothesis",
+      "related_ids": [
+        "P4-H008"
+      ],
+      "source_ids": [
+        "P4-SRC-023",
+        "P4-SRC-026",
+        "P4-SRC-028"
+      ],
+      "meaning": "No reproducible information-bearing substrate independent of irreversible brain failure is established."
+    },
+    {
+      "id": "GAP-ENERGY-001",
+      "type": "energy_accounting_gap",
+      "name": "Energy carrier for anomalous-information claims",
+      "status": "UNKNOWN",
+      "scope": "telepathy / nonlocal information / mediumship",
+      "related_ids": [
+        "P4-U001",
+        "P4-H009",
+        "P4-H011",
+        "P4-H013",
+        "P4-H014",
+        "P4-H015"
+      ],
+      "source_ids": [
+        "P4-SRC-027",
+        "P4-SRC-033",
+        "P4-SRC-034"
+      ],
+      "meaning": "Information transfer is claimed in some studies, but no novel energy transfer or carrier is established."
+    },
+    {
+      "id": "GAP-CATALOG-001",
+      "type": "catalog_gap",
+      "name": "Established-spectrum catalog is representative, not exhaustive",
+      "status": "KNOWN_LIMITATION",
+      "scope": "Phase 2 families",
+      "related_ids": [],
+      "source_ids": [],
+      "meaning": "Many material-, species-, branch-, and object-specific modes/lines remain to be cataloged; absence from the atlas is not physical absence."
+    },
+    {
+      "id": "GAP-VISUAL-001",
+      "type": "visual_gap_only",
+      "name": "Blank frequency interval",
+      "status": "NO_INFERENCE",
+      "scope": "any unpopulated visual region",
+      "related_ids": [],
+      "source_ids": [],
+      "meaning": "A blank visual region has no scientific significance unless tied to a family, model, observable, and measurement coverage."
+    }
+  ]
+}
