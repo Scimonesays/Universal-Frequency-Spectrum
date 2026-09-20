@@ -100,6 +100,21 @@ const validationVerdicts = new Set([
 ]);
 const validationPolicies = new Set(["strict", "normal", "sandbox"]);
 const validationGateStatuses = new Set(["PASS", "FAIL", "NA", "WARNING"]);
+const spectralSemanticTypes = new Set([
+  "periodic_or_rotational",
+  "propagating_wave",
+  "normal_mode_or_resonance",
+  "transition_frequency",
+  "detector_band",
+  "characteristic_inverse_timescale",
+  "characteristic_rate",
+  "energy_equivalent_frequency",
+  "classification_band",
+  "biological_sensitivity",
+  "parameter_dependent",
+  "state_dependent",
+  "other",
+]);
 
 const requireSources = (record, label) => {
   if (!Array.isArray(record.source_ids) || record.source_ids.length === 0) {
@@ -132,6 +147,7 @@ for (const p of phenomena) {
     if (s[key] !== null && s[key] !== undefined && !isFiniteNonnegative(s[key])) fail.push(`phenomena ${p.id}: invalid ${key}`);
   }
   if (s.min_hz != null && s.max_hz != null && s.min_hz > s.max_hz) fail.push(`phenomena ${p.id}: min_hz > max_hz`);
+  if (s.semantic_type != null && !spectralSemanticTypes.has(s.semantic_type)) fail.push(`phenomena ${p.id}: invalid semantic_type ${s.semantic_type}`);
   checkEnergyRoleList(p.energy_accounting?.roles, `phenomena ${p.id}`);
 }
 
@@ -173,7 +189,7 @@ for (const r of ranges) {
 
 for (const s of sources) {
   const expectedPrefix = `P${s.phase}-SRC-`;
-  if (![2, 3, 4].includes(s.phase)) fail.push(`source ${s.id}: invalid phase ${s.phase}`);
+  if (!Number.isInteger(s.phase) || s.phase < 2 || s.phase > 7) fail.push(`source ${s.id}: invalid phase ${s.phase}`);
   if (!s.id.startsWith(expectedPrefix)) fail.push(`source ${s.id}: phase/id mismatch`);
   if (!isNonEmptyString(s.title) || !isNonEmptyString(s.source_note_file)) fail.push(`source ${s.id}: missing title/source_note_file`);
   if (!Array.isArray(s.urls) || s.urls.length === 0) fail.push(`source ${s.id}: no URLs`);
@@ -186,7 +202,7 @@ for (const s of sources) {
 }
 
 for (const c of claims) {
-  if (!Number.isInteger(c.phase) || c.phase < 1 || c.phase > 4) fail.push(`claim ${c.id}: invalid phase`);
+  if (!Number.isInteger(c.phase) || c.phase < 1 || c.phase > 7) fail.push(`claim ${c.id}: invalid phase`);
   if (!isNonEmptyString(c.claim) || !isNonEmptyString(c.status)) fail.push(`claim ${c.id}: missing claim/status`);
   for (const sid of c.source_ids || []) if (!sids.has(sid)) fail.push(`claim ${c.id}: unknown source ${sid}`);
   for (const u of c.source_urls || []) if (!isHttps(u)) fail.push(`claim ${c.id}: source URL must be HTTPS: ${u}`);
