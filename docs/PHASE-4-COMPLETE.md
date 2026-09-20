@@ -1,7 +1,7 @@
 # Phase 4 Completion Record
 
 **Phase:** 4 — Frontier physics, consciousness, and deep hypotheses  
-**Status:** COMPLETE  
+**Status:** COMPLETE — amended with unknown-carrier / anomalous-cognition layer  
 **Completed:** 2026-09-20
 
 ## Completion checklist
@@ -31,6 +31,11 @@
 - [x] Afterlife/personal-survival hypothesis retained but not presented as established.
 - [x] Mediumship/anomalous-information literature represented as contested evidence.
 - [x] Nonlocal/external-memory hypothesis retained as a falsifiable-question placeholder.
+- [x] Unknown/unobserved proposed energy or information carriers added as a formal holding category.
+- [x] Technological neural decoding separated from paranormal "mind reading."
+- [x] Telepathy added as a contested-evidence question node with no established carrier.
+- [x] Remote viewing/clairvoyance added separately from telepathy.
+- [x] Precognition/presentiment added separately with temporal-method safeguards.
 
 ### Tesla / energy audit
 
