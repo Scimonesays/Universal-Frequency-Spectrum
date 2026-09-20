@@ -12,7 +12,9 @@
     "claims": 107,
     "gaps": 16,
     "entities": 33,
-    "validations": 0
+    "validations": 0,
+    "energy_roles": 17,
+    "energy_rules": 1
   },
   "files": {
     "phenomena": "phenomena.json",
@@ -23,7 +25,8 @@
     "claims": "claims.json",
     "gaps": "gaps.json",
     "entities": "entities.json",
-    "validations": "validations.json"
+    "validations": "validations.json",
+    "energy_roles": "energy_roles.json"
   },
   "legacy_inputs": [
     "../phase2-known-spectrum.csv",
