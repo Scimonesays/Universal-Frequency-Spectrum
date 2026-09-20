@@ -1,4 +1,724 @@
 {
   "schema_version": "1.0.0",
-  "records": []
+  "records": [
+    {
+      "id": "P2-SRC-001",
+      "phase": 2,
+      "title": "NOAA tidal frequency",
+      "urls": [
+        "https://oceanservice.noaa.gov/facts/tidefrequency.html"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-002",
+      "phase": 2,
+      "title": "NOAA equatorial-wave literature",
+      "urls": [
+        "https://repository.library.noaa.gov/view/noaa/48990"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-003",
+      "phase": 2,
+      "title": "NOAA/WMO ocean wave-period coding",
+      "urls": [
+        "https://www.ncei.noaa.gov/access/world-ocean-database/CODES/s_20_wave_period.html"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-004",
+      "phase": 2,
+      "title": "USGS earthquake frequencies",
+      "urls": [
+        "https://www.usgs.gov/programs/earthquake-hazards/what-are-effects-earthquakes",
+        "https://www.usgs.gov/observatories/hvo/news/volcano-watch-good-vibrations-earths-music",
+        "https://www.usgs.gov/programs/earthquake-hazards/cool-earthquake-facts"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-005",
+      "phase": 2,
+      "title": "USGS infrasound",
+      "urls": [
+        "https://doi.org/10.3133/sir20245062C"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-006",
+      "phase": 2,
+      "title": "FDA medical acoustics",
+      "urls": [
+        "https://www.fda.gov/medical-devices/medical-device-regulatory-science-research-programs-conducted-osel/medical-acoustics-program-research-medical-acoustic-devices"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-007",
+      "phase": 2,
+      "title": "silicon phonons",
+      "urls": [
+        "https://doi.org/10.1103/PhysRevLett.83.3317",
+        "https://doi.org/10.1103/PhysRevLett.114.115901"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-008",
+      "phase": 2,
+      "title": "magnons",
+      "urls": [
+        "https://doi.org/10.1038/s41578-021-00332-w",
+        "https://doi.org/10.1038/ncomms5700"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-009",
+      "phase": 2,
+      "title": "molecular rotational spectra",
+      "urls": [
+        "https://www.nist.gov/pml/molecular-spectroscopic-data",
+        "https://physics.nist.gov/PhysRefData/MolSpec/freqsearch.html",
+        "https://physics.nist.gov/PhysRefData/MolSpec/Triatomic/Html/intro.html"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-010",
+      "phase": 2,
+      "title": "molecular vibration",
+      "urls": [
+        "https://www.nist.gov/pml/applied-physics-division/molecular-and-biophotonics/state-resolved-terahertz-spectroscopy",
+        "https://www.nist.gov/pml/wavenumbers-calibration-ir-spectrometers/wavenumbers-calibration-ir-spectrometers-atlas-and"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-011",
+      "phase": 2,
+      "title": "atomic and molecular electronic transitions",
+      "urls": [
+        "https://physics.nist.gov/asd",
+        "https://physics.nist.gov/PhysRefData/ASD/Html/lineshelp.html",
+        "https://webbook.nist.gov/chemistry/bh-ser/"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-012",
+      "phase": 2,
+      "title": "hydrogen hyperfine line",
+      "urls": [
+        "https://imagine.gsfc.nasa.gov/educators/galaxies/imagine/hidden_objects.html",
+        "https://tf.nist.gov/general/pdf/584.pdf"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-013",
+      "phase": 2,
+      "title": "NMR",
+      "urls": [
+        "https://www.nist.gov/mml/csd/biochemical-and-exposure-science-group/nuclear-magnetic-resonance-spectroscopy-nmr-facility"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-014",
+      "phase": 2,
+      "title": "ESR/EPR",
+      "urls": [
+        "https://www.nist.gov/programs-projects/electron-spin-resonance-single-atom-level",
+        "https://www.nist.gov/publications/scalable-microresonators-room-temperature-detection-electron-spin-resonance-dilute-sub"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-015",
+      "phase": 2,
+      "title": "Fe-57 nuclear transition",
+      "urls": [
+        "https://doi.org/10.1103/PhysRevA.84.043820"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-016",
+      "phase": 2,
+      "title": "electromagnetic spectrum",
+      "urls": [
+        "https://imagine.gsfc.nasa.gov/science/toolbox/spectrum_chart.html",
+        "https://science.nasa.gov/asset/webb/the-electromagnetic-spectrum/"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-017",
+      "phase": 2,
+      "title": "plasma frequencies",
+      "urls": [
+        "https://suli.pppl.gov/2016/course/NRL_FORMULARY_16.pdf"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-018",
+      "phase": 2,
+      "title": "matter waves",
+      "urls": [
+        "https://doi.org/10.1103/PhysRev.30.705"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-019",
+      "phase": 2,
+      "title": "neutrino oscillations",
+      "urls": [
+        "https://pdg.lbl.gov/2026/reviews/astro-cosmo.html"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-020",
+      "phase": 2,
+      "title": "gravitational-wave bands",
+      "urls": [
+        "https://doi.org/10.1007/s41114-017-0004-1",
+        "https://lisa.nasa.gov/documentsReference.html",
+        "https://dcc-backup.ligo.org/LIGO-P1500260/public",
+        "https://ligo.org/science-summaries/O1AllskyFullBand/",
+        "https://doi.org/10.1007/s41114-021-00032-5"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P2-SRC-021",
+      "phase": 2,
+      "title": "mechanical / structural resonance",
+      "urls": [
+        "https://www.nist.gov/news-events/news/2021/09/new-harmony-nist-researchers-develop-universal-method-calculating",
+        "https://www.nist.gov/noac/technology/mass-force-and-acceleration/optomechanical-accelerometers"
+      ],
+      "source_note_file": "research/PHASE-2-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-001",
+      "phase": 3,
+      "title": "mechanical / acoustic coupling",
+      "urls": [
+        "https://www.nist.gov/news-events/news/2022/06/now-hear"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-002",
+      "phase": 3,
+      "title": "piezoelectric electrical ↔ acoustic transduction",
+      "urls": [
+        "https://doi.org/10.3390/s22030820",
+        "https://doi.org/10.1038/s41378-023-00555-7",
+        "https://doi.org/10.1038/s41928-025-01548-2"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-003",
+      "phase": 3,
+      "title": "electromagnetic ↔ molecular transitions",
+      "urls": [
+        "https://www.nist.gov/pml/molecular-spectroscopic-data",
+        "https://physics.nist.gov/PhysRefData/MolSpec/freqsearch.html",
+        "https://www.nist.gov/pml/wavenumbers-calibration-ir-spectrometers/wavenumbers-calibration-ir-spectrometers-atlas-and"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-004",
+      "phase": 3,
+      "title": "electromagnetic ↔ atomic/electronic transitions",
+      "urls": [
+        "https://physics.nist.gov/asd"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-005",
+      "phase": 3,
+      "title": "cavity optomechanics / photon ↔ mechanical mode",
+      "urls": [
+        "https://doi.org/10.1103/RevModPhys.86.1391"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-006",
+      "phase": 3,
+      "title": "integrated photon ↔ phonon conversion",
+      "urls": [
+        "https://doi.org/10.1038/s41467-023-43393-x"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-007",
+      "phase": 3,
+      "title": "microwave ↔ acoustic ↔ optical chain",
+      "urls": [
+        "https://doi.org/10.1038/s41467-024-49467-8"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-008",
+      "phase": 3,
+      "title": "photon ↔ magnon coherent coupling",
+      "urls": [
+        "https://doi.org/10.1063/5.0046202",
+        "https://doi.org/10.1038/s41578-021-00332-w"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-009",
+      "phase": 3,
+      "title": "optical magnon probing and spin–phonon coupling",
+      "urls": [
+        "https://www.nist.gov/programs-projects/optical-probes-2d-magnetic-phenomena"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-010",
+      "phase": 3,
+      "title": "electron ↔ phonon energy exchange",
+      "urls": [
+        "https://doi.org/10.1103/PhysRevLett.59.1460",
+        "https://doi.org/10.1038/nature12608"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-011",
+      "phase": 3,
+      "title": "phonon ↔ phonon interaction",
+      "urls": [
+        "https://doi.org/10.1038/nature12608",
+        "https://doi.org/10.1038/ncomms7400",
+        "https://doi.org/10.1103/PhysRevLett.69.2799",
+        "https://doi.org/10.1103/PhysRevLett.83.3317"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-012",
+      "phase": 3,
+      "title": "thermal matter ↔ electromagnetic radiation",
+      "urls": [
+        "https://doi.org/10.1351/goldbook.H02752",
+        "https://www.nist.gov/glossary-term/24981",
+        "https://www.nist.gov/system/files/documents/iaao/SIM-Metrology-School-Optical-Metrology-Y-Ohno-2.pdf"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-013",
+      "phase": 3,
+      "title": "electromagnetic ↔ plasma modes",
+      "urls": [
+        "https://suli.pppl.gov/2016/course/NRL_FORMULARY_16.pdf"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-014",
+      "phase": 3,
+      "title": "gravitational wave → optical readout",
+      "urls": [
+        "https://ligo.org/gravitational-wave-science/",
+        "https://ligo.org/science-summaries/gw150914/"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-015",
+      "phase": 3,
+      "title": "photon radiation pressure → mirror motion",
+      "urls": [
+        "https://ligo.org/science-summaries/GW150914Calibration/"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P3-SRC-016",
+      "phase": 3,
+      "title": "tidal forcing → ocean response",
+      "urls": [
+        "https://oceanservice.noaa.gov/facts/tidefrequency.html"
+      ],
+      "source_note_file": "research/PHASE-3-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-001",
+      "phase": 4,
+      "title": "dark matter search status",
+      "urls": [
+        "https://doi.org/10.1038/s42005-026-02563-1"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-002",
+      "phase": 4,
+      "title": "axion dark matter / distributed sensors",
+      "urls": [
+        "https://doi.org/10.1038/s41586-025-10034-w"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-003",
+      "phase": 4,
+      "title": "oscillating ALP dark-matter field",
+      "urls": [
+        "https://doi.org/10.1038/s41467-025-60178-6"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-004",
+      "phase": 4,
+      "title": "dark photon / axion conversion to radio",
+      "urls": [
+        "https://doi.org/10.1038/s41467-024-45033-4"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-005",
+      "phase": 4,
+      "title": "fifth-force searches",
+      "urls": [
+        "https://doi.org/10.1038/s42254-024-00793-2"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-006",
+      "phase": 4,
+      "title": "broader beyond-Standard-Model anomalies",
+      "urls": [
+        "https://doi.org/10.1038/s42254-024-00703-6"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-007",
+      "phase": 4,
+      "title": "DESI DR2 dark energy, 2025",
+      "urls": [
+        "https://www.desi.lbl.gov/2025/03/19/desi-dr2-results-march-19-guide/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-008",
+      "phase": 4,
+      "title": "DESI July 2026 Lyman-alpha result",
+      "urls": [
+        "https://www.desi.lbl.gov/2026/07/30/new-desi-dr2-lyman-alpha-results-shed-light-on-dark-energy/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-009",
+      "phase": 4,
+      "title": "vacuum fluctuations",
+      "urls": [
+        "https://www.nist.gov/news-events/news/2015/06/vacuum-fluctuations-measuring-unreal"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-010",
+      "phase": 4,
+      "title": "Casimir-energy measurement program",
+      "urls": [
+        "https://www.nist.gov/publications/system-probing-casimir-energy-corrections-condensation-energy"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-011",
+      "phase": 4,
+      "title": "decihertz gravitational-wave gap",
+      "urls": [
+        "https://doi.org/10.1038/s44453-025-00021-w"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-012",
+      "phase": 4,
+      "title": "experimental quantum-gravity frontier",
+      "urls": [
+        "https://doi.org/10.1038/d41586-025-02509-7"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-013",
+      "phase": 4,
+      "title": "ambiguity of gravity-mediated entanglement test",
+      "urls": [
+        "https://doi.org/10.1038/s41586-025-09595-7",
+        "https://doi.org/10.1038/d41586-025-03132-2"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-014",
+      "phase": 4,
+      "title": "memory engrams",
+      "urls": [
+        "https://doi.org/10.1038/s41583-024-00814-0"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-015",
+      "phase": 4,
+      "title": "engram causality experiments",
+      "urls": [
+        "https://doi.org/10.1038/nrn4000"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-016",
+      "phase": 4,
+      "title": "modern memory engram review",
+      "urls": [
+        "https://doi.org/10.1038/s41386-024-01979-z"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-017",
+      "phase": 4,
+      "title": "consciousness theory landscape",
+      "urls": [
+        "https://doi.org/10.1038/s41583-022-00587-4"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-018",
+      "phase": 4,
+      "title": "adversarial consciousness theory test",
+      "urls": [
+        "https://doi.org/10.1038/s41586-025-08888-1"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-019",
+      "phase": 4,
+      "title": "neural oscillations and integration",
+      "urls": [
+        "https://doi.org/10.1038/s41583-024-00845-7"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-020",
+      "phase": 4,
+      "title": "EM-field theories of consciousness",
+      "urls": [
+        "https://doi.org/10.3389/fpsyg.2023.1015967",
+        "https://doi.org/10.3389/fneur.2024.1420676"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-021",
+      "phase": 4,
+      "title": "quantum consciousness evidence constraints",
+      "urls": [
+        "https://doi.org/10.3390/brainsci16040386"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-022",
+      "phase": 4,
+      "title": "Orch OR supportive and critical literature",
+      "urls": [
+        "https://doi.org/10.1093/nc/niaf011",
+        "https://doi.org/10.1016/j.csbj.2025.09.016",
+        "https://pubmed.ncbi.nlm.nih.gov/19792156/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-023",
+      "phase": 4,
+      "title": "AWARE-II",
+      "urls": [
+        "https://doi.org/10.1016/j.resuscitation.2023.109903"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-024",
+      "phase": 4,
+      "title": "neuroscientific NDE model",
+      "urls": [
+        "https://doi.org/10.1038/s41582-025-01072-z"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-025",
+      "phase": 4,
+      "title": "terminal/paradoxical lucidity",
+      "urls": [
+        "https://doi.org/10.3233/JAD-231396",
+        "https://pubmed.ncbi.nlm.nih.gov/40757248/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-026",
+      "phase": 4,
+      "title": "end-of-life experiences",
+      "urls": [
+        "https://doi.org/10.1136/spcare-2022-004055",
+        "https://pubmed.ncbi.nlm.nih.gov/40627515/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-027",
+      "phase": 4,
+      "title": "mediumship / anomalous-information claims",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/32660815/",
+        "https://pubmed.ncbi.nlm.nih.gov/40627508/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-028",
+      "phase": 4,
+      "title": "brain death / irreversible neurological death context",
+      "urls": [
+        "https://doi.org/10.1038/s41582-024-00929-z"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-029",
+      "phase": 4,
+      "title": "Tesla 3–6–9 attribution",
+      "urls": [
+        "https://teslauniverse.com/nikola-tesla/quotes/44"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-030",
+      "phase": 4,
+      "title": "Tesla's authentic \"Throughout space there is energy\" statement",
+      "urls": [
+        "https://www.pbs.org/tesla/res/res_art05.html"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-031",
+      "phase": 4,
+      "title": "constrained internal-speech neural decoding",
+      "urls": [
+        "https://doi.org/10.1038/s41562-024-01867-y"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-032",
+      "phase": 4,
+      "title": "speech neuroprostheses and brain–computer interfaces",
+      "urls": [
+        "https://doi.org/10.1038/s41583-024-00819-9",
+        "https://doi.org/10.1038/s41597-024-04114-1"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-033",
+      "phase": 4,
+      "title": "Ganzfeld / telepathy evidence and replication dispute",
+      "urls": [
+        "https://doi.org/10.12688/f1000research.51746.4",
+        "https://doi.org/10.1037/0033-2909.125.4.387",
+        "https://doi.org/10.1348/000712604773952449"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-034",
+      "phase": 4,
+      "title": "2026 critical ESP/neuroimaging reviews",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42009267/",
+        "https://pubmed.ncbi.nlm.nih.gov/42456633/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-035",
+      "phase": 4,
+      "title": "black holes / event-horizon-scale evidence",
+      "urls": [
+        "https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole",
+        "https://eventhorizontelescope.org/publications/first-sagittarius-event-horizon-telescope-results-vi-testing-black-hole-metric"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-036",
+      "phase": 4,
+      "title": "black-hole ringdown / spectroscopy",
+      "urls": [
+        "https://ligo.org/science-summaries/GW250114_TGR/",
+        "https://ligo.org/science-summaries/S5S6RD/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-037",
+      "phase": 4,
+      "title": "singularity status",
+      "urls": [
+        "https://science.nasa.gov/universe/black-holes/anatomy/",
+        "https://science.nasa.gov/universe/glossary/"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P4-SRC-038",
+      "phase": 4,
+      "title": "wormholes",
+      "urls": [
+        "https://doi.org/10.1103/PhysRevLett.128.091104",
+        "https://doi.org/10.1103/PhysRevD.106.044035"
+      ],
+      "source_note_file": "research/PHASE-4-SOURCES.md"
+    }
+  ]
 }
