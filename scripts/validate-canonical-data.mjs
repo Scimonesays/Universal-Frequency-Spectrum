@@ -16,7 +16,8 @@ const files = {
   ranges:"data/canonical/ranges.json",
   sources:"data/canonical/sources.json",
   claims:"data/canonical/claims.json",
-  gaps:"data/canonical/gaps.json"
+  gaps:"data/canonical/gaps.json",
+  validations:"data/canonical/validations.json"
 };
 
 for (const [name,p] of Object.entries(files)) {
@@ -38,6 +39,7 @@ const ranges=read(files.ranges).records;
 const sources=read(files.sources).records;
 const claims=read(files.claims).records;
 const gaps=read(files.gaps).records;
+const validations=read(files.validations).records;
 
 const unique=(records,label)=>{
   const seen=new Set();
@@ -57,6 +59,7 @@ const sids=unique(sources,"sources");
 const cids=unique(claims,"claims");
 unique(ranges,"ranges");
 unique(gaps,"gaps");
+unique(validations,"validations");
 
 const allRecordIds=new Set([...pids,...iids,...fids]);
 
@@ -87,10 +90,16 @@ for(const g of gaps){
   for(const sid of g.source_ids||[]) if(!sids.has(sid)) fail.push(`gap ${g.id}: unknown source ${sid}`);
   for(const rid of g.related_ids||[]) if(!allRecordIds.has(rid)) fail.push(`gap ${g.id}: unknown related record ${rid}`);
 }
+for(const v of validations){
+  if(!allRecordIds.has(v.target_record_id)) fail.push(`validation ${v.id}: unknown target record ${v.target_record_id}`);
+  if(v.target_claim_id && !cids.has(v.target_claim_id)) fail.push(`validation ${v.id}: unknown target claim ${v.target_claim_id}`);
+  if(v.reviewed_for_canonical_ingest !== true && v.reviewed_for_canonical_ingest !== false) fail.push(`validation ${v.id}: reviewed_for_canonical_ingest must be boolean`);
+}
 
 const expected={
   phenomena:phenomena.length, interactions:interactions.length, frontier:frontier.length,
-  entities:entities.length, ranges:ranges.length, sources:sources.length, claims:claims.length, gaps:gaps.length
+  entities:entities.length, ranges:ranges.length, sources:sources.length, claims:claims.length, gaps:gaps.length,
+  validations:validations.length
 };
 for(const [k,v] of Object.entries(expected)){
   if(manifest.counts?.[k]!==v) fail.push(`manifest count mismatch for ${k}: ${manifest.counts?.[k]} != ${v}`);
