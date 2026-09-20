@@ -298,6 +298,473 @@
       "source_ids": [
         "P2-SRC-020"
       ]
+    },
+    {
+      "id": "RANGE-ASTRO-EARTH-ROT",
+      "phenomenon_id": "ASTRO-EARTH-ROT",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 0.000011605748094916451,
+      "range_kind": "characteristic rotation rate",
+      "source_ids": [
+        "P7-SRC-001"
+      ]
+    },
+    {
+      "id": "RANGE-ASTRO-EARTH-ORBIT",
+      "phenomenon_id": "ASTRO-EARTH-ORBIT",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 3.168756727904285e-8,
+      "range_kind": "characteristic orbital rate",
+      "source_ids": [
+        "P7-SRC-001"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-SUN-ROT",
+      "phenomenon_id": "STAR-SUN-ROT",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 4.2866941015089163e-7,
+      "range_kind": "representative rotation rate",
+      "source_ids": [
+        "P7-SRC-002"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-SUN-PMODE",
+      "phenomenon_id": "STAR-SUN-PMODE",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 0.0033333333333333335,
+      "range_kind": "representative helioseismic mode scale",
+      "source_ids": [
+        "P7-SRC-003"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-CEPHEID",
+      "phenomenon_id": "STAR-CEPHEID",
+      "min_hz": 1.9290123456790122e-7,
+      "max_hz": 0.000005787037037037037,
+      "characteristic_hz": null,
+      "range_kind": "representative pulsation-period family",
+      "source_ids": [
+        "P7-SRC-004"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-RRLYRAE",
+      "phenomenon_id": "STAR-RRLYRAE",
+      "min_hz": 0.000011574074074074073,
+      "max_hz": 0.00006944444444444444,
+      "characteristic_hz": null,
+      "range_kind": "representative pulsation-period family",
+      "source_ids": [
+        "P7-SRC-004"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-PULSAR-SLOW",
+      "phenomenon_id": "STAR-PULSAR-SLOW",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 2.141327623126338,
+      "range_kind": "characteristic observed rotation example",
+      "source_ids": [
+        "P7-SRC-005"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-PULSAR-MSP",
+      "phenomenon_id": "STAR-PULSAR-MSP",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 254.45292620865138,
+      "range_kind": "characteristic observed rotation example",
+      "source_ids": [
+        "P7-SRC-005"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-BINARY-PULSAR",
+      "phenomenon_id": "STAR-BINARY-PULSAR",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 9.808537350910232e-7,
+      "range_kind": "characteristic observed orbital example",
+      "source_ids": [
+        "P7-SRC-005"
+      ]
+    },
+    {
+      "id": "RANGE-STAR-BH-RINGDOWN",
+      "phenomenon_id": "STAR-BH-RINGDOWN",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 260,
+      "range_kind": "representative quasinormal-mode example",
+      "source_ids": [
+        "P7-SRC-006"
+      ]
+    },
+    {
+      "id": "RANGE-CLIM-ENSO",
+      "phenomenon_id": "CLIM-ENSO",
+      "min_hz": 4.526869687718421e-9,
+      "max_hz": 1.5844043907014474e-8,
+      "characteristic_hz": null,
+      "range_kind": "characteristic recurrence interval",
+      "source_ids": [
+        "P7-SRC-007"
+      ]
+    },
+    {
+      "id": "RANGE-OCE-SEICHE",
+      "phenomenon_id": "OCE-SEICHE",
+      "min_hz": null,
+      "max_hz": 0.00009259259259259259,
+      "characteristic_hz": null,
+      "range_kind": "representative one-sided period scale",
+      "source_ids": [
+        "P7-SRC-008"
+      ]
+    },
+    {
+      "id": "RANGE-OCE-ROSSBY-TRANSIT",
+      "phenomenon_id": "OCE-ROSSBY-TRANSIT",
+      "min_hz": 1.5844043907014474e-9,
+      "max_hz": 3.8580246913580245e-7,
+      "characteristic_hz": null,
+      "range_kind": "inverse propagation-timescale envelope",
+      "source_ids": [
+        "P7-SRC-009"
+      ]
+    },
+    {
+      "id": "RANGE-ATM-GRAVITY",
+      "phenomenon_id": "ATM-GRAVITY",
+      "min_hz": 0.00002777777777777778,
+      "max_hz": 0.00009259259259259259,
+      "characteristic_hz": null,
+      "range_kind": "observed representative period range",
+      "source_ids": [
+        "P7-SRC-010"
+      ]
+    },
+    {
+      "id": "RANGE-GEO-SCHUMANN",
+      "phenomenon_id": "GEO-SCHUMANN",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 7.8,
+      "range_kind": "characteristic cavity-resonance scale",
+      "source_ids": [
+        "P7-SRC-011"
+      ]
+    },
+    {
+      "id": "RANGE-ELEC-GRID-US",
+      "phenomenon_id": "ELEC-GRID-US",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 60,
+      "range_kind": "nominal engineering frequency",
+      "source_ids": [
+        "P7-SRC-012"
+      ]
+    },
+    {
+      "id": "RANGE-PLASMA-ALFVEN",
+      "phenomenon_id": "PLASMA-ALFVEN",
+      "min_hz": 0.0011,
+      "max_hz": 0.0063,
+      "characteristic_hz": null,
+      "range_kind": "observed plasma-rest-frame example",
+      "source_ids": [
+        "P7-SRC-014"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-CIRCADIAN",
+      "phenomenon_id": "BIO-CIRCADIAN",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 0.000011574074074074073,
+      "range_kind": "approximate endogenous period",
+      "source_ids": [
+        "P7-SRC-015"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-BREATH",
+      "phenomenon_id": "BIO-BREATH",
+      "min_hz": 0.2,
+      "max_hz": 0.3333333333333333,
+      "characteristic_hz": null,
+      "range_kind": "representative resting adult rate",
+      "source_ids": [
+        "P7-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-HEART",
+      "phenomenon_id": "BIO-HEART",
+      "min_hz": 1,
+      "max_hz": 1.6666666666666667,
+      "characteristic_hz": null,
+      "range_kind": "representative resting adult rate",
+      "source_ids": [
+        "P7-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-HRV-VLF",
+      "phenomenon_id": "BIO-HRV-VLF",
+      "min_hz": 0.0033,
+      "max_hz": 0.04,
+      "characteristic_hz": null,
+      "range_kind": "conventional HRV analysis band",
+      "source_ids": [
+        "P7-SRC-017"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-HRV-LF",
+      "phenomenon_id": "BIO-HRV-LF",
+      "min_hz": 0.04,
+      "max_hz": 0.15,
+      "characteristic_hz": null,
+      "range_kind": "conventional HRV analysis band",
+      "source_ids": [
+        "P7-SRC-017"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-HRV-HF",
+      "phenomenon_id": "BIO-HRV-HF",
+      "min_hz": 0.15,
+      "max_hz": 0.4,
+      "characteristic_hz": null,
+      "range_kind": "conventional HRV analysis band",
+      "source_ids": [
+        "P7-SRC-017"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-TREMOR",
+      "phenomenon_id": "BIO-TREMOR",
+      "min_hz": 8,
+      "max_hz": 12,
+      "characteristic_hz": null,
+      "range_kind": "representative physiological tremor band",
+      "source_ids": [
+        "P7-SRC-018"
+      ]
+    },
+    {
+      "id": "RANGE-EEG-DELTA",
+      "phenomenon_id": "EEG-DELTA",
+      "min_hz": 0.5,
+      "max_hz": 4,
+      "characteristic_hz": null,
+      "range_kind": "conventional EEG band",
+      "source_ids": [
+        "P7-SRC-019"
+      ]
+    },
+    {
+      "id": "RANGE-EEG-THETA",
+      "phenomenon_id": "EEG-THETA",
+      "min_hz": 4,
+      "max_hz": 8,
+      "characteristic_hz": null,
+      "range_kind": "conventional EEG band",
+      "source_ids": [
+        "P7-SRC-019"
+      ]
+    },
+    {
+      "id": "RANGE-EEG-ALPHA",
+      "phenomenon_id": "EEG-ALPHA",
+      "min_hz": 8,
+      "max_hz": 13,
+      "characteristic_hz": null,
+      "range_kind": "conventional EEG band",
+      "source_ids": [
+        "P7-SRC-019"
+      ]
+    },
+    {
+      "id": "RANGE-EEG-BETA",
+      "phenomenon_id": "EEG-BETA",
+      "min_hz": 13,
+      "max_hz": 30,
+      "characteristic_hz": null,
+      "range_kind": "conventional EEG band",
+      "source_ids": [
+        "P7-SRC-019"
+      ]
+    },
+    {
+      "id": "RANGE-EEG-GAMMA",
+      "phenomenon_id": "EEG-GAMMA",
+      "min_hz": 30,
+      "max_hz": 100,
+      "characteristic_hz": null,
+      "range_kind": "representative conventional EEG band",
+      "source_ids": [
+        "P7-SRC-019"
+      ]
+    },
+    {
+      "id": "RANGE-CHEM-BZ",
+      "phenomenon_id": "CHEM-BZ",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 0.05,
+      "range_kind": "representative reaction-oscillation example",
+      "source_ids": [
+        "P7-SRC-020"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-PROTEIN-DYNAMICS",
+      "phenomenon_id": "BIO-PROTEIN-DYNAMICS",
+      "min_hz": 0.0001,
+      "max_hz": 100000000000000,
+      "characteristic_hz": null,
+      "range_kind": "inverse-timescale envelope across distinct protein motions",
+      "source_ids": [
+        "P7-SRC-021"
+      ]
+    },
+    {
+      "id": "RANGE-BIO-ENZYME-TURNOVER",
+      "phenomenon_id": "BIO-ENZYME-TURNOVER",
+      "min_hz": 1,
+      "max_hz": 10000,
+      "characteristic_hz": 1000,
+      "range_kind": "representative catalytic rate range",
+      "source_ids": [
+        "P7-SRC-022"
+      ]
+    },
+    {
+      "id": "RANGE-CHEM-ELECTRON-TRANSFER",
+      "phenomenon_id": "CHEM-ELECTRON-TRANSFER",
+      "min_hz": 1000000,
+      "max_hz": 1000000000000000000,
+      "characteristic_hz": null,
+      "range_kind": "inverse-timescale envelope",
+      "source_ids": [
+        "P7-SRC-023"
+      ]
+    },
+    {
+      "id": "RANGE-CHEM-PROTON-TRANSFER",
+      "phenomenon_id": "CHEM-PROTON-TRANSFER",
+      "min_hz": 100000000,
+      "max_hz": 10000000000000,
+      "characteristic_hz": null,
+      "range_kind": "inverse-timescale envelope",
+      "source_ids": [
+        "P7-SRC-024"
+      ]
+    },
+    {
+      "id": "RANGE-CHEM-GAS-COLLISION",
+      "phenomenon_id": "CHEM-GAS-COLLISION",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 1000000000,
+      "range_kind": "order-of-magnitude characteristic rate",
+      "source_ids": [
+        "P7-SRC-025"
+      ]
+    },
+    {
+      "id": "RANGE-THERM-CMB-EQUIV",
+      "phenomenon_id": "THERM-CMB-EQUIV",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 56779787111.06764,
+      "range_kind": "k_B T / h energy-equivalent frequency",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-027"
+      ]
+    },
+    {
+      "id": "RANGE-THERM-ROOM-EQUIV",
+      "phenomenon_id": "THERM-ROOM-EQUIV",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 6105129403134.9795,
+      "range_kind": "k_B T / h energy-equivalent frequency",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-028"
+      ]
+    },
+    {
+      "id": "RANGE-THERM-BODY-EQUIV",
+      "phenomenon_id": "THERM-BODY-EQUIV",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 6459351928231.549,
+      "range_kind": "k_B T / h energy-equivalent frequency",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-028"
+      ]
+    },
+    {
+      "id": "RANGE-THERM-SUN-EQUIV",
+      "phenomenon_id": "THERM-SUN-EQUIV",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 120268965579846.77,
+      "range_kind": "k_B T / h energy-equivalent frequency",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-028"
+      ]
+    },
+    {
+      "id": "RANGE-ATOM-CS133-CLOCK",
+      "phenomenon_id": "ATOM-CS133-CLOCK",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 9192631770,
+      "range_kind": "defined atomic transition frequency",
+      "source_ids": [
+        "P7-SRC-029"
+      ]
+    },
+    {
+      "id": "RANGE-PARTICLE-MUON-DECAY",
+      "phenomenon_id": "PARTICLE-MUON-DECAY",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 455170.05130358203,
+      "range_kind": "inverse mean lifetime",
+      "source_ids": [
+        "P7-SRC-030"
+      ]
+    },
+    {
+      "id": "RANGE-PARTICLE-ELECTRON-REST-EQ",
+      "phenomenon_id": "PARTICLE-ELECTRON-REST-EQ",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 123558996549410210000,
+      "range_kind": "m_e c^2 / h energy-equivalent frequency",
+      "source_ids": [
+        "P7-SRC-026",
+        "P7-SRC-031"
+      ]
     }
   ]
 }
