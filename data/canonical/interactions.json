@@ -67,10 +67,13 @@
         ],
         "target_roles": [
           "RECEIVES",
-          "STORES_TEMPORARILY",
+          "STORES",
           "DOES_WORK"
         ],
-        "fate": "acoustic energy drives structural motion; damping transfers part to thermal degrees of freedom"
+        "fate": "acoustic energy drives structural motion; damping transfers part to thermal degrees of freedom",
+        "qualifiers": [
+          "target:temporary_storage"
+        ]
       },
       "caveat": "not every acoustic frequency couples efficiently",
       "provenance": {
@@ -186,9 +189,13 @@
         "target_roles": [
           "RECEIVES",
           "ABSORBS",
-          "STORES_OR_THERMALIZES"
+          "STORES",
+          "THERMALIZES"
         ],
-        "fate": "photon energy is transferred into an internal excitation and may later re-emit or thermalize"
+        "fate": "photon energy is transferred into an internal excitation and may later re-emit or thermalize",
+        "qualifiers": [
+          "target:role_depends_on_relaxation"
+        ]
       },
       "caveat": "selection rules and linewidth apply",
       "provenance": {
@@ -220,14 +227,16 @@
       "energy_accounting": {
         "system_boundary": "ATOMIC-ELECTRONIC-EXCITATION -> EM-PHOTON via electromagnetic interaction",
         "source_roles": [
-          "RELEASES",
           "SUPPLIES"
         ],
         "target_roles": [
           "RECEIVES",
           "CARRIES"
         ],
-        "fate": "stored/internal excitation energy is released as electromagnetic radiation"
+        "fate": "stored/internal excitation energy is released as electromagnetic radiation",
+        "qualifiers": [
+          "source:release_from_stored_energy"
+        ]
       },
       "caveat": "spontaneous and stimulated emission are distinct processes",
       "provenance": {
@@ -265,9 +274,13 @@
         ],
         "target_roles": [
           "RECEIVES",
-          "STORES_OR_CARRIES"
+          "STORES",
+          "CARRIES"
         ],
-        "fate": "incoming photon energy is partitioned between the outgoing photon and created phonon"
+        "fate": "incoming photon energy is partitioned between the outgoing photon and created phonon",
+        "qualifiers": [
+          "target:role_depends_on_mode_state"
+        ]
       },
       "caveat": "Stokes-type schematic",
       "provenance": {
@@ -300,14 +313,16 @@
       "energy_accounting": {
         "system_boundary": "PHONON -> EM-PHOTON via optomechanical/Raman/Brillouin interaction",
         "source_roles": [
-          "SUPPLIES",
-          "RELEASES"
+          "SUPPLIES"
         ],
         "target_roles": [
           "RECEIVES",
           "CARRIES"
         ],
-        "fate": "phonon energy is transferred into the outgoing photon in addition to incoming photon energy"
+        "fate": "phonon energy is transferred into the outgoing photon in addition to incoming photon energy",
+        "qualifiers": [
+          "source:release_from_stored_energy"
+        ]
       },
       "caveat": "anti-Stokes-type schematic",
       "provenance": {
@@ -345,9 +360,13 @@
         ],
         "target_roles": [
           "RECEIVES",
-          "STORES_OR_DISSIPATES"
+          "STORES",
+          "DISSIPATES"
         ],
-        "fate": "electromagnetic momentum/energy performs mechanical work; losses may thermalize"
+        "fate": "electromagnetic momentum/energy performs mechanical work; losses may thermalize",
+        "qualifiers": [
+          "target:role_depends_on_damping"
+        ]
       },
       "caveat": "carrier frequency need not equal mechanical frequency",
       "provenance": {
@@ -379,14 +398,18 @@
       "energy_accounting": {
         "system_boundary": "MECH-MODE -> EM-CAVITY via moving boundary/photoelastic response",
         "source_roles": [
-          "MODULATES",
-          "MAY_SUPPLY_OR_RECEIVE"
+          "READS_OUT",
+          "EXCHANGES"
         ],
         "target_roles": [
           "READS_OUT",
           "CARRIES"
         ],
-        "fate": "mechanical motion modulates electromagnetic energy/phase; net energy transfer depends on operating regime"
+        "fate": "mechanical motion modulates electromagnetic energy/phase; net energy transfer depends on operating regime",
+        "qualifiers": [
+          "source:modulates_carrier",
+          "source:direction_depends_on_regime"
+        ]
       },
       "caveat": "readout/modulation is not identity",
       "provenance": {
@@ -498,14 +521,18 @@
       "energy_accounting": {
         "system_boundary": "MICROWAVE -> OPTICAL-SIGNAL via piezoelectric phonon intermediary",
         "source_roles": [
-          "SUPPLIES_OR_RECEIVES",
+          "EXCHANGES",
           "CONVERTS"
         ],
         "target_roles": [
-          "RECEIVES_OR_SUPPLIES",
+          "EXCHANGES",
           "CONVERTS"
         ],
-        "fate": "energy conversion is mediated by an intermediate phonon and external pump/drive where applicable"
+        "fate": "energy conversion is mediated by an intermediate phonon and external pump/drive where applicable",
+        "qualifiers": [
+          "source:direction_depends_on_process",
+          "target:direction_depends_on_process"
+        ]
       },
       "caveat": "must render intermediary; not a bare direct edge",
       "provenance": {
@@ -575,13 +602,19 @@
         "system_boundary": "OPTICAL-PHOTON -> MAGNON via magneto-optical Raman interaction",
         "source_roles": [
           "CARRIES",
-          "SUPPLIES_OR_READS_OUT"
+          "SUPPLIES",
+          "READS_OUT"
         ],
         "target_roles": [
-          "RECEIVES_OR_EMITS",
+          "RECEIVES",
+          "EMITS",
           "STORES"
         ],
-        "fate": "optical energy may excite or probe spin excitations; exact energy flow depends on Stokes/anti-Stokes/probe regime"
+        "fate": "optical energy may excite or probe spin excitations; exact energy flow depends on Stokes/anti-Stokes/probe regime",
+        "qualifiers": [
+          "source:probe_or_excitation_regime",
+          "target:direction_depends_on_process"
+        ]
       },
       "caveat": "probe and excitation regimes differ",
       "provenance": {
@@ -650,14 +683,16 @@
       "energy_accounting": {
         "system_boundary": "ELECTRONIC-EXCITATIONS -> PHONON-POPULATION via electron-phonon interaction",
         "source_roles": [
-          "EXCHANGES",
-          "SUPPLIES_OR_RECEIVES"
+          "EXCHANGES"
         ],
         "target_roles": [
           "EXCHANGES",
           "THERMALIZES"
         ],
-        "fate": "energy redistributes between electronic and lattice populations toward equilibrium"
+        "fate": "energy redistributes between electronic and lattice populations toward equilibrium",
+        "qualifiers": [
+          "source:direction_depends_on_process"
+        ]
       },
       "caveat": "strength varies strongly by material and temperature",
       "provenance": {
@@ -689,14 +724,16 @@
       "energy_accounting": {
         "system_boundary": "PHONON-MODE-A -> PHONON-MODE-B via lattice anharmonicity",
         "source_roles": [
-          "EXCHANGES",
-          "SUPPLIES_OR_RECEIVES"
+          "EXCHANGES"
         ],
         "target_roles": [
           "EXCHANGES",
           "THERMALIZES"
         ],
-        "fate": "phonon energy is redistributed among lattice modes subject to conservation rules"
+        "fate": "phonon energy is redistributed among lattice modes subject to conservation rules",
+        "qualifiers": [
+          "source:direction_depends_on_process"
+        ]
       },
       "caveat": "Normal and Umklapp processes differ",
       "provenance": {
@@ -809,14 +846,17 @@
       "energy_accounting": {
         "system_boundary": "EM-FIELD -> PLASMA-MODE via Lorentz force/collective charge response",
         "source_roles": [
-          "SUPPLIES_OR_RECEIVES",
+          "EXCHANGES",
           "DOES_WORK"
         ],
         "target_roles": [
-          "RECEIVES_OR_SUPPLIES",
           "EXCHANGES"
         ],
-        "fate": "field and plasma mode exchange energy near resonant/dispersion conditions"
+        "fate": "field and plasma mode exchange energy near resonant/dispersion conditions",
+        "qualifiers": [
+          "source:direction_depends_on_process",
+          "target:direction_depends_on_process"
+        ]
       },
       "caveat": "many distinct plasma branches exist",
       "provenance": {
@@ -848,14 +888,18 @@
       "energy_accounting": {
         "system_boundary": "GW-STRAIN -> INTERFEROMETER-OPTICAL-PATH via spacetime-induced differential optical path",
         "source_roles": [
-          "INFORMATION_SOURCE",
-          "MODULATES"
+          "CARRIES",
+          "READS_OUT"
         ],
         "target_roles": [
           "READS_OUT",
           "CARRIES"
         ],
-        "fate": "the measured phenomenon modulates detector light; most optical readout energy is supplied externally, not converted wholesale from the source"
+        "fate": "the measured phenomenon modulates detector light; most optical readout energy is supplied externally, not converted wholesale from the source",
+        "qualifiers": [
+          "source:information_source",
+          "source:modulates_carrier"
+        ]
       },
       "caveat": "gravitational wave does not become optical radiation",
       "provenance": {
@@ -888,13 +932,16 @@
         "system_boundary": "INTERFEROMETER-OPTICAL-PATH -> PHOTODETECTOR-ELECTRICAL via optical interference and photodetection",
         "source_roles": [
           "CARRIES",
-          "SUPPLIES_DETECTOR_SIGNAL"
+          "SUPPLIES"
         ],
         "target_roles": [
           "RECEIVES",
           "CONVERTS"
         ],
-        "fate": "detector carrier energy is converted into an electrical measurement signal"
+        "fate": "detector carrier energy is converted into an electrical measurement signal",
+        "qualifiers": [
+          "source:detector_signal"
+        ]
       },
       "caveat": "detector electronics are downstream measurement",
       "provenance": {
@@ -932,9 +979,13 @@
         ],
         "target_roles": [
           "RECEIVES",
-          "STORES_OR_DISSIPATES"
+          "STORES",
+          "DISSIPATES"
         ],
-        "fate": "electromagnetic momentum/energy performs mechanical work; losses may thermalize"
+        "fate": "electromagnetic momentum/energy performs mechanical work; losses may thermalize",
+        "qualifiers": [
+          "target:role_depends_on_damping"
+        ]
       },
       "caveat": "used by LIGO as calibration actuator",
       "provenance": {
@@ -971,9 +1022,13 @@
         ],
         "target_roles": [
           "RECEIVES",
-          "STORES_OR_DISSIPATES"
+          "STORES",
+          "DISSIPATES"
         ],
-        "fate": "driving potential transfers energy into the responding subsystem; damping/transport redistribute it"
+        "fate": "driving potential transfers energy into the responding subsystem; damping/transport redistribute it",
+        "qualifiers": [
+          "target:role_depends_on_damping"
+        ]
       },
       "caveat": "tidal period is not a unique frequency of gravity",
       "provenance": {
