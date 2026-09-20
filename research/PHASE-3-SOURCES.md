@@ -186,17 +186,17 @@ Project use:
 
 ## P3-SRC-010 — electron ↔ phonon energy exchange
 
+Allen, *Theory of thermal relaxation of electrons in metals*, Physical Review Letters 59, 1460 (1987):
+- https://doi.org/10.1103/PhysRevLett.59.1460
+
+Supports:
+- electron–phonon interaction transfers energy between a hot electronic population and the lattice and produces temperature relaxation.
+
 Maldovan, *Sound and heat revolutions in phononics*, Nature 503, 209–217 (2013):
 - https://doi.org/10.1038/nature12608
 
 Supports:
 - phonons participate centrally in thermal transport and interact with other carriers in materials.
-
-Chen & Song, review of electron–phonon coupling and thermal interface conductance:
-- https://doi.org/10.3969/j.issn.1001-9731.2021.01.001
-
-Supports:
-- electron–phonon coupling contributes to energy exchange and interface thermal transport.
 
 Project use:
 - ELECTRON ↔ PHONON THERMALIZE / SCATTER edge.
@@ -211,14 +211,19 @@ Caution:
 Maldovan, *Sound and heat revolutions in phononics*:
 - https://doi.org/10.1038/nature12608
 
+Cepellotti et al., *Phonon hydrodynamics in two-dimensional materials*, Nature Communications 6, 6400 (2015):
+- https://doi.org/10.1038/ncomms7400
+
+Supports:
+- three-phonon processes include Normal and Umklapp events;
+- Normal processes conserve crystal momentum while Umklapp processes transfer crystal momentum by a reciprocal-lattice vector;
+- the distinction matters for heat transport.
+
 Supporting lattice-dynamics background:
 - Wei & Chou: https://doi.org/10.1103/PhysRevLett.69.2799
 - Holt et al.: https://doi.org/10.1103/PhysRevLett.83.3317
 
 Project use:
-- establishes lattice modes as interacting thermal/mechanical excitations.
-
-Phase 3 interpretation:
 - anharmonic phonon scattering is represented as a many-mode SCATTER / THERMALIZE relation, not one fixed conversion arrow.
 
 ---
