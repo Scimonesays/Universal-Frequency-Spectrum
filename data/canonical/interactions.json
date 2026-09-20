@@ -1,0 +1,937 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "P3-E001",
+      "claim_id": "CLAIM-P3-E001",
+      "record_type": "interaction",
+      "source": "MECH-STRUCT",
+      "target": "ACOUSTIC-FIELD",
+      "interaction_type": "RADIATE/DRIVE",
+      "directionality": "source-to-target",
+      "mediator": "material boundary",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "mechanical source spectrum drives matching acoustic spectrum",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-001"
+      ],
+      "energy_accounting": {
+        "system_boundary": "MECH-STRUCT -> ACOUSTIC-FIELD via material boundary",
+        "source_roles": [
+          "SUPPLIES",
+          "DOES_WORK"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "CARRIES"
+        ],
+        "fate": "mechanical energy crosses into the acoustic field; inefficiencies may dissipate thermally"
+      },
+      "caveat": "radiation efficiency and impedance are geometry/medium dependent",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E002",
+      "claim_id": "CLAIM-P3-E002",
+      "record_type": "interaction",
+      "source": "ACOUSTIC-FIELD",
+      "target": "MECH-STRUCT",
+      "interaction_type": "DRIVE/RESONATE",
+      "directionality": "source-to-target",
+      "mediator": "material boundary",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "response enhanced near structural eigenmodes",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-001"
+      ],
+      "energy_accounting": {
+        "system_boundary": "ACOUSTIC-FIELD -> MECH-STRUCT via material boundary",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "STORES_TEMPORARILY",
+          "DOES_WORK"
+        ],
+        "fate": "acoustic energy drives structural motion; damping transfers part to thermal degrees of freedom"
+      },
+      "caveat": "not every acoustic frequency couples efficiently",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E003",
+      "claim_id": "CLAIM-P3-E003",
+      "record_type": "interaction",
+      "source": "ELECTRICAL-FIELD",
+      "target": "MECH-PIEZO",
+      "interaction_type": "PIEZOELECTRIC_TRANSDUCE",
+      "directionality": "bidirectional",
+      "mediator": "piezoelectric polarization/strain",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "device resonance and impedance matching often relevant",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-002"
+      ],
+      "energy_accounting": {
+        "system_boundary": "ELECTRICAL-FIELD -> MECH-PIEZO via piezoelectric polarization/strain",
+        "source_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "target_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "fate": "electrical and mechanical/acoustic energy are interconverted; finite efficiency leaves loss channels"
+      },
+      "caveat": "material and geometry dependent",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E004",
+      "claim_id": "CLAIM-P3-E004",
+      "record_type": "interaction",
+      "source": "MECH-PIEZO",
+      "target": "ELECTRICAL-SIGNAL",
+      "interaction_type": "PIEZOELECTRIC_TRANSDUCE",
+      "directionality": "bidirectional",
+      "mediator": "piezoelectric polarization/strain",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "device resonance and impedance matching often relevant",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-002"
+      ],
+      "energy_accounting": {
+        "system_boundary": "MECH-PIEZO -> ELECTRICAL-SIGNAL via piezoelectric polarization/strain",
+        "source_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "target_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "fate": "electrical and mechanical/acoustic energy are interconverted; finite efficiency leaves loss channels"
+      },
+      "caveat": "receiver direction of piezoelectric transduction",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E005",
+      "claim_id": "CLAIM-P3-E005",
+      "record_type": "interaction",
+      "source": "EM-PHOTON",
+      "target": "MOL-VIB",
+      "interaction_type": "ABSORB/EXCITE",
+      "directionality": "source-to-target",
+      "mediator": "electric-dipole and related molecular coupling",
+      "energy_transfer": "yes",
+      "coherent_possible": "quantum coherent in suitable regimes",
+      "frequency_condition": "h f approximately equals allowed transition energy",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-003"
+      ],
+      "energy_accounting": {
+        "system_boundary": "EM-PHOTON -> MOL-VIB via electric-dipole and related molecular coupling",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "ABSORBS",
+          "STORES_OR_THERMALIZES"
+        ],
+        "fate": "photon energy is transferred into an internal excitation and may later re-emit or thermalize"
+      },
+      "caveat": "selection rules and linewidth apply",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E006",
+      "claim_id": "CLAIM-P3-E006",
+      "record_type": "interaction",
+      "source": "ATOMIC-ELECTRONIC-EXCITATION",
+      "target": "EM-PHOTON",
+      "interaction_type": "EMIT",
+      "directionality": "source-to-target",
+      "mediator": "electromagnetic interaction",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "h f equals transition-energy difference within line shifts/width",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-004"
+      ],
+      "energy_accounting": {
+        "system_boundary": "ATOMIC-ELECTRONIC-EXCITATION -> EM-PHOTON via electromagnetic interaction",
+        "source_roles": [
+          "RELEASES",
+          "SUPPLIES"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "CARRIES"
+        ],
+        "fate": "stored/internal excitation energy is released as electromagnetic radiation"
+      },
+      "caveat": "spontaneous and stimulated emission are distinct processes",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E007",
+      "claim_id": "CLAIM-P3-E007",
+      "record_type": "interaction",
+      "source": "EM-PHOTON",
+      "target": "PHONON",
+      "interaction_type": "SCATTER_CREATE",
+      "directionality": "source-to-target",
+      "mediator": "optomechanical/Raman/Brillouin interaction",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "f_in approximately f_out + f_phonon plus momentum matching",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-005",
+        "P3-SRC-006"
+      ],
+      "energy_accounting": {
+        "system_boundary": "EM-PHOTON -> PHONON via optomechanical/Raman/Brillouin interaction",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "STORES_OR_CARRIES"
+        ],
+        "fate": "incoming photon energy is partitioned between the outgoing photon and created phonon"
+      },
+      "caveat": "Stokes-type schematic",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E008",
+      "claim_id": "CLAIM-P3-E008",
+      "record_type": "interaction",
+      "source": "PHONON",
+      "target": "EM-PHOTON",
+      "interaction_type": "SCATTER_ANNIHILATE",
+      "directionality": "source-to-target",
+      "mediator": "optomechanical/Raman/Brillouin interaction",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "f_out approximately f_in + f_phonon plus momentum matching",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-005",
+        "P3-SRC-006"
+      ],
+      "energy_accounting": {
+        "system_boundary": "PHONON -> EM-PHOTON via optomechanical/Raman/Brillouin interaction",
+        "source_roles": [
+          "SUPPLIES",
+          "RELEASES"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "CARRIES"
+        ],
+        "fate": "phonon energy is transferred into the outgoing photon in addition to incoming photon energy"
+      },
+      "caveat": "anti-Stokes-type schematic",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E009",
+      "claim_id": "CLAIM-P3-E009",
+      "record_type": "interaction",
+      "source": "EM-CAVITY",
+      "target": "MECH-MODE",
+      "interaction_type": "RADIATION_PRESSURE_FORCE",
+      "directionality": "source-to-target",
+      "mediator": "radiation pressure",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "broad force; resonant enhancement depends on cavity/mechanical conditions",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-005"
+      ],
+      "energy_accounting": {
+        "system_boundary": "EM-CAVITY -> MECH-MODE via radiation pressure",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES",
+          "DOES_WORK"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "STORES_OR_DISSIPATES"
+        ],
+        "fate": "electromagnetic momentum/energy performs mechanical work; losses may thermalize"
+      },
+      "caveat": "carrier frequency need not equal mechanical frequency",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E010",
+      "claim_id": "CLAIM-P3-E010",
+      "record_type": "interaction",
+      "source": "MECH-MODE",
+      "target": "EM-CAVITY",
+      "interaction_type": "MODULATE_RESONANCE",
+      "directionality": "source-to-target",
+      "mediator": "moving boundary/photoelastic response",
+      "energy_transfer": "signal/energy depending regime",
+      "coherent_possible": "yes",
+      "frequency_condition": "mechanical motion creates optical phase/frequency modulation and sidebands",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-005"
+      ],
+      "energy_accounting": {
+        "system_boundary": "MECH-MODE -> EM-CAVITY via moving boundary/photoelastic response",
+        "source_roles": [
+          "MODULATES",
+          "MAY_SUPPLY_OR_RECEIVE"
+        ],
+        "target_roles": [
+          "READS_OUT",
+          "CARRIES"
+        ],
+        "fate": "mechanical motion modulates electromagnetic energy/phase; net energy transfer depends on operating regime"
+      },
+      "caveat": "readout/modulation is not identity",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E011",
+      "claim_id": "CLAIM-P3-E011",
+      "record_type": "interaction",
+      "source": "MICROWAVE",
+      "target": "PHONON-GHZ",
+      "interaction_type": "PIEZOELECTRIC_TRANSDUCE",
+      "directionality": "bidirectional",
+      "mediator": "piezoelectric acoustic resonator",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "mode/impedance/resonance matching",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-002",
+        "P3-SRC-007"
+      ],
+      "energy_accounting": {
+        "system_boundary": "MICROWAVE -> PHONON-GHZ via piezoelectric acoustic resonator",
+        "source_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "target_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "fate": "electrical and mechanical/acoustic energy are interconverted; finite efficiency leaves loss channels"
+      },
+      "caveat": "specific demonstrated devices are platform dependent",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E012",
+      "claim_id": "CLAIM-P3-E012",
+      "record_type": "interaction",
+      "source": "PHONON-GHZ",
+      "target": "OPTICAL-PHOTON",
+      "interaction_type": "OPTOMECHANICAL_TRANSDUCE",
+      "directionality": "bidirectional",
+      "mediator": "photoelastic/moving-boundary coupling",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "sum/difference frequency plus phase/co-resonance matching",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-006",
+        "P3-SRC-007"
+      ],
+      "energy_accounting": {
+        "system_boundary": "PHONON-GHZ -> OPTICAL-PHOTON via photoelastic/moving-boundary coupling",
+        "source_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "target_roles": [
+          "EXCHANGES",
+          "CONVERTS"
+        ],
+        "fate": "pump-assisted coherent energy conversion between phononic and optical degrees of freedom"
+      },
+      "caveat": "often pump-assisted",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E013",
+      "claim_id": "CLAIM-P3-E013",
+      "record_type": "interaction",
+      "source": "MICROWAVE",
+      "target": "OPTICAL-SIGNAL",
+      "interaction_type": "MEDIATED_TRANSDUCE",
+      "directionality": "bidirectional",
+      "mediator": "piezoelectric phonon intermediary",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "microwave-acoustic and acoustic-optical conditions both required",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-007"
+      ],
+      "energy_accounting": {
+        "system_boundary": "MICROWAVE -> OPTICAL-SIGNAL via piezoelectric phonon intermediary",
+        "source_roles": [
+          "SUPPLIES_OR_RECEIVES",
+          "CONVERTS"
+        ],
+        "target_roles": [
+          "RECEIVES_OR_SUPPLIES",
+          "CONVERTS"
+        ],
+        "fate": "energy conversion is mediated by an intermediate phonon and external pump/drive where applicable"
+      },
+      "caveat": "must render intermediary; not a bare direct edge",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E014",
+      "claim_id": "CLAIM-P3-E014",
+      "record_type": "interaction",
+      "source": "CAVITY-PHOTON",
+      "target": "MAGNON",
+      "interaction_type": "HYBRIDIZE",
+      "directionality": "bidirectional",
+      "mediator": "magnetic dipole/spin-photon coupling",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "near resonance; strong-coupling criteria required for hybrid label",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-008"
+      ],
+      "energy_accounting": {
+        "system_boundary": "CAVITY-PHOTON -> MAGNON via magnetic dipole/spin-photon coupling",
+        "source_roles": [
+          "EXCHANGES"
+        ],
+        "target_roles": [
+          "EXCHANGES"
+        ],
+        "fate": "coupled modes coherently exchange energy; hybrid eigenmodes share excitation character"
+      },
+      "caveat": "weak coupling should not be mislabeled hybridization",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E015",
+      "claim_id": "CLAIM-P3-E015",
+      "record_type": "interaction",
+      "source": "OPTICAL-PHOTON",
+      "target": "MAGNON",
+      "interaction_type": "RAMAN_EXCITE_PROBE",
+      "directionality": "bidirectional measurement/excitation",
+      "mediator": "magneto-optical Raman interaction",
+      "energy_transfer": "yes",
+      "coherent_possible": "possible",
+      "frequency_condition": "Raman shift/selection rules depend on magnon mode",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-009"
+      ],
+      "energy_accounting": {
+        "system_boundary": "OPTICAL-PHOTON -> MAGNON via magneto-optical Raman interaction",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES_OR_READS_OUT"
+        ],
+        "target_roles": [
+          "RECEIVES_OR_EMITS",
+          "STORES"
+        ],
+        "fate": "optical energy may excite or probe spin excitations; exact energy flow depends on Stokes/anti-Stokes/probe regime"
+      },
+      "caveat": "probe and excitation regimes differ",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E016",
+      "claim_id": "CLAIM-P3-E016",
+      "record_type": "interaction",
+      "source": "MAGNON-SPIN",
+      "target": "PHONON",
+      "interaction_type": "SPIN_PHONON_COUPLE",
+      "directionality": "bidirectional",
+      "mediator": "spin-lattice interaction",
+      "energy_transfer": "yes",
+      "coherent_possible": "possible",
+      "frequency_condition": "material/symmetry/mode dependent",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-009"
+      ],
+      "energy_accounting": {
+        "system_boundary": "MAGNON-SPIN -> PHONON via spin-lattice interaction",
+        "source_roles": [
+          "EXCHANGES"
+        ],
+        "target_roles": [
+          "EXCHANGES"
+        ],
+        "fate": "spin and lattice degrees of freedom exchange energy and may hybridize or relax"
+      },
+      "caveat": "can cause shifts linewidth changes or hybridization depending regime",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E017",
+      "claim_id": "CLAIM-P3-E017",
+      "record_type": "interaction",
+      "source": "ELECTRONIC-EXCITATIONS",
+      "target": "PHONON-POPULATION",
+      "interaction_type": "THERMALIZE_SCATTER",
+      "directionality": "bidirectional",
+      "mediator": "electron-phonon interaction",
+      "energy_transfer": "yes",
+      "coherent_possible": "not necessarily phase coherent",
+      "frequency_condition": "population/energy/momentum dependent",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-010"
+      ],
+      "energy_accounting": {
+        "system_boundary": "ELECTRONIC-EXCITATIONS -> PHONON-POPULATION via electron-phonon interaction",
+        "source_roles": [
+          "EXCHANGES",
+          "SUPPLIES_OR_RECEIVES"
+        ],
+        "target_roles": [
+          "EXCHANGES",
+          "THERMALIZES"
+        ],
+        "fate": "energy redistributes between electronic and lattice populations toward equilibrium"
+      },
+      "caveat": "strength varies strongly by material and temperature",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E018",
+      "claim_id": "CLAIM-P3-E018",
+      "record_type": "interaction",
+      "source": "PHONON-MODE-A",
+      "target": "PHONON-MODE-B",
+      "interaction_type": "ANHARMONIC_SCATTER",
+      "directionality": "many-body/bidirectional",
+      "mediator": "lattice anharmonicity",
+      "energy_transfer": "yes",
+      "coherent_possible": "can be coherent or incoherent depending context",
+      "frequency_condition": "energy and crystal-momentum conservation govern processes",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-011"
+      ],
+      "energy_accounting": {
+        "system_boundary": "PHONON-MODE-A -> PHONON-MODE-B via lattice anharmonicity",
+        "source_roles": [
+          "EXCHANGES",
+          "SUPPLIES_OR_RECEIVES"
+        ],
+        "target_roles": [
+          "EXCHANGES",
+          "THERMALIZES"
+        ],
+        "fate": "phonon energy is redistributed among lattice modes subject to conservation rules"
+      },
+      "caveat": "Normal and Umklapp processes differ",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E019",
+      "claim_id": "CLAIM-P3-E019",
+      "record_type": "interaction",
+      "source": "THERMAL-MATTER",
+      "target": "EM-RADIATION",
+      "interaction_type": "THERMAL_EMIT",
+      "directionality": "source-to-target",
+      "mediator": "matter-electromagnetic coupling",
+      "energy_transfer": "yes",
+      "coherent_possible": "generally incoherent thermal ensemble",
+      "frequency_condition": "temperature-dependent spectrum",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-012"
+      ],
+      "energy_accounting": {
+        "system_boundary": "THERMAL-MATTER -> EM-RADIATION via matter-electromagnetic coupling",
+        "source_roles": [
+          "SUPPLIES",
+          "EMITS"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "CARRIES"
+        ],
+        "fate": "matter releases internal energy as electromagnetic thermal radiation"
+      },
+      "caveat": "thermal radiation is one heat-transfer pathway, not all heat",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E020",
+      "claim_id": "CLAIM-P3-E020",
+      "record_type": "interaction",
+      "source": "EM-RADIATION",
+      "target": "THERMAL-MATTER",
+      "interaction_type": "ABSORB_THERMALIZE",
+      "directionality": "source-to-target",
+      "mediator": "material optical absorption then internal relaxation",
+      "energy_transfer": "yes",
+      "coherent_possible": "varies",
+      "frequency_condition": "absorption spectrum and internal relaxation are material dependent",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-012",
+        "P3-SRC-003",
+        "P3-SRC-004"
+      ],
+      "energy_accounting": {
+        "system_boundary": "EM-RADIATION -> THERMAL-MATTER via material optical absorption then internal relaxation",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "ABSORBS",
+          "THERMALIZES"
+        ],
+        "fate": "electromagnetic energy is absorbed and redistributed among internal degrees of freedom"
+      },
+      "caveat": "absorbed energy can populate multiple internal degrees of freedom",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E021",
+      "claim_id": "CLAIM-P3-E021",
+      "record_type": "interaction",
+      "source": "EM-FIELD",
+      "target": "PLASMA-MODE",
+      "interaction_type": "DRIVE_RESONATE",
+      "directionality": "bidirectional interaction",
+      "mediator": "Lorentz force/collective charge response",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "matching to plasma/gyro/mode dispersion where applicable",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-013"
+      ],
+      "energy_accounting": {
+        "system_boundary": "EM-FIELD -> PLASMA-MODE via Lorentz force/collective charge response",
+        "source_roles": [
+          "SUPPLIES_OR_RECEIVES",
+          "DOES_WORK"
+        ],
+        "target_roles": [
+          "RECEIVES_OR_SUPPLIES",
+          "EXCHANGES"
+        ],
+        "fate": "field and plasma mode exchange energy near resonant/dispersion conditions"
+      },
+      "caveat": "many distinct plasma branches exist",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E022",
+      "claim_id": "CLAIM-P3-E022",
+      "record_type": "interaction",
+      "source": "GW-STRAIN",
+      "target": "INTERFEROMETER-OPTICAL-PATH",
+      "interaction_type": "READ_OUT_MODULATE",
+      "directionality": "source-to-target",
+      "mediator": "spacetime-induced differential optical path",
+      "energy_transfer": "measurement coupling",
+      "coherent_possible": "yes",
+      "frequency_condition": "GW modulation frequency imprinted on optical phase/intensity",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-014"
+      ],
+      "energy_accounting": {
+        "system_boundary": "GW-STRAIN -> INTERFEROMETER-OPTICAL-PATH via spacetime-induced differential optical path",
+        "source_roles": [
+          "INFORMATION_SOURCE",
+          "MODULATES"
+        ],
+        "target_roles": [
+          "READS_OUT",
+          "CARRIES"
+        ],
+        "fate": "the measured phenomenon modulates detector light; most optical readout energy is supplied externally, not converted wholesale from the source"
+      },
+      "caveat": "gravitational wave does not become optical radiation",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E023",
+      "claim_id": "CLAIM-P3-E023",
+      "record_type": "interaction",
+      "source": "INTERFEROMETER-OPTICAL-PATH",
+      "target": "PHOTODETECTOR-ELECTRICAL",
+      "interaction_type": "READ_OUT",
+      "directionality": "source-to-target",
+      "mediator": "optical interference and photodetection",
+      "energy_transfer": "signal conversion",
+      "coherent_possible": "yes",
+      "frequency_condition": "photodetector follows encoded interference variation within bandwidth",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-014"
+      ],
+      "energy_accounting": {
+        "system_boundary": "INTERFEROMETER-OPTICAL-PATH -> PHOTODETECTOR-ELECTRICAL via optical interference and photodetection",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES_DETECTOR_SIGNAL"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "CONVERTS"
+        ],
+        "fate": "detector carrier energy is converted into an electrical measurement signal"
+      },
+      "caveat": "detector electronics are downstream measurement",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E024",
+      "claim_id": "CLAIM-P3-E024",
+      "record_type": "interaction",
+      "source": "LASER-PHOTONS",
+      "target": "LIGO-MIRROR",
+      "interaction_type": "RADIATION_PRESSURE_FORCE",
+      "directionality": "source-to-target",
+      "mediator": "photon momentum transfer",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "laser-power modulation produces calibrated force/displacement",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-015"
+      ],
+      "energy_accounting": {
+        "system_boundary": "LASER-PHOTONS -> LIGO-MIRROR via photon momentum transfer",
+        "source_roles": [
+          "CARRIES",
+          "SUPPLIES",
+          "DOES_WORK"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "STORES_OR_DISSIPATES"
+        ],
+        "fate": "electromagnetic momentum/energy performs mechanical work; losses may thermalize"
+      },
+      "caveat": "used by LIGO as calibration actuator",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    },
+    {
+      "id": "P3-E025",
+      "claim_id": "CLAIM-P3-E025",
+      "record_type": "interaction",
+      "source": "TIDAL-GRAVITATIONAL-FORCING",
+      "target": "OCEAN-TIDE",
+      "interaction_type": "DRIVE",
+      "directionality": "source-to-target",
+      "mediator": "gravitational potential plus rotating Earth/ocean dynamics",
+      "energy_transfer": "yes",
+      "coherent_possible": "yes",
+      "frequency_condition": "forcing periods interact with ocean-basin response/resonances",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "source_ids": [
+        "P3-SRC-016"
+      ],
+      "energy_accounting": {
+        "system_boundary": "TIDAL-GRAVITATIONAL-FORCING -> OCEAN-TIDE via gravitational potential plus rotating Earth/ocean dynamics",
+        "source_roles": [
+          "SUPPLIES",
+          "DOES_WORK"
+        ],
+        "target_roles": [
+          "RECEIVES",
+          "STORES_OR_DISSIPATES"
+        ],
+        "fate": "driving potential transfers energy into the responding subsystem; damping/transport redistribute it"
+      },
+      "caveat": "tidal period is not a unique frequency of gravity",
+      "provenance": {
+        "phase": 3,
+        "source_file": "data/phase3-couplings.csv"
+      }
+    }
+  ]
+}
