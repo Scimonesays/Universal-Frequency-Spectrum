@@ -167,7 +167,10 @@ Turn the research into a machine-readable source of truth and ask disciplined qu
 - **constraint gap** — model allows a region that is not well tested;
 - **true forbidden region** — theory rules something out under stated assumptions;
 - **visual gap only** — no significance; simply no plotted item;
-- **energy-accounting gap** — an interaction is claimed but the source, sink, conversion pathway, or measured energy balance is missing.
+- **energy-accounting gap** — an interaction is claimed but the source, sink, conversion pathway, or measured energy balance is missing;
+- **mechanism gap** — an observed or accepted phenomenon lacks a sufficient causal physical mechanism;
+- **replication gap** — a claimed effect lacks robust independent reproducibility;
+- **operationalization gap** — a concept lacks measurable state variables, carrier, coupling, or falsification criteria.
 
 ### Exit condition
 
