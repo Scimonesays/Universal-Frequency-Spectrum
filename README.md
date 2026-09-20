@@ -16,7 +16,7 @@ This repository is intended to make those relationships visible without blurring
 
 **Phase 4 — Frontier physics, consciousness & deep hypotheses: COMPLETE**
 
-Phase 1 established the scientific rules. Phase 2 added the first source-backed catalog of established frequency-bearing phenomena. Phase 3 added the first source-backed **interaction graph**. Phase 4 now adds the frontier: dark-sector candidates, new forces, dark energy, vacuum physics, detector gaps, quantum gravity, plus a protected **human-experience/question layer** for memory, consciousness, near-death experience, terminal lucidity, soul/afterlife hypotheses, and Tesla/energy claims.
+Phase 1 established the scientific rules. Phase 2 added the first source-backed catalog of established frequency-bearing phenomena. Phase 3 added the first source-backed **interaction graph**. Phase 4 now adds the frontier: dark-sector candidates, new forces, dark energy, vacuum physics, detector gaps, quantum gravity, plus a protected **human-experience/question layer** for memory, consciousness, near-death experience, terminal lucidity, soul/afterlife hypotheses, telepathy/anomalous cognition, unknown/unobserved proposed carriers, and Tesla/energy claims.
 
 No final visual layout is being asserted yet. Frontier questions are allowed into the research without being promoted to established fields or assigned invented frequencies.
 
