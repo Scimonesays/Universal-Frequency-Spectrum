@@ -33,7 +33,7 @@ The build copies the web assets and the exact canonical JSON files referenced by
 
 ## Views
 
-- **Spectrum** — logarithmic Hz axis, physical-family separation, open/one-sided bands, characteristic lines, detector windows, filters, energy roles and EM wavelength/photon-energy overlays.
+- **Spectrum** — logarithmic 10^-18–10^24 Hz display window with reciprocal-period labels, expanded physical-family separation, frequency-semantics glyphs, open/one-sided bands, characteristic lines, detector windows, filters, energy roles and EM wavelength/photon-energy overlays.
 - **Connections** — interaction graph with mediators, directionality, conservation/energy accounting and source trail.
 - **Frontier** — dark-sector, quantum-gravity, consciousness, anomalous-cognition and other question nodes without invented frequency bars.
 - **Gaps** — typed gaps: instrumentation, theory, constraint, mechanism, replication, operationalization, energy accounting, catalog and visual-only.
@@ -58,3 +58,22 @@ node scripts/test-web-app.mjs
 ```
 
 The web audit also verifies that selected scientific record IDs are not hard-coded in the application.
+
+
+## Frequency semantics
+
+The atlas distinguishes numerical values that share units but do not share physical meaning:
+
+- periodic / rotational motion;
+- propagating waves;
+- normal modes / resonances;
+- transition frequencies;
+- detector or sensitivity bands;
+- characteristic inverse timescales;
+- characteristic rates;
+- energy-equivalent frequencies such as k_B T / h;
+- conventional classification/analysis bands;
+- biological sensitivity windows;
+- parameter- or state-dependent frequency.
+
+The visible 10^-18–10^24 Hz span is a **display window**, not a claim that nature has universal frequency endpoints.
