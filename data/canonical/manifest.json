@@ -11,7 +11,8 @@
     "sources": 75,
     "claims": 107,
     "gaps": 16,
-    "entities": 33
+    "entities": 33,
+    "validations": 0
   },
   "files": {
     "phenomena": "phenomena.json",
@@ -21,7 +22,8 @@
     "sources": "sources.json",
     "claims": "claims.json",
     "gaps": "gaps.json",
-    "entities": "entities.json"
+    "entities": "entities.json",
+    "validations": "validations.json"
   },
   "legacy_inputs": [
     "../phase2-known-spectrum.csv",
@@ -36,5 +38,14 @@
     "canonical_cross_reference_failures": 0,
     "broken_internal_links": 0,
     "github_actions_validation": "PASS"
+  },
+  "integrations": {
+    "curv": {
+      "repository": "Scimonesays/CURV",
+      "mode": "read-only research validator",
+      "automatic_canonical_status_changes": false,
+      "contract": "../../docs/12-CURV-RESEARCH-VALIDATOR.md",
+      "validation_schema": "../../schema/ufs-validation-result.schema.json"
+    }
   }
 }
