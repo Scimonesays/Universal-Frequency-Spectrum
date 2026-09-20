@@ -23,7 +23,10 @@ A scientifically useful edge must say:
 6. what conservation or resonance conditions apply;
 7. whether the edge is direct or mediated by an intermediate mode;
 8. whether the relation is a physical conversion, scattering event, force, hybridization, or merely a measurement/readout path;
-9. what evidence supports it.
+9. what evidence supports it;
+10. what the **energy role** of source and target is;
+11. what system boundary is being used;
+12. whether energy is stored, transferred, converted, dissipated, dispersed, or merely used for readout.
 
 ---
 
@@ -187,6 +190,34 @@ gravitational-wave strain
 A readout edge is especially important because it **must not be rendered as if the measured phenomenon becomes the detector signal.**
 
 ---
+
+# 1A. Energy-accounting overlay for every edge
+
+Every Phase 3 edge should be interpretable through an energy ledger.
+
+At minimum:
+
+```yaml
+system_boundary: ...
+source_energy_role: ...
+target_energy_role: ...
+energy_transfer_observed: yes | no | mixed | unknown
+energy_input_form: ...
+energy_output_form: ...
+loss_channels: ...
+energy_fate: ...
+```
+
+Important distinctions:
+
+- **source loses / target gains** does not mean total energy disappears;
+- **conversion** changes the degree of freedom carrying energy;
+- **dissipation** redistributes organized energy, commonly toward thermal degrees of freedom;
+- **dispersion** spreads energy but need not dissipate it;
+- **readout** may use externally supplied detector energy rather than converting the measured phenomenon's energy wholesale into the detector carrier;
+- **steady state** can contain continuous power flow while stored energy remains approximately constant.
+
+The canonical energy-role vocabulary is defined in [Energy Accounting](10-ENERGY-ACCOUNTING.md).
 
 # 2. Classical mechanical ↔ acoustic bridge
 
