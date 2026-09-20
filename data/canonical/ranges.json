@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "RANGE-GEO-TIDE-SEMI",
+      "phenomenon_id": "GEO-TIDE-SEMI",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 0.00002237,
+      "range_kind": "characteristic geophysical period",
+      "source_ids": [
+        "P2-SRC-001"
+      ]
+    },
+    {
+      "id": "RANGE-GEO-TIDE-LUNAR",
+      "phenomenon_id": "GEO-TIDE-LUNAR",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 0.00001119,
+      "range_kind": "characteristic geophysical period",
+      "source_ids": [
+        "P2-SRC-001"
+      ]
+    },
+    {
+      "id": "RANGE-ATM-EQUATORIAL",
+      "phenomenon_id": "ATM-EQUATORIAL",
+      "min_hz": 5e-7,
+      "max_hz": 0.000004,
+      "characteristic_hz": null,
+      "range_kind": "observed/representative",
+      "source_ids": [
+        "P2-SRC-002"
+      ]
+    },
+    {
+      "id": "RANGE-OCE-SURFACE",
+      "phenomenon_id": "OCE-SURFACE",
+      "min_hz": 0.05,
+      "max_hz": 0.2,
+      "characteristic_hz": null,
+      "range_kind": "observational/practical",
+      "source_ids": [
+        "P2-SRC-003"
+      ]
+    },
+    {
+      "id": "RANGE-SEIS-GROUND",
+      "phenomenon_id": "SEIS-GROUND",
+      "min_hz": 0.1,
+      "max_hz": 30,
+      "characteristic_hz": null,
+      "range_kind": "observed/representative",
+      "source_ids": [
+        "P2-SRC-004"
+      ]
+    },
+    {
+      "id": "RANGE-ACOU-INFRA",
+      "phenomenon_id": "ACOU-INFRA",
+      "min_hz": null,
+      "max_hz": 20,
+      "characteristic_hz": null,
+      "range_kind": "conventional upper boundary",
+      "source_ids": [
+        "P2-SRC-005"
+      ]
+    },
+    {
+      "id": "RANGE-ACOU-HEARING",
+      "phenomenon_id": "ACOU-HEARING",
+      "min_hz": 20,
+      "max_hz": 20000,
+      "characteristic_hz": null,
+      "range_kind": "biological sensitivity",
+      "source_ids": [
+        "P2-SRC-004"
+      ]
+    },
+    {
+      "id": "RANGE-ACOU-ULTRA",
+      "phenomenon_id": "ACOU-ULTRA",
+      "min_hz": 20000,
+      "max_hz": null,
+      "characteristic_hz": null,
+      "range_kind": "conventional lower boundary",
+      "source_ids": [
+        "P2-SRC-006"
+      ]
+    },
+    {
+      "id": "RANGE-PHONON-SI",
+      "phenomenon_id": "PHONON-SI",
+      "min_hz": 0,
+      "max_hz": 15000000000000,
+      "characteristic_hz": null,
+      "range_kind": "material-specific dispersion",
+      "source_ids": [
+        "P2-SRC-007"
+      ]
+    },
+    {
+      "id": "RANGE-PHONON-SI-OPT",
+      "phenomenon_id": "PHONON-SI-OPT",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 15500000000000,
+      "range_kind": "characteristic material mode",
+      "source_ids": [
+        "P2-SRC-007"
+      ]
+    },
+    {
+      "id": "RANGE-MAGNON-YIG-DIP",
+      "phenomenon_id": "MAGNON-YIG-DIP",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 7000000000,
+      "range_kind": "characteristic material example",
+      "source_ids": [
+        "P2-SRC-008"
+      ]
+    },
+    {
+      "id": "RANGE-MAGNON-YIG-EDGE",
+      "phenomenon_id": "MAGNON-YIG-EDGE",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 7000000000000,
+      "range_kind": "characteristic material example",
+      "source_ids": [
+        "P2-SRC-008"
+      ]
+    },
+    {
+      "id": "RANGE-MOL-IR-NIST",
+      "phenomenon_id": "MOL-IR-NIST",
+      "min_hz": 14630000000000,
+      "max_hz": 131900000000000,
+      "characteristic_hz": null,
+      "range_kind": "dataset envelope with internal gap",
+      "source_ids": [
+        "P2-SRC-010"
+      ]
+    },
+    {
+      "id": "RANGE-H-HYPERFINE",
+      "phenomenon_id": "H-HYPERFINE",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 1420000000,
+      "range_kind": "characteristic transition",
+      "source_ids": [
+        "P2-SRC-012"
+      ]
+    },
+    {
+      "id": "RANGE-NMR-EXAMPLE",
+      "phenomenon_id": "NMR-EXAMPLE",
+      "min_hz": 700000000,
+      "max_hz": 800000000,
+      "characteristic_hz": null,
+      "range_kind": "instrument examples",
+      "source_ids": [
+        "P2-SRC-013"
+      ]
+    },
+    {
+      "id": "RANGE-ESR-EXAMPLE",
+      "phenomenon_id": "ESR-EXAMPLE",
+      "min_hz": 5000000000,
+      "max_hz": 34000000000,
+      "characteristic_hz": null,
+      "range_kind": "instrument/experiment examples",
+      "source_ids": [
+        "P2-SRC-014"
+      ]
+    },
+    {
+      "id": "RANGE-NUC-FE57",
+      "phenomenon_id": "NUC-FE57",
+      "min_hz": null,
+      "max_hz": null,
+      "characteristic_hz": 3480000000000000000,
+      "range_kind": "characteristic transition",
+      "source_ids": [
+        "P2-SRC-015"
+      ]
+    },
+    {
+      "id": "RANGE-EM-RADIO",
+      "phenomenon_id": "EM-RADIO",
+      "min_hz": null,
+      "max_hz": 3000000000,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-EM-MICROWAVE",
+      "phenomenon_id": "EM-MICROWAVE",
+      "min_hz": 3000000000,
+      "max_hz": 300000000000,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-EM-INFRARED",
+      "phenomenon_id": "EM-INFRARED",
+      "min_hz": 300000000000,
+      "max_hz": 400000000000000,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-EM-VISIBLE",
+      "phenomenon_id": "EM-VISIBLE",
+      "min_hz": 400000000000000,
+      "max_hz": 750000000000000,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-EM-UV",
+      "phenomenon_id": "EM-UV",
+      "min_hz": 750000000000000,
+      "max_hz": 30000000000000000,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-EM-XRAY",
+      "phenomenon_id": "EM-XRAY",
+      "min_hz": 30000000000000000,
+      "max_hz": 30000000000000000000,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-EM-GAMMA",
+      "phenomenon_id": "EM-GAMMA",
+      "min_hz": 30000000000000000000,
+      "max_hz": null,
+      "characteristic_hz": null,
+      "range_kind": "conventional EM band",
+      "source_ids": [
+        "P2-SRC-016"
+      ]
+    },
+    {
+      "id": "RANGE-GW-PTA",
+      "phenomenon_id": "GW-PTA",
+      "min_hz": 1e-9,
+      "max_hz": 1e-7,
+      "characteristic_hz": null,
+      "range_kind": "detector/observational band",
+      "source_ids": [
+        "P2-SRC-020"
+      ]
+    },
+    {
+      "id": "RANGE-GW-LISA",
+      "phenomenon_id": "GW-LISA",
+      "min_hz": 0.0001,
+      "max_hz": 0.1,
+      "characteristic_hz": null,
+      "range_kind": "detector/mission band",
+      "source_ids": [
+        "P2-SRC-020"
+      ]
+    },
+    {
+      "id": "RANGE-GW-LIGO",
+      "phenomenon_id": "GW-LIGO",
+      "min_hz": 10,
+      "max_hz": 5000,
+      "characteristic_hz": null,
+      "range_kind": "detector band",
+      "source_ids": [
+        "P2-SRC-020"
+      ]
+    }
+  ]
+}
