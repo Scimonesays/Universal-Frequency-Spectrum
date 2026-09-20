@@ -290,3 +290,82 @@ Interaction whose documented mechanism connects the specified source and target 
 Interaction path whose source and target communicate through one or more intermediate physical modes.
 
 Mediated edges should generally be expandable into their component edges in the final atlas.
+
+
+# Phase 4 frontier terms
+
+## Question node
+
+A research object representing a meaningful unresolved question that does not yet have a sufficiently established physical ontology for placement as a normal spectrum node.
+
+A question node can later mature into a physical model if it acquires operational definitions, predicted observables, couplings, and reproducible evidence.
+
+## Contested evidence
+
+Project label for a literature containing nontrivial empirical claims whose interpretation, methodology, replication, or causal explanation remains substantially disputed.
+
+This label is stronger than "pure speculation" but weaker than "established."
+
+## Not yet operationalized
+
+Project label for a concept that cannot currently be tested as a physical hypothesis because its measurable state variables, carrier, interaction, or falsification condition have not been specified.
+
+## Anomalous information
+
+Information reported as obtained without an identified conventional sensory or inferential channel.
+
+The label describes the claim being tested; it does not assume that a paranormal or nonlocal mechanism is correct.
+
+## Near-death experience (NDE)
+
+A reported conscious experience occurring in situations involving actual or perceived threat to life, often containing recurring phenomenological features.
+
+NDE phenomenology can be studied empirically. Its occurrence does not by itself establish postmortem survival.
+
+## Terminal / paradoxical lucidity
+
+Unexpected temporary return of awareness, communication, memory, or related cognitive function in a person with severe neurological or cognitive impairment, sometimes near death.
+
+Mechanism remains under investigation.
+
+## Survival hypothesis
+
+Hypothesis that personal consciousness, identity, or information persists after irreversible biological death.
+
+The project treats this as speculative unless and until a reproducible physical or informational mechanism is demonstrated.
+
+## Nonlocal memory hypothesis
+
+Hypothesis that some memory information is stored or accessed outside the ordinary neural substrate.
+
+No established physical carrier is currently assigned by the project.
+
+## Dark photon
+
+Hypothetical vector boson associated with an additional gauge field, often studied through possible kinetic mixing with the ordinary photon.
+
+## Axion / axion-like particle (ALP)
+
+Hypothetical light pseudoscalar particle/field. In some dark-matter models an ultralight axion/ALP behaves as a coherently oscillating field with a characteristic frequency related to mass.
+
+## Fifth force
+
+Generic term for a hypothetical fundamental interaction beyond the established gravitational, electromagnetic, strong, and weak interactions.
+
+## Dark energy
+
+Name for the component or effective description associated with the observed accelerated cosmic expansion.
+
+Its microscopic nature is unknown; a cosmological constant and dynamical models are among competing descriptions.
+
+## Zero-point fluctuation
+
+Quantum fluctuation remaining in a system's ground state.
+
+Its existence does not imply an unlimited extractable energy reservoir.
+
+## Unverified attribution
+
+Historical quotation or claim widely associated with a person but lacking adequate primary-source verification.
+
+The Tesla 3–6–9 quotation is tracked under this label.
