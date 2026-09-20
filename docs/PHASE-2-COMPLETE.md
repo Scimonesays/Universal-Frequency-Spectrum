@@ -58,11 +58,11 @@ The project may compare different phenomena on a common frequency axis **only wh
 
 A shared x-coordinate is not evidence of a shared physical mechanism.
 
-## Deferred to Phase 3
+## Implemented in Phase 3
 
-Phase 2 catalogs the nodes.
+Phase 2 cataloged the nodes.
 
-Phase 3 will research and encode the **edges**:
+Phase 3 subsequently researched and encoded the **edges**:
 
 - drives;
 - excites;
