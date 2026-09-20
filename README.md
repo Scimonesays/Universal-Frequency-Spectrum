@@ -14,11 +14,11 @@ This repository is intended to make those relationships visible without blurring
 
 ## Project status
 
-**Phase 3 — Coupling, conversion, resonance & bridges: COMPLETE**
+**Phase 4 — Frontier physics, consciousness & deep hypotheses: COMPLETE**
 
-Phase 1 established the scientific rules. Phase 2 added the first source-backed catalog of established frequency-bearing phenomena. Phase 3 now adds the first source-backed **interaction graph**: how those phenomena drive, absorb, emit, scatter, transduce, hybridize, thermalize, modulate, exert force on, or read out one another.
+Phase 1 established the scientific rules. Phase 2 added the first source-backed catalog of established frequency-bearing phenomena. Phase 3 added the first source-backed **interaction graph**. Phase 4 now adds the frontier: dark-sector candidates, new forces, dark energy, vacuum physics, detector gaps, quantum gravity, plus a protected **human-experience/question layer** for memory, consciousness, near-death experience, terminal lucidity, soul/afterlife hypotheses, and Tesla/energy claims.
 
-No final visual layout is being asserted yet. The research now has both spectral **nodes** and physical-interaction **edges**, with mediated paths preserved rather than hidden behind vague arrows.
+No final visual layout is being asserted yet. Frontier questions are allowed into the research without being promoted to established fields or assigned invented frequencies.
 
 ## Scientific ground rules
 
@@ -53,6 +53,10 @@ No final visual layout is being asserted yet. The research now has both spectral
 | [Phase 3 Source Notes](research/PHASE-3-SOURCES.md) | Source-to-edge notes for established interactions |
 | [Phase 3 Provisional Edges](data/phase3-couplings.csv) | Machine-readable working interaction graph |
 | [Phase 3 Completion Record](docs/PHASE-3-COMPLETE.md) | Completion checklist and scientific boundary for Phase 3 |
+| [Frontier Physics, Consciousness & Deep Hypotheses](docs/09-FRONTIER-PHYSICS-AND-DEEP-HYPOTHESES.md) | Phase 4 physics frontier plus protected human-experience/question layer |
+| [Phase 4 Source Notes](research/PHASE-4-SOURCES.md) | Source-to-claim notes for frontier models, consciousness, end-of-life phenomena and Tesla |
+| [Phase 4 Provisional Dataset](data/phase4-frontier.csv) | Machine-readable frontier candidates and question nodes |
+| [Phase 4 Completion Record](docs/PHASE-4-COMPLETE.md) | Completion checklist and evidence boundary for Phase 4 |
 
 ## Proposed organizing dimensions
 
