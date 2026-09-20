@@ -213,3 +213,80 @@ Project evidence label for an unresolved scientific question or incompletely con
 ## Speculative
 
 Project evidence label for a proposed interpretation or extension that lacks sufficient empirical support to be presented as established physics.
+
+
+# Phase 3 interaction terms
+
+## Transduction
+
+Conversion of a signal, excitation, or measurable quantity from one physical domain into another.
+
+A transduction edge does not imply that the source and target are the same kind of excitation.
+
+## Mediated coupling
+
+Interaction between two systems that proceeds through one or more intermediate degrees of freedom.
+
+Example:
+
+`microwave → piezoelectric phonon → optical sideband`
+
+The intermediary should remain visible in the atlas.
+
+## Hybridization
+
+Formation of coupled eigenmodes containing substantial contributions from two or more uncoupled modes.
+
+Use this term only when the coupling regime justifies mixed-mode language, such as normal-mode splitting or avoided crossing.
+
+## Back-action
+
+Influence of a measurement or coupled field on the system being measured or driven.
+
+Radiation pressure acting on an optomechanical resonator is a canonical example.
+
+## Inelastic scattering
+
+Scattering in which the outgoing excitation has different energy from the incoming excitation because energy is transferred to or from another degree of freedom.
+
+Stokes and anti-Stokes photon–phonon processes are examples.
+
+## Stokes process
+
+An inelastic light-scattering process in which the outgoing photon has lower energy/frequency while another excitation, such as a phonon, is created.
+
+## Anti-Stokes process
+
+An inelastic light-scattering process in which the outgoing photon has higher energy/frequency while another excitation, such as a phonon, is annihilated.
+
+## Readout
+
+A measurement relationship in which a physical phenomenon changes another observable that is easier to detect.
+
+A readout chain must not be interpreted as identity or necessarily as energy conversion.
+
+Example:
+
+`gravitational-wave strain → interferometer optical phase → photodetector signal`
+
+## Phase matching
+
+Condition on participating wavevectors that permits efficient coherent wave-mixing or conversion.
+
+The exact relation depends on the physical process and may include reciprocal-lattice vectors.
+
+## Frequency matching
+
+Requirement that participating frequencies satisfy the resonance or energy-conservation relation appropriate to an interaction.
+
+This may mean equal frequencies, a transition condition `ΔE = hf`, or a sum/difference relation such as `f3 = f1 ± f2`.
+
+## Direct edge
+
+Interaction whose documented mechanism connects the specified source and target without requiring another atlas node as an essential intermediate excitation.
+
+## Mediated edge
+
+Interaction path whose source and target communicate through one or more intermediate physical modes.
+
+Mediated edges should generally be expandable into their component edges in the final atlas.
