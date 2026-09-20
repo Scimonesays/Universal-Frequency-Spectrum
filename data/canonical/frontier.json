@@ -1,0 +1,955 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "P4-F001",
+      "claim_id": "CLAIM-P4-F001",
+      "record_type": "frontier",
+      "domain": "frontier physics",
+      "name": "dark matter identity",
+      "status": "OPEN",
+      "evidence": {
+        "class": "open",
+        "label": "OPEN"
+      },
+      "physical_candidate_or_question": "unknown microscopic dark-matter constituent",
+      "spectral": {
+        "status": "candidate-dependent"
+      },
+      "predicted_or_observed_signal": "gravitational/cosmological evidence established; nongravitational identity unknown",
+      "required_bridge": "candidate-specific coupling to detector",
+      "source_ids": [
+        "P4-SRC-001"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "no single dark-matter frequency",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F002",
+      "claim_id": "CLAIM-P4-F002",
+      "record_type": "frontier",
+      "domain": "frontier physics",
+      "name": "axion/ALP dark matter",
+      "status": "MODEL-DEPENDENT",
+      "evidence": {
+        "class": "model-dependent",
+        "label": "MODEL-DEPENDENT"
+      },
+      "physical_candidate_or_question": "coherent ultralight bosonic field",
+      "spectral": {
+        "status": "mass-dependent oscillation"
+      },
+      "predicted_or_observed_signal": "oscillating spin/field/clock or conversion signals depending coupling",
+      "required_bridge": "axion coupling to photons/spins/matter",
+      "source_ids": [
+        "P4-SRC-002",
+        "P4-SRC-003"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "candidate not detected",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F003",
+      "claim_id": "CLAIM-P4-F003",
+      "record_type": "frontier",
+      "domain": "frontier physics",
+      "name": "dark photon dark matter",
+      "status": "MODEL-DEPENDENT",
+      "evidence": {
+        "class": "model-dependent",
+        "label": "MODEL-DEPENDENT"
+      },
+      "physical_candidate_or_question": "hypothetical vector field/boson",
+      "spectral": {
+        "status": "mass-dependent; converted signal scenario-dependent"
+      },
+      "predicted_or_observed_signal": "monochromatic EM conversion signal in plasma under specified model",
+      "required_bridge": "kinetic mixing / plasma conversion",
+      "source_ids": [
+        "P4-SRC-004"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "30-80 MHz is one search window, not universal",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F004",
+      "claim_id": "CLAIM-P4-F004",
+      "record_type": "frontier",
+      "domain": "frontier physics",
+      "name": "topological-defect dark matter",
+      "status": "MODEL-DEPENDENT",
+      "evidence": {
+        "class": "model-dependent",
+        "label": "MODEL-DEPENDENT"
+      },
+      "physical_candidate_or_question": "field domain wall/string/localized configuration",
+      "spectral": {
+        "status": "transient rather than necessarily periodic"
+      },
+      "predicted_or_observed_signal": "correlated transient sensor event",
+      "required_bridge": "candidate coupling to spin/clock/network",
+      "source_ids": [
+        "P4-SRC-002"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "must support transient objects, not only frequency bars",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F005",
+      "claim_id": "CLAIM-P4-F005",
+      "record_type": "frontier",
+      "domain": "frontier physics",
+      "name": "fifth force",
+      "status": "MODEL-DEPENDENT / OPEN SEARCH",
+      "evidence": {
+        "class": "model-dependent",
+        "label": "MODEL-DEPENDENT / OPEN SEARCH"
+      },
+      "physical_candidate_or_question": "new mediator boson / interaction",
+      "spectral": {
+        "status": "mediator-mass and experiment dependent"
+      },
+      "predicted_or_observed_signal": "precision isotope-shift deviation / King-plot nonlinearity",
+      "required_bridge": "new boson coupling to electrons/neutrons",
+      "source_ids": [
+        "P4-SRC-005",
+        "P4-SRC-006"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "no fifth force established",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F006",
+      "claim_id": "CLAIM-P4-F006",
+      "record_type": "frontier",
+      "domain": "cosmology",
+      "name": "dynamical dark energy",
+      "status": "OPEN",
+      "evidence": {
+        "class": "open",
+        "label": "OPEN"
+      },
+      "physical_candidate_or_question": "time-varying cosmological component/model",
+      "spectral": {
+        "status": "not naturally a single Hz band"
+      },
+      "predicted_or_observed_signal": "expansion-history deviations from LambdaCDM",
+      "required_bridge": "cosmological model to BAO/CMB/SN observables",
+      "source_ids": [
+        "P4-SRC-007",
+        "P4-SRC-008"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "2026 Lyman-alpha result shifted toward LambdaCDM; evolving DE not established",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F007",
+      "claim_id": "CLAIM-P4-F007",
+      "record_type": "frontier",
+      "domain": "quantum physics",
+      "name": "vacuum zero-point fluctuations",
+      "status": "ESTABLISHED",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "physical_candidate_or_question": "ground-state quantum fluctuations",
+      "spectral": {
+        "status": "system/mode dependent"
+      },
+      "predicted_or_observed_signal": "vacuum fluctuation / Casimir-related measurable effects",
+      "required_bridge": "quantum field/system boundary conditions",
+      "source_ids": [
+        "P4-SRC-009",
+        "P4-SRC-010"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "does not establish unlimited extractable free energy",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F008",
+      "claim_id": "CLAIM-P4-F008",
+      "record_type": "frontier",
+      "domain": "gravitational",
+      "name": "decihertz GW sensitivity gap",
+      "status": "OPEN INSTRUMENT FRONTIER",
+      "evidence": {
+        "class": "open",
+        "label": "OPEN INSTRUMENT FRONTIER"
+      },
+      "physical_candidate_or_question": "gravitational waves in poorly covered detector region",
+      "spectral": {
+        "status": "~0.1-1 Hz detector-coverage gap"
+      },
+      "predicted_or_observed_signal": "candidate astrophysical/cosmological GW signals",
+      "required_bridge": "new detector concept",
+      "source_ids": [
+        "P4-SRC-011"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "instrument gap is not evidence of new physics",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F009",
+      "claim_id": "CLAIM-P4-F009",
+      "record_type": "frontier",
+      "domain": "fundamental physics",
+      "name": "quantum nature of gravity",
+      "status": "OPEN",
+      "evidence": {
+        "class": "open",
+        "label": "OPEN"
+      },
+      "physical_candidate_or_question": "unknown fundamental gravitational quantum degrees of freedom",
+      "spectral": {
+        "status": "model-dependent"
+      },
+      "predicted_or_observed_signal": "quantum correlations / deviations predicted by specific tests",
+      "required_bridge": "gravity-matter quantum experiment",
+      "source_ids": [
+        "P4-SRC-012",
+        "P4-SRC-013"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "no single smoking-gun test yet accepted",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H001",
+      "claim_id": "CLAIM-P4-H001",
+      "record_type": "frontier",
+      "domain": "memory",
+      "name": "engram retrieval",
+      "status": "PARTLY ESTABLISHED / INCOMPLETE",
+      "evidence": {
+        "class": "established",
+        "label": "PARTLY ESTABLISHED / INCOMPLETE"
+      },
+      "physical_candidate_or_question": "distributed neuronal ensembles and synaptic/circuit states",
+      "spectral": {
+        "status": "multiple neural timescales, no single memory frequency"
+      },
+      "predicted_or_observed_signal": "reactivation required/sufficient for memory expression in experimental models",
+      "required_bridge": "neural ensemble/circuit dynamics",
+      "source_ids": [
+        "P4-SRC-014",
+        "P4-SRC-015",
+        "P4-SRC-016"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "does not imply external memory field",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H002",
+      "claim_id": "CLAIM-P4-H002",
+      "record_type": "frontier",
+      "domain": "neuroscience",
+      "name": "neural oscillatory coordination",
+      "status": "ESTABLISHED PHENOMENON",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED PHENOMENON"
+      },
+      "physical_candidate_or_question": "network electrical activity",
+      "spectral": {
+        "status": "multi-band and task-dependent"
+      },
+      "predicted_or_observed_signal": "phase/power/cross-frequency relationships correlate with processing",
+      "required_bridge": "neuronal/synaptic network dynamics",
+      "source_ids": [
+        "P4-SRC-019"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "no established universal consciousness or memory frequency",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H003",
+      "claim_id": "CLAIM-P4-H003",
+      "record_type": "frontier",
+      "domain": "consciousness",
+      "name": "GNWT/IIT and major neuroscience theories",
+      "status": "OPEN THEORY COMPETITION",
+      "evidence": {
+        "class": "open",
+        "label": "OPEN THEORY COMPETITION"
+      },
+      "physical_candidate_or_question": "neural computational/integrative mechanisms",
+      "spectral": {
+        "status": "theory/task dependent"
+      },
+      "predicted_or_observed_signal": "theory-specific neural signatures",
+      "required_bridge": "brain activity to conscious report/experience",
+      "source_ids": [
+        "P4-SRC-017",
+        "P4-SRC-018"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "consciousness exists; best mechanism unresolved",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H004",
+      "claim_id": "CLAIM-P4-H004",
+      "record_type": "frontier",
+      "domain": "consciousness",
+      "name": "electromagnetic-field consciousness theories",
+      "status": "MODEL-DEPENDENT / SPECULATIVE",
+      "evidence": {
+        "class": "speculative",
+        "label": "MODEL-DEPENDENT / SPECULATIVE"
+      },
+      "physical_candidate_or_question": "endogenous brain EM field proposed as constitutive substrate",
+      "spectral": {
+        "status": "model-dependent"
+      },
+      "predicted_or_observed_signal": "unique field-level predictions beyond standard network neuroscience required",
+      "required_bridge": "neural currents to endogenous EM field to cognition",
+      "source_ids": [
+        "P4-SRC-020"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "EM fields are real; special consciousness role not established",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H005",
+      "claim_id": "CLAIM-P4-H005",
+      "record_type": "frontier",
+      "domain": "consciousness",
+      "name": "Orch OR / quantum microtubule consciousness",
+      "status": "SPECULATIVE ACTIVE HYPOTHESIS",
+      "evidence": {
+        "class": "speculative",
+        "label": "SPECULATIVE ACTIVE HYPOTHESIS"
+      },
+      "physical_candidate_or_question": "quantum microtubule/spacetime-collapse dynamics",
+      "spectral": {
+        "status": "model-dependent"
+      },
+      "predicted_or_observed_signal": "quantum coherence/entanglement/collapse signatures causally tied to conscious state",
+      "required_bridge": "microtubules to neural function to consciousness",
+      "source_ids": [
+        "P4-SRC-021",
+        "P4-SRC-022"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "supportive and critical literature; operational quantum criteria unmet",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H006",
+      "claim_id": "CLAIM-P4-H006",
+      "record_type": "frontier",
+      "domain": "end of life",
+      "name": "terminal/paradoxical lucidity",
+      "status": "OBSERVED/REPORTED; OPEN MECHANISM",
+      "evidence": {
+        "class": "open",
+        "label": "OBSERVED/REPORTED; OPEN MECHANISM"
+      },
+      "physical_candidate_or_question": "transient recovery of cognitive/communication function",
+      "spectral": {
+        "status": "unknown; not established as a spectral phenomenon"
+      },
+      "predicted_or_observed_signal": "prospective physiological changes during lucid episode",
+      "required_bridge": "brain state to recovered cognition",
+      "source_ids": [
+        "P4-SRC-025",
+        "P4-SRC-026"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "does not establish nonlocal memory",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H007",
+      "claim_id": "CLAIM-P4-H007",
+      "record_type": "frontier",
+      "domain": "end of life",
+      "name": "near-death/recalled experience during resuscitation",
+      "status": "OBSERVED PHENOMENOLOGY; OPEN MECHANISM",
+      "evidence": {
+        "class": "open",
+        "label": "OBSERVED PHENOMENOLOGY; OPEN MECHANISM"
+      },
+      "physical_candidate_or_question": "conscious experience/report during threat/cardiac-arrest contexts",
+      "spectral": {
+        "status": "no established unique frequency"
+      },
+      "predicted_or_observed_signal": "subjective reports plus physiological/EEG correlates",
+      "required_bridge": "brain/resuscitation physiology to experience",
+      "source_ids": [
+        "P4-SRC-023",
+        "P4-SRC-024"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "cardiac arrest under CPR is not irreversible brain death",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H008",
+      "claim_id": "CLAIM-P4-H008",
+      "record_type": "frontier",
+      "domain": "afterlife",
+      "name": "postmortem personal survival",
+      "status": "SPECULATIVE / NOT ESTABLISHED",
+      "evidence": {
+        "class": "not-established",
+        "label": "SPECULATIVE / NOT ESTABLISHED"
+      },
+      "physical_candidate_or_question": "hypothetical persistent conscious information-bearing substrate",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "reproducible information-bearing effect independent of irreversibly nonfunctioning brain",
+      "required_bridge": "unknown carrier coupling to measurable system",
+      "source_ids": [
+        "P4-SRC-023",
+        "P4-SRC-026",
+        "P4-SRC-028"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "no established physical carrier or frequency identified",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H009",
+      "claim_id": "CLAIM-P4-H009",
+      "record_type": "frontier",
+      "domain": "anomalous cognition",
+      "name": "mediumship anomalous-information claims",
+      "status": "CONTESTED EVIDENCE",
+      "evidence": {
+        "class": "contested",
+        "label": "CONTESTED EVIDENCE"
+      },
+      "physical_candidate_or_question": "unknown if effect is genuine and if so what mechanism",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "blinded above-chance information acquisition claimed in some studies",
+      "required_bridge": "unknown information channel",
+      "source_ids": [
+        "P4-SRC-027"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "does not by itself establish survival or a physical field",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H010",
+      "claim_id": "CLAIM-P4-H010",
+      "record_type": "frontier",
+      "domain": "philosophy/physics boundary",
+      "name": "soul as physically interacting entity",
+      "status": "NOT YET OPERATIONALIZED",
+      "evidence": {
+        "class": "not-established",
+        "label": "NOT YET OPERATIONALIZED"
+      },
+      "physical_candidate_or_question": "undefined physical carrier/degree of freedom",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "would require measurable energy/information/momentum coupling",
+      "required_bridge": "hypothetical soul-to-matter interaction",
+      "source_ids": [
+        "P4-SRC-028"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "religious/philosophical meanings are not reducible to one scientific hypothesis",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H011",
+      "claim_id": "CLAIM-P4-H011",
+      "record_type": "frontier",
+      "domain": "memory frontier",
+      "name": "nonlocal/external memory field",
+      "status": "SPECULATIVE",
+      "evidence": {
+        "class": "speculative",
+        "label": "SPECULATIVE"
+      },
+      "physical_candidate_or_question": "hypothetical external information substrate",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "reproducible retrieval beyond neural/sensory/inferential channels plus physical coupling signature",
+      "required_bridge": "external substrate to neural state",
+      "source_ids": [
+        "P4-SRC-014",
+        "P4-SRC-015",
+        "P4-SRC-027"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "no established physical substrate identified",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-T001",
+      "claim_id": "CLAIM-P4-T001",
+      "record_type": "frontier",
+      "domain": "history/culture",
+      "name": "Tesla 3-6-9 quote",
+      "status": "UNVERIFIED ATTRIBUTION",
+      "evidence": {
+        "class": "unverified",
+        "label": "UNVERIFIED ATTRIBUTION"
+      },
+      "physical_candidate_or_question": "historical claim, not physical model",
+      "spectral": {
+        "status": "none"
+      },
+      "predicted_or_observed_signal": "primary-source verification or quantitative physical prediction absent",
+      "required_bridge": "none",
+      "source_ids": [
+        "P4-SRC-029"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "must not be cited as Tesla science",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-T002",
+      "claim_id": "CLAIM-P4-T002",
+      "record_type": "frontier",
+      "domain": "history/physics",
+      "name": "Tesla 'Throughout space there is energy'",
+      "status": "VERIFIED HISTORICAL STATEMENT",
+      "evidence": {
+        "class": "observed",
+        "label": "VERIFIED HISTORICAL STATEMENT"
+      },
+      "physical_candidate_or_question": "Tesla's 1891 speculation about natural energy in space",
+      "spectral": {
+        "status": "not a modern defined spectrum"
+      },
+      "predicted_or_observed_signal": "historical proposal in context of high-frequency electricity, radiation and heat",
+      "required_bridge": "historical concept to modern field/energy distinctions",
+      "source_ids": [
+        "P4-SRC-030"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "not proof Tesla discovered dark energy or zero-point extraction",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-E001",
+      "claim_id": "CLAIM-P4-E001",
+      "record_type": "frontier",
+      "domain": "energy frontier",
+      "name": "unlimited extractable vacuum/free energy",
+      "status": "NOT ESTABLISHED",
+      "evidence": {
+        "class": "not-established",
+        "label": "NOT ESTABLISHED"
+      },
+      "physical_candidate_or_question": "claim of net usable energy extraction from vacuum reservoir",
+      "spectral": {
+        "status": "not meaningful without device/model"
+      },
+      "predicted_or_observed_signal": "would require reproducible net-energy balance beyond known inputs",
+      "required_bridge": "device to full thermodynamic accounting",
+      "source_ids": [
+        "P4-SRC-009",
+        "P4-SRC-010"
+      ],
+      "energy_accounting": {
+        "status": "requires measured net-energy balance",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "vacuum fluctuations being real does not imply free unlimited work",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-U001",
+      "claim_id": "CLAIM-P4-U001",
+      "record_type": "frontier",
+      "domain": "unknown/unobserved carrier",
+      "name": "unknown energy or information carrier",
+      "status": "QUESTION NODE / NOT YET OPERATIONALIZED",
+      "evidence": {
+        "class": "not-established",
+        "label": "QUESTION NODE / NOT YET OPERATIONALIZED"
+      },
+      "physical_candidate_or_question": "unknown field particle interaction information substrate or transfer mechanism",
+      "spectral": {
+        "status": "unknown unless a model defines it"
+      },
+      "predicted_or_observed_signal": "requires reproducible unexplained effect before carrier inference",
+      "required_bridge": "unknown effect to measurable detector/biological system",
+      "source_ids": [
+        "P4-SRC-033",
+        "P4-SRC-034"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "category reserves unknown space; does not assert unknown energy exists",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H012",
+      "claim_id": "CLAIM-P4-H012",
+      "record_type": "frontier",
+      "domain": "neurotechnology",
+      "name": "constrained neural mind-reading / internal-speech decoding",
+      "status": "ESTABLISHED IN CONSTRAINED SETTINGS",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED IN CONSTRAINED SETTINGS"
+      },
+      "physical_candidate_or_question": "measured neural activity decoded statistically",
+      "spectral": {
+        "status": "recording- and task-dependent neural rhythms/features"
+      },
+      "predicted_or_observed_signal": "decoded internal/imagined speech categories or communication output",
+      "required_bridge": "brain electrodes/EEG to trained decoder",
+      "source_ids": [
+        "P4-SRC-031",
+        "P4-SRC-032"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "not unrestricted access to arbitrary thoughts; requires physical neural measurement",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H013",
+      "claim_id": "CLAIM-P4-H013",
+      "record_type": "frontier",
+      "domain": "anomalous cognition",
+      "name": "telepathy",
+      "status": "CONTESTED EVIDENCE / CARRIER UNKNOWN",
+      "evidence": {
+        "class": "contested",
+        "label": "CONTESTED EVIDENCE / CARRIER UNKNOWN"
+      },
+      "physical_candidate_or_question": "claimed person-to-person information transfer without established sensory/technical channel",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "above-chance target identification or receiver correlation claimed in some paradigms",
+      "required_bridge": "unknown sender-to-receiver information channel",
+      "source_ids": [
+        "P4-SRC-033",
+        "P4-SRC-034"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "positive and null/critical literature; no established field force or frequency",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H014",
+      "claim_id": "CLAIM-P4-H014",
+      "record_type": "frontier",
+      "domain": "anomalous cognition",
+      "name": "remote viewing / clairvoyance",
+      "status": "CONTESTED EVIDENCE / MECHANISM UNKNOWN",
+      "evidence": {
+        "class": "contested",
+        "label": "CONTESTED EVIDENCE / MECHANISM UNKNOWN"
+      },
+      "physical_candidate_or_question": "claimed information acquisition about hidden/distant targets",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "target-description accuracy above chance claimed in some studies",
+      "required_bridge": "unknown target-to-observer information channel",
+      "source_ids": [
+        "P4-SRC-034"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "sender not required in all protocols; heterogeneous literature",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-H015",
+      "claim_id": "CLAIM-P4-H015",
+      "record_type": "frontier",
+      "domain": "anomalous cognition",
+      "name": "precognition / presentiment",
+      "status": "CONTESTED / SPECULATIVE MECHANISM",
+      "evidence": {
+        "class": "contested",
+        "label": "CONTESTED / SPECULATIVE MECHANISM"
+      },
+      "physical_candidate_or_question": "claimed information or physiological response preceding future target availability",
+      "spectral": {
+        "status": "unknown"
+      },
+      "predicted_or_observed_signal": "pre-stimulus behavioral or physiological deviation",
+      "required_bridge": "unknown future-event information relationship",
+      "source_ids": [
+        "P4-SRC-034"
+      ],
+      "energy_accounting": {
+        "status": "no novel energy carrier established",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "requires especially strict randomization temporal controls preregistration and replication",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F010",
+      "claim_id": "CLAIM-P4-F010",
+      "record_type": "frontier",
+      "domain": "relativity/astrophysics",
+      "name": "black holes",
+      "status": "ESTABLISHED",
+      "evidence": {
+        "class": "established",
+        "label": "ESTABLISHED"
+      },
+      "physical_candidate_or_question": "compact objects with event horizons described externally by Kerr-like spacetimes in astrophysical tests",
+      "spectral": {
+        "status": "mass/spin dependent; no universal frequency"
+      },
+      "predicted_or_observed_signal": "event-horizon-scale imaging; merger GWs; ringdown/quasinormal-mode spectra",
+      "required_bridge": "gravity to matter/light/GW observables",
+      "source_ids": [
+        "P4-SRC-035",
+        "P4-SRC-036"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "black-hole system frequencies include ringdown orbital and accretion phenomena; do not assign one universal black-hole frequency",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F011",
+      "claim_id": "CLAIM-P4-F011",
+      "record_type": "frontier",
+      "domain": "relativity/quantum-gravity boundary",
+      "name": "black-hole singularity",
+      "status": "THEORETICAL PREDICTION / OPEN PHYSICAL INTERPRETATION",
+      "evidence": {
+        "class": "theoretical",
+        "label": "THEORETICAL PREDICTION / OPEN PHYSICAL INTERPRETATION"
+      },
+      "physical_candidate_or_question": "classical GR predicts singular high-curvature interior behavior",
+      "spectral": {
+        "status": "no established frequency"
+      },
+      "predicted_or_observed_signal": "not directly observable outside horizon; may signal breakdown of classical GR",
+      "required_bridge": "classical GR interior to unknown quantum-gravity completion",
+      "source_ids": [
+        "P4-SRC-037"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "do not render as directly observed physical point",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    },
+    {
+      "id": "P4-F012",
+      "claim_id": "CLAIM-P4-F012",
+      "record_type": "frontier",
+      "domain": "relativity/frontier",
+      "name": "wormholes",
+      "status": "THEORETICAL / UNOBSERVED",
+      "evidence": {
+        "class": "theoretical",
+        "label": "THEORETICAL / UNOBSERVED"
+      },
+      "physical_candidate_or_question": "hypothetical spacetime geometry connecting distant regions",
+      "spectral": {
+        "status": "model-dependent; no universal frequency"
+      },
+      "predicted_or_observed_signal": "possible model-specific lensing GW ringdown echo orbital or throat-mode signatures",
+      "required_bridge": "wormhole geometry to astronomical/GW observables",
+      "source_ids": [
+        "P4-SRC-038"
+      ],
+      "energy_accounting": {
+        "status": "model/context-dependent",
+        "system_boundary": "must be specified for any energy claim"
+      },
+      "caution": "existence and traversability highly model-dependent; no observational confirmation",
+      "provenance": {
+        "phase": 4,
+        "source_file": "data/phase4-frontier.csv"
+      }
+    }
+  ]
+}
