@@ -17,6 +17,9 @@
 - [x] Vacuum / zero-point physics separated from unsupported unlimited-free-energy claims.
 - [x] Gravitational-wave sensitivity gaps documented as instrument gaps.
 - [x] Quantum-gravity test frontier documented with current ambiguity about entanglement-based smoking guns.
+- [x] Black holes added as established astrophysical objects with mass/spin-dependent ringdown spectra.
+- [x] Classical black-hole singularities separated from directly observed black-hole evidence.
+- [x] Wormholes added as theoretical/unobserved spacetime geometries with model-dependent observables.
 
 ### Added human-experience frontier
 
