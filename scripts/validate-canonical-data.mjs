@@ -94,6 +94,12 @@ const gapTypes = new Set([
   "true_forbidden_region", "visual_gap_only", "energy_accounting_gap",
   "mechanism_gap", "replication_gap", "operationalization_gap",
 ]);
+const validationVerdicts = new Set([
+  "READY_FOR_CONSTRAINT_DESIGN", "NEEDS_OPERATIONALIZATION", "HOLD_EVIDENCE",
+  "INCONCLUSIVE", "CONSTRAINED", "REJECTED_BY_TEST", "SUPPORTIVE_RESULT",
+]);
+const validationPolicies = new Set(["strict", "normal", "sandbox"]);
+const validationGateStatuses = new Set(["PASS", "FAIL", "NA", "WARNING"]);
 
 const requireSources = (record, label) => {
   if (!Array.isArray(record.source_ids) || record.source_ids.length === 0) {
@@ -205,6 +211,16 @@ for (const v of validations) {
   if (typeof v.reviewed_for_canonical_ingest !== "boolean") fail.push(`validation ${v.id}: reviewed_for_canonical_ingest must be boolean`);
   if (!isNonEmptyString(v.provider) || !isNonEmptyString(v.provider_repo) || !isNonEmptyString(v.provider_commit) || !isNonEmptyString(v.run_id)) {
     fail.push(`validation ${v.id}: incomplete provider/run provenance`);
+  }
+  if (!validationVerdicts.has(v.verdict)) fail.push(`validation ${v.id}: invalid verdict ${v.verdict}`);
+  if (!validationPolicies.has(v.policy)) fail.push(`validation ${v.id}: invalid policy ${v.policy}`);
+  if (typeof v.speculative !== "boolean") fail.push(`validation ${v.id}: speculative must be boolean`);
+  if (!Array.isArray(v.gate_results)) fail.push(`validation ${v.id}: gate_results must be an array`);
+  for (const gate of v.gate_results || []) {
+    if (!isNonEmptyString(gate.id) || !isNonEmptyString(gate.label) || !isNonEmptyString(gate.detail)) {
+      fail.push(`validation ${v.id}: incomplete gate result`);
+    }
+    if (!validationGateStatuses.has(gate.status)) fail.push(`validation ${v.id}: invalid gate status ${gate.status}`);
   }
   for (const sid of v.evidence_refs || []) if (!sids.has(sid)) fail.push(`validation ${v.id}: unknown evidence ref ${sid}`);
 }
