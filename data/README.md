@@ -26,6 +26,21 @@ range_context: ...
 wavelength_m: ...
 dispersion_relation: ...
 energy_relation: ...
+system_boundary: ...
+energy_roles: []
+energy_input_forms: []
+energy_output_forms: []
+stored_energy_forms: []
+energy_balance:
+  state: gains | loses | approximately_constant | exchanges | unknown | not_applicable
+  interval_or_condition: ...
+energy_transfer_observed: true | false | unknown
+power_relevant: true | false
+efficiency: ...
+loss_channels: []
+energy_sources: []
+energy_sinks: []
+energy_accounting_notes: ...
 scale: ...
 source_mechanism: ...
 detection_method: ...
@@ -44,6 +59,10 @@ notes: ...
 - Do not store human hearing/vision boundaries as if they define acoustic/EM existence.
 - Do not store detector sensitivity windows as universal phenomenon boundaries.
 - Do not apply `E = hf` indiscriminately to classical total wave energy.
+- Any claim that something gains, loses, uses, supplies, produces, disperses, or dissipates energy must define the system boundary and identify the input/output or state change.
+- Do not use `create_energy_from_nothing` as a normal energy role.
+- Keep energy and power as separate quantities.
+- Keep dissipation and dispersion as separate processes.
 - Every frontier record must name the underlying model.
 - Every record that appears in the final atlas must be traceable to sources.
 
@@ -52,6 +71,7 @@ notes: ...
 - `phase2-known-spectrum.csv` — Phase 2 node/frequency catalog.
 - `phase3-couplings.csv` — Phase 3 directed interaction graph.
 - `phase4-frontier.csv` — Phase 4 frontier candidates, unresolved phenomena, contested evidence, historical claims, and question nodes.
+- `energy-role-taxonomy.csv` — Cross-project controlled vocabulary for energy accounting.
 
 The Phase 3 edge file demonstrates that relationships need structured interaction metadata. Phase 4 demonstrates that **not every research object should be forced into a physical frequency record**: question nodes require status, operationalization requirements, predicted observables, and explicit caveats.
 
@@ -64,6 +84,7 @@ Likely artifacts:
 - `sources.json`
 - `claims.json`
 - `couplings.json`
+- `energy_accounting.json` or equivalent normalized energy fields within phenomena/edges
 - generated CSV exports
 - schema validation files
 
