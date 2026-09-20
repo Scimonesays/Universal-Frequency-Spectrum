@@ -88,6 +88,7 @@ Current artifacts:
 - `canonical/sources.json`
 - `canonical/claims.json`
 - `canonical/gaps.json`
+- `canonical/validations.json` — reviewed external validation results (for example CURV), with no automatic evidence-status promotion
 - `../schema/ufs-canonical.schema.json`
 - `../scripts/validate-canonical-data.mjs`
 
