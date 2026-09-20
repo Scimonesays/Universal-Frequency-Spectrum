@@ -182,11 +182,14 @@ These are dataset limits, not universal vibrational limits.
 
 ---
 
-## P2-SRC-011 — atomic transitions
+## P2-SRC-011 — atomic and molecular electronic transitions
 
 NIST Atomic Spectra Database:
 - https://physics.nist.gov/asd
 - https://physics.nist.gov/PhysRefData/ASD/Html/lineshelp.html
+
+NIST Chemistry WebBook electronic-energy-level search:
+- https://webbook.nist.gov/chemistry/bh-ser/
 
 Supports:
 - critically evaluated atomic/ionic wavelengths, wavenumbers, photon energies and frequencies;
@@ -246,11 +249,11 @@ Supports:
 
 ## P2-SRC-015 — Fe-57 nuclear transition
 
-NIST special publication:
-- https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication260-13.pdf
+Shakhmuratov, Vagizov & Kocharovskaya, *Radiation burst from a single γ-photon field*, Physical Review A 84, 043820 (2011):
+- https://doi.org/10.1103/PhysRevA.84.043820
 
 Supports:
-- Fe-57 Mössbauer transition involving the 14.4 keV excited state.
+- Fe-57 Mössbauer spectroscopy using the 14.4 keV gamma-photon transition.
 
 Project arithmetic:
 - E/h for 14.4 keV is approximately 3.48×10^18 Hz.
