@@ -2,9 +2,9 @@
 
 This directory contains the machine-readable research data. **Beginning with Phase 5, `data/canonical/` is the preferred source of truth.**
 
-Phase 1 intentionally did **not** invent a large frequency table before the evidence model was stable. Phase 2 added a provisional known-spectrum CSV, and Phase 3 added a provisional coupling-edge CSV. These are research artifacts, not yet the Phase 5 canonical dataset.
+Phase 1 intentionally did **not** invent a large frequency table before the evidence model was stable. Phase 2–4 then added provisional CSV research artifacts. **Phase 5 has since canonicalized that work under `data/canonical/`; the CSVs remain provenance/research snapshots, not the current source of truth.**
 
-## Planned record shape
+## Canonical record concepts
 
 The Phase 5 canonical record model contains fields equivalent to:
 
@@ -71,7 +71,7 @@ notes: ...
 - `phase2-known-spectrum.csv` — Phase 2 node/frequency catalog.
 - `phase3-couplings.csv` — Phase 3 directed interaction graph.
 - `phase4-frontier.csv` — Phase 4 frontier candidates, unresolved phenomena, contested evidence, historical claims, and question nodes.
-- `energy-role-taxonomy.csv` — Cross-project controlled vocabulary for energy accounting.
+- `energy-role-taxonomy.csv` — Legacy/research-format energy vocabulary: 17 roles plus the separate `NO_CREATE_FROM_NOTHING` accounting rule.
 
 The Phase 3 edge file demonstrates that relationships need structured interaction metadata. Phase 4 demonstrates that **not every research object should be forced into a physical frequency record**: question nodes require status, operationalization requirements, predicted observables, and explicit caveats.
 
@@ -88,6 +88,7 @@ Current artifacts:
 - `canonical/sources.json`
 - `canonical/claims.json`
 - `canonical/gaps.json`
+- `canonical/energy_roles.json` — authoritative controlled energy roles and accounting rule
 - `canonical/validations.json` — reviewed external validation results (for example CURV), with no automatic evidence-status promotion
 - `../schema/ufs-canonical.schema.json`
 - `../scripts/validate-canonical-data.mjs`
