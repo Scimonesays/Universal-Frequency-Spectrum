@@ -444,11 +444,16 @@ function renderSpectrum() {
   const plottedRecords = plottableSpectrumRecords();
   renderSpectrumChart(plottedRecords);
   renderSpectrumTable(semanticRecords);
+  const intrinsicallyNonnumeric = semanticRecords.filter((r) => {
+    const s = r.spectral || {};
+    return !Number.isFinite(s.min_hz) && !Number.isFinite(s.max_hz) && !Number.isFinite(s.characteristic_hz);
+  }).length;
+  const outsideViewport = semanticRecords.length - plottedRecords.length - intrinsicallyNonnumeric;
   $("#spectrum-metrics").innerHTML =
     metric(String(plottedRecords.length), "plotted records") +
-    metric(String(semanticRecords.length - plottedRecords.length), "not on numeric axis") +
-    metric(String(new Set(semanticRecords.map((r) => r.family)).size), "physical families") +
-    metric(`10^${$("#exp-min").value} – 10^${$("#exp-max").value}`, "viewport Hz");
+    metric(String(intrinsicallyNonnumeric), "not a simple Hz axis") +
+    metric(String(Math.max(0, outsideViewport)), "outside viewport") +
+    metric(String(new Set(semanticRecords.map((r) => r.family)).size), "physical families");
   if (state.selectedSpectrum && semanticRecords.some((r) => r.id === state.selectedSpectrum)) renderSpectrumInspector(state.selectedSpectrum);
 }
 
