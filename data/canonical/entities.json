@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "MECH-STRUCT",
+      "display_name": "Structural/mechanical mode",
+      "family": "mechanical",
+      "related_phenomenon_ids": [
+        "MECH-STRUCT"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "ACOUSTIC-FIELD",
+      "display_name": "Acoustic field / wave",
+      "family": "acoustic",
+      "related_phenomenon_ids": [
+        "ACOU-INFRA",
+        "ACOU-ULTRA"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "ELECTRICAL-FIELD",
+      "display_name": "Electrical/electromagnetic drive field",
+      "family": "electromagnetic/electrical",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "MECH-PIEZO",
+      "display_name": "Piezoelectric mechanical mode",
+      "family": "mechanical/piezoelectric",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "ELECTRICAL-SIGNAL",
+      "display_name": "Electrical signal",
+      "family": "electrical",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "EM-PHOTON",
+      "display_name": "Electromagnetic photon",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [
+        "EM-RADIO",
+        "EM-MICROWAVE",
+        "EM-INFRARED",
+        "EM-VISIBLE",
+        "EM-UV",
+        "EM-XRAY",
+        "EM-GAMMA"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "MOL-VIB",
+      "display_name": "Molecular vibrational mode",
+      "family": "molecular",
+      "related_phenomenon_ids": [
+        "MOL-VIB-THZ",
+        "MOL-IR-NIST"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "ATOMIC-ELECTRONIC-EXCITATION",
+      "display_name": "Atomic/electronic excitation",
+      "family": "atomic/electronic",
+      "related_phenomenon_ids": [
+        "ATOM-ELECTRON"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PHONON",
+      "display_name": "Phonon",
+      "family": "condensed matter",
+      "related_phenomenon_ids": [
+        "PHONON-SI",
+        "PHONON-SI-OPT"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "EM-CAVITY",
+      "display_name": "Electromagnetic cavity mode",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "MECH-MODE",
+      "display_name": "Mechanical mode",
+      "family": "mechanical",
+      "related_phenomenon_ids": [
+        "MECH-STRUCT"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "MICROWAVE",
+      "display_name": "Microwave electromagnetic field",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [
+        "EM-MICROWAVE"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PHONON-GHZ",
+      "display_name": "GHz acoustic phonon mode",
+      "family": "condensed matter/acoustic",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "OPTICAL-PHOTON",
+      "display_name": "Optical photon",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [
+        "EM-INFRARED",
+        "EM-VISIBLE"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "OPTICAL-SIGNAL",
+      "display_name": "Optical signal",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [
+        "EM-INFRARED",
+        "EM-VISIBLE"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "CAVITY-PHOTON",
+      "display_name": "Cavity photon mode",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "MAGNON",
+      "display_name": "Magnon / spin wave",
+      "family": "condensed matter/spin",
+      "related_phenomenon_ids": [
+        "MAGNON-YIG-DIP",
+        "MAGNON-YIG-EDGE"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "MAGNON-SPIN",
+      "display_name": "Magnon / collective spin mode",
+      "family": "condensed matter/spin",
+      "related_phenomenon_ids": [
+        "MAGNON-YIG-DIP",
+        "MAGNON-YIG-EDGE"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "ELECTRONIC-EXCITATIONS",
+      "display_name": "Electronic excitations in matter",
+      "family": "electronic/condensed matter",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PHONON-POPULATION",
+      "display_name": "Phonon population",
+      "family": "condensed matter",
+      "related_phenomenon_ids": [
+        "PHONON-SI",
+        "PHONON-SI-OPT"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PHONON-MODE-A",
+      "display_name": "Phonon mode A",
+      "family": "condensed matter",
+      "related_phenomenon_ids": [
+        "PHONON-SI",
+        "PHONON-SI-OPT"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PHONON-MODE-B",
+      "display_name": "Phonon mode B",
+      "family": "condensed matter",
+      "related_phenomenon_ids": [
+        "PHONON-SI",
+        "PHONON-SI-OPT"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "THERMAL-MATTER",
+      "display_name": "Thermal matter",
+      "family": "thermal/cross-cutting",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "EM-RADIATION",
+      "display_name": "Electromagnetic radiation",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [
+        "EM-RADIO",
+        "EM-MICROWAVE",
+        "EM-INFRARED",
+        "EM-VISIBLE",
+        "EM-UV",
+        "EM-XRAY",
+        "EM-GAMMA"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "EM-FIELD",
+      "display_name": "Electromagnetic field",
+      "family": "electromagnetic",
+      "related_phenomenon_ids": [
+        "EM-RADIO",
+        "EM-MICROWAVE",
+        "EM-INFRARED",
+        "EM-VISIBLE",
+        "EM-UV",
+        "EM-XRAY",
+        "EM-GAMMA"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PLASMA-MODE",
+      "display_name": "Plasma collective mode",
+      "family": "plasma",
+      "related_phenomenon_ids": [
+        "PLASMA-ELECTRON",
+        "PLASMA-GYRO"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "GW-STRAIN",
+      "display_name": "Gravitational-wave strain",
+      "family": "gravitational",
+      "related_phenomenon_ids": [
+        "GW-PTA",
+        "GW-LISA",
+        "GW-LIGO"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "INTERFEROMETER-OPTICAL-PATH",
+      "display_name": "Interferometer optical path / phase",
+      "family": "detector/optical",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "PHOTODETECTOR-ELECTRICAL",
+      "display_name": "Photodetector electrical output",
+      "family": "detector/electrical",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "LASER-PHOTONS",
+      "display_name": "Laser photon field",
+      "family": "electromagnetic/detector",
+      "related_phenomenon_ids": [
+        "EM-INFRARED",
+        "EM-VISIBLE"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "LIGO-MIRROR",
+      "display_name": "Interferometer test-mass mirror",
+      "family": "detector/mechanical",
+      "related_phenomenon_ids": [],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "TIDAL-GRAVITATIONAL-FORCING",
+      "display_name": "Tidal gravitational forcing",
+      "family": "gravitational/geophysical",
+      "related_phenomenon_ids": [
+        "GEO-TIDE-SEMI",
+        "GEO-TIDE-LUNAR"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    },
+    {
+      "id": "OCEAN-TIDE",
+      "display_name": "Ocean tidal response",
+      "family": "ocean/geophysical",
+      "related_phenomenon_ids": [
+        "GEO-TIDE-SEMI",
+        "GEO-TIDE-LUNAR"
+      ],
+      "role": "interaction_endpoint",
+      "provenance": "Phase 3 endpoint normalization"
+    }
+  ]
+}
