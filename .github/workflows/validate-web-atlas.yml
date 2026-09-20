@@ -31,5 +31,6 @@ jobs:
           node-version: "22.23.2"
       - run: node scripts/validate-canonical-data.mjs
       - run: node --check web/app.js
+      - run: node --check web/ux.js
       - run: node scripts/build-site.mjs
       - run: node scripts/test-web-app.mjs
