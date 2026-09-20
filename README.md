@@ -45,11 +45,11 @@ No final visual layout is being asserted yet. Phase 6 should consume the canonic
 | [Research Roadmap](docs/05-RESEARCH-ROADMAP.md) | Seven phases from foundation through public release |
 | [Glossary](docs/06-GLOSSARY.md) | Precise working vocabulary |
 | [Source Library](research/SOURCES.md) | Curated primary papers, reviews, standards, and authoritative references |
-| [Data Area](data/README.md) | Planned machine-readable source of truth for later phases |
+| [Data Area](data/README.md) | Canonical machine-readable data contract plus legacy research snapshots |
 | [Phase 1 Completion Record](docs/PHASE-1-COMPLETE.md) | Final checklist and scientific boundary for Phase 1 |
 | [Known-Spectrum Catalog](docs/07-KNOWN-SPECTRUM-CATALOG.md) | Phase 2 catalog of established phenomena and contextual frequency information |
 | [Phase 2 Source Notes](research/PHASE-2-SOURCES.md) | Source-to-claim notes for Phase 2 ranges and examples |
-| [Phase 2 Provisional CSV](data/phase2-known-spectrum.csv) | Machine-readable working catalog; not yet the Phase 5 canonical dataset |
+| [Phase 2 Provisional CSV](data/phase2-known-spectrum.csv) | Legacy Phase 2 working catalog retained for provenance; use `data/canonical/` for current machine-readable truth |
 | [Phase 2 Completion Record](docs/PHASE-2-COMPLETE.md) | Completion checklist and boundary for the known-spectrum phase |
 | [Coupling, Conversion, Resonance & Bridges](docs/08-COUPLING-CONVERSION-MAP.md) | Phase 3 interaction ontology and established coupling map |
 | [Phase 3 Source Notes](research/PHASE-3-SOURCES.md) | Source-to-edge notes for established interactions |
@@ -60,13 +60,14 @@ No final visual layout is being asserted yet. Phase 6 should consume the canonic
 | [Phase 4 Provisional Dataset](data/phase4-frontier.csv) | Machine-readable frontier candidates and question nodes |
 | [Phase 4 Completion Record](docs/PHASE-4-COMPLETE.md) | Completion checklist and evidence boundary for Phase 4 |
 | [Energy Accounting](docs/10-ENERGY-ACCOUNTING.md) | Cross-project rules for storage, transfer, conversion, work, dissipation, dispersion, steady state, and unknown energy behavior |
-| [Energy Role Taxonomy](data/energy-role-taxonomy.csv) | Machine-readable vocabulary for energy behavior across nodes and edges |
+| [Energy Role Taxonomy](data/energy-role-taxonomy.csv) | Legacy CSV view of 17 energy roles plus one accounting rule; canonical registry is `data/canonical/energy_roles.json` |
 | [Gap Analysis & Canonical Dataset](docs/11-GAP-ANALYSIS-AND-CANONICAL-DATASET.md) | Phase 5 canonicalization, gap taxonomy, and validation model |
 | [Canonical Data Manifest](data/canonical/manifest.json) | Counts and file registry for the machine-readable source of truth |
 | [Canonical JSON Schema](schema/ufs-canonical.schema.json) | Structural contract for canonical data records |
 | [Phase 5 Completion Record](docs/PHASE-5-COMPLETE.md) | Completion checklist and canonical validation result |
 | [Post-Phase-5 Repository Audit](docs/REPOSITORY-AUDIT-2026-09-20.md) | Repo-wide integrity, provenance, link, data, and validation audit |
 | [CURV Research Validator Integration](docs/12-CURV-RESEARCH-VALIDATOR.md) | Read-only bridge from UFS frontier/question nodes into CURV falsifier-first validation |
+| [Canonical Energy Roles](data/canonical/energy_roles.json) | Controlled 17-role energy vocabulary plus conservation/accounting rule |
 | [External Validation Registry](data/canonical/validations.json) | Reviewed external validation results; never changes canonical scientific status automatically |
 
 ## Proposed organizing dimensions
