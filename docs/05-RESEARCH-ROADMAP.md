@@ -38,7 +38,7 @@ without inventing policy.
 
 ## Phase 2 — Known-spectrum catalog
 
-**Status: NOT STARTED**
+**Status: COMPLETE**
 
 ### Goal
 
@@ -64,6 +64,8 @@ Populate the map with established physical phenomena and defensible frequency in
 ### Exit condition
 
 The project has a source-backed table of major established families, with ranges described as **contextual ranges**, not false universal limits.
+
+**Completed 2026-09-20.** See [Known-Spectrum Catalog](07-KNOWN-SPECTRUM-CATALOG.md) and [Phase 2 Completion Record](PHASE-2-COMPLETE.md).
 
 ---
 
