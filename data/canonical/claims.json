@@ -1,0 +1,1085 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "CLAIM-FND-001",
+      "legacy_id": "FND-001",
+      "phase": 1,
+      "claim": "Frequency is a rate of recurrence measured in inverse seconds; the SI special name is hertz.",
+      "status": "ESTABLISHED",
+      "evidence_note": "NIST time/frequency references",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-002",
+      "legacy_id": "FND-002",
+      "phase": 1,
+      "claim": "A numerical frequency alone does not identify the physical nature of a phenomenon.",
+      "status": "ESTABLISHED synthesis",
+      "evidence_note": "Compare acoustic, EM, phonon, matter-wave, and GW sources below",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-003",
+      "legacy_id": "FND-003",
+      "phase": 1,
+      "claim": "Ordinary sound in air involves mechanical pressure/density variation and requires matter.",
+      "status": "ESTABLISHED",
+      "evidence_note": "NIST acoustics",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-004",
+      "legacy_id": "FND-004",
+      "phase": 1,
+      "claim": "Maxwell's equations support electromagnetic-wave propagation; a material medium is not required in vacuum.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Maxwell electrodynamics; NIST reference",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-005",
+      "legacy_id": "FND-005",
+      "phase": 1,
+      "claim": "Radio through gamma radiation are regions of the electromagnetic spectrum rather than separate fundamental media.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Electrodynamics / standard spectrum classifications",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-006",
+      "legacy_id": "FND-006",
+      "phase": 1,
+      "claim": "Crystal lattice vibrations form normal modes; quantized excitations of such modes are phonons.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Lattice-dynamics literature",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-007",
+      "legacy_id": "FND-007",
+      "phase": 1,
+      "claim": "Molecular rotational transitions are observed in radio/microwave/millimeter-wave spectroscopy.",
+      "status": "ESTABLISHED",
+      "evidence_note": "NIST molecular spectral databases",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-008",
+      "legacy_id": "FND-008",
+      "phase": 1,
+      "claim": "Molecular and condensed-phase vibrational dynamics can occur in infrared/terahertz spectral regions; exact values are system- and mode-dependent.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Spectroscopy reviews",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-009",
+      "legacy_id": "FND-009",
+      "phase": 1,
+      "claim": "Electron diffraction demonstrates wave behavior of matter consistent with de Broglie-type matter waves.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Davisson–Germer",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-010",
+      "legacy_id": "FND-010",
+      "phase": 1,
+      "claim": "Gravitational radiation forms a spectrum physically distinct from electromagnetic radiation and can share numerical frequency ranges with other wave types.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Living Reviews in Relativity",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-011",
+      "legacy_id": "FND-011",
+      "phase": 1,
+      "claim": "\"Heat\" is not one wave family or single frequency band; thermal transport/radiation can involve multiple mechanisms.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Thermodynamics + phononics + blackbody radiation",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-012",
+      "legacy_id": "FND-012",
+      "phase": 1,
+      "claim": "For photons, `E = hf`; frequency alone does not determine the total energy of an arbitrary classical wave.",
+      "status": "ESTABLISHED",
+      "evidence_note": "Quantum theory + classical wave mechanics",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-013",
+      "legacy_id": "FND-013",
+      "phase": 1,
+      "claim": "The Standard Model is formulated using quantum field theory; particles can be described as excitations of quantum fields.",
+      "status": "ESTABLISHED framework",
+      "evidence_note": "PDG / CERN QFT references",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-014",
+      "legacy_id": "FND-014",
+      "phase": 1,
+      "claim": "The microscopic identity of dark matter is unknown; some ultralight bosonic candidate models predict coherent/wave-like oscillatory signals searchable in frequency space.",
+      "status": "OPEN + MODEL-DEPENDENT",
+      "evidence_note": "Atomic-clock and cavity searches",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-015",
+      "legacy_id": "FND-015",
+      "phase": 1,
+      "claim": "A gap in detector sensitivity is not automatically a gap in physical existence, and an empty visual frequency interval does not by itself predict new physics.",
+      "status": "ESTABLISHED methodological conclusion",
+      "evidence_note": "Multi-band GW literature; evidence policy",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-FND-016",
+      "legacy_id": "FND-016",
+      "phase": 1,
+      "claim": "The repository currently has no empirical basis for treating all phenomena as one universal physical vibration or one common propagation medium.",
+      "status": "PROJECT BOUNDARY",
+      "evidence_note": "Existing theories distinguish degrees of freedom; future unification must be separately evidenced",
+      "source_ids": []
+    },
+    {
+      "id": "CLAIM-P2-GEO-TIDE-SEMI",
+      "phase": 2,
+      "claim": "semidiurnal tidal scale: characteristic geophysical period; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-001"
+      ],
+      "record_id": "GEO-TIDE-SEMI"
+    },
+    {
+      "id": "CLAIM-P2-GEO-TIDE-LUNAR",
+      "phase": 2,
+      "claim": "lunar-day tidal scale: characteristic geophysical period; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-001"
+      ],
+      "record_id": "GEO-TIDE-LUNAR"
+    },
+    {
+      "id": "CLAIM-P2-ATM-EQUATORIAL",
+      "phase": 2,
+      "claim": "equatorial planetary waves: observed/representative; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-002"
+      ],
+      "record_id": "ATM-EQUATORIAL"
+    },
+    {
+      "id": "CLAIM-P2-OCE-SURFACE",
+      "phase": 2,
+      "claim": "wind waves and swell: observational/practical; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-003"
+      ],
+      "record_id": "OCE-SURFACE"
+    },
+    {
+      "id": "CLAIM-P2-SEIS-GROUND",
+      "phase": 2,
+      "claim": "earthquake ground shaking: observed/representative; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-004"
+      ],
+      "record_id": "SEIS-GROUND"
+    },
+    {
+      "id": "CLAIM-P2-ACOU-INFRA",
+      "phase": 2,
+      "claim": "infrasound: conventional upper boundary; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-005"
+      ],
+      "record_id": "ACOU-INFRA"
+    },
+    {
+      "id": "CLAIM-P2-ACOU-HEARING",
+      "phase": 2,
+      "claim": "human auditory sensitivity: biological sensitivity; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-004"
+      ],
+      "record_id": "ACOU-HEARING"
+    },
+    {
+      "id": "CLAIM-P2-ACOU-ULTRA",
+      "phase": 2,
+      "claim": "ultrasound: conventional lower boundary; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-006"
+      ],
+      "record_id": "ACOU-ULTRA"
+    },
+    {
+      "id": "CLAIM-P2-MECH-STRUCT",
+      "phase": 2,
+      "claim": "structural mechanical resonance: parameter-dependent; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-021"
+      ],
+      "record_id": "MECH-STRUCT"
+    },
+    {
+      "id": "CLAIM-P2-PHONON-SI",
+      "phase": 2,
+      "claim": "bulk silicon phonon branches: material-specific dispersion; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-007"
+      ],
+      "record_id": "PHONON-SI"
+    },
+    {
+      "id": "CLAIM-P2-PHONON-SI-OPT",
+      "phase": 2,
+      "claim": "silicon optical phonon: characteristic material mode; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-007"
+      ],
+      "record_id": "PHONON-SI-OPT"
+    },
+    {
+      "id": "CLAIM-P2-MAGNON-YIG-DIP",
+      "phase": 2,
+      "claim": "YIG dipolar magnon example: characteristic material example; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-008"
+      ],
+      "record_id": "MAGNON-YIG-DIP"
+    },
+    {
+      "id": "CLAIM-P2-MAGNON-YIG-EDGE",
+      "phase": 2,
+      "claim": "YIG Brillouin-zone-edge magnon scale: characteristic material example; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-008"
+      ],
+      "record_id": "MAGNON-YIG-EDGE"
+    },
+    {
+      "id": "CLAIM-P2-MOL-ROT",
+      "phase": 2,
+      "claim": "molecular rotational transitions: transition family; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-009"
+      ],
+      "record_id": "MOL-ROT"
+    },
+    {
+      "id": "CLAIM-P2-MOL-VIB-THZ",
+      "phase": 2,
+      "claim": "low-frequency molecular vibration: spectroscopy domain; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-010"
+      ],
+      "record_id": "MOL-VIB-THZ"
+    },
+    {
+      "id": "CLAIM-P2-MOL-IR-NIST",
+      "phase": 2,
+      "claim": "representative NIST IR calibration spectra: dataset envelope with internal gap; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-010"
+      ],
+      "record_id": "MOL-IR-NIST"
+    },
+    {
+      "id": "CLAIM-P2-ATOM-ELECTRON",
+      "phase": 2,
+      "claim": "atomic electronic transitions: transition family; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-011"
+      ],
+      "record_id": "ATOM-ELECTRON"
+    },
+    {
+      "id": "CLAIM-P2-H-HYPERFINE",
+      "phase": 2,
+      "claim": "neutral hydrogen 21 cm hyperfine line: characteristic transition; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-012"
+      ],
+      "record_id": "H-HYPERFINE"
+    },
+    {
+      "id": "CLAIM-P2-NMR-EXAMPLE",
+      "phase": 2,
+      "claim": "NMR instrument examples: instrument examples; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-013"
+      ],
+      "record_id": "NMR-EXAMPLE"
+    },
+    {
+      "id": "CLAIM-P2-ESR-EXAMPLE",
+      "phase": 2,
+      "claim": "ESR/EPR examples: instrument/experiment examples; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-014"
+      ],
+      "record_id": "ESR-EXAMPLE"
+    },
+    {
+      "id": "CLAIM-P2-NUC-FE57",
+      "phase": 2,
+      "claim": "Fe-57 Mossbauer 14.4 keV transition: characteristic transition; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-015"
+      ],
+      "record_id": "NUC-FE57"
+    },
+    {
+      "id": "CLAIM-P2-EM-RADIO",
+      "phase": 2,
+      "claim": "radio: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-RADIO"
+    },
+    {
+      "id": "CLAIM-P2-EM-MICROWAVE",
+      "phase": 2,
+      "claim": "microwave: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-MICROWAVE"
+    },
+    {
+      "id": "CLAIM-P2-EM-INFRARED",
+      "phase": 2,
+      "claim": "infrared: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-INFRARED"
+    },
+    {
+      "id": "CLAIM-P2-EM-VISIBLE",
+      "phase": 2,
+      "claim": "visible/optical: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-VISIBLE"
+    },
+    {
+      "id": "CLAIM-P2-EM-UV",
+      "phase": 2,
+      "claim": "ultraviolet: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-UV"
+    },
+    {
+      "id": "CLAIM-P2-EM-XRAY",
+      "phase": 2,
+      "claim": "X-ray: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-XRAY"
+    },
+    {
+      "id": "CLAIM-P2-EM-GAMMA",
+      "phase": 2,
+      "claim": "gamma ray: conventional EM band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-016"
+      ],
+      "record_id": "EM-GAMMA"
+    },
+    {
+      "id": "CLAIM-P2-PLASMA-ELECTRON",
+      "phase": 2,
+      "claim": "electron plasma oscillation: parameter-dependent formula; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-017"
+      ],
+      "record_id": "PLASMA-ELECTRON"
+    },
+    {
+      "id": "CLAIM-P2-PLASMA-GYRO",
+      "phase": 2,
+      "claim": "electron gyrofrequency: parameter-dependent formula; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-017"
+      ],
+      "record_id": "PLASMA-GYRO"
+    },
+    {
+      "id": "CLAIM-P2-MATTER-WAVE",
+      "phase": 2,
+      "claim": "matter-wave behavior: state-dependent; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-018"
+      ],
+      "record_id": "MATTER-WAVE"
+    },
+    {
+      "id": "CLAIM-P2-NEUTRINO-OSC",
+      "phase": 2,
+      "claim": "neutrino flavor oscillation: not a simple universal Hz axis; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-019"
+      ],
+      "record_id": "NEUTRINO-OSC"
+    },
+    {
+      "id": "CLAIM-P2-GW-PTA",
+      "phase": 2,
+      "claim": "pulsar-timing gravitational-wave band: detector/observational band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "record_id": "GW-PTA"
+    },
+    {
+      "id": "CLAIM-P2-GW-LISA",
+      "phase": 2,
+      "claim": "LISA low-frequency band: detector/mission band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "record_id": "GW-LISA"
+    },
+    {
+      "id": "CLAIM-P2-GW-LIGO",
+      "phase": 2,
+      "claim": "Advanced LIGO detector band: detector band; evidence ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P2-SRC-020"
+      ],
+      "record_id": "GW-LIGO"
+    },
+    {
+      "id": "CLAIM-P3-E001",
+      "phase": 3,
+      "claim": "MECH-STRUCT RADIATE/DRIVE ACOUSTIC-FIELD.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-001"
+      ],
+      "record_id": "P3-E001"
+    },
+    {
+      "id": "CLAIM-P3-E002",
+      "phase": 3,
+      "claim": "ACOUSTIC-FIELD DRIVE/RESONATE MECH-STRUCT.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-001"
+      ],
+      "record_id": "P3-E002"
+    },
+    {
+      "id": "CLAIM-P3-E003",
+      "phase": 3,
+      "claim": "ELECTRICAL-FIELD PIEZOELECTRIC_TRANSDUCE MECH-PIEZO.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-002"
+      ],
+      "record_id": "P3-E003"
+    },
+    {
+      "id": "CLAIM-P3-E004",
+      "phase": 3,
+      "claim": "MECH-PIEZO PIEZOELECTRIC_TRANSDUCE ELECTRICAL-SIGNAL.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-002"
+      ],
+      "record_id": "P3-E004"
+    },
+    {
+      "id": "CLAIM-P3-E005",
+      "phase": 3,
+      "claim": "EM-PHOTON ABSORB/EXCITE MOL-VIB.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-003"
+      ],
+      "record_id": "P3-E005"
+    },
+    {
+      "id": "CLAIM-P3-E006",
+      "phase": 3,
+      "claim": "ATOMIC-ELECTRONIC-EXCITATION EMIT EM-PHOTON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-004"
+      ],
+      "record_id": "P3-E006"
+    },
+    {
+      "id": "CLAIM-P3-E007",
+      "phase": 3,
+      "claim": "EM-PHOTON SCATTER_CREATE PHONON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-005",
+        "P3-SRC-006"
+      ],
+      "record_id": "P3-E007"
+    },
+    {
+      "id": "CLAIM-P3-E008",
+      "phase": 3,
+      "claim": "PHONON SCATTER_ANNIHILATE EM-PHOTON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-005",
+        "P3-SRC-006"
+      ],
+      "record_id": "P3-E008"
+    },
+    {
+      "id": "CLAIM-P3-E009",
+      "phase": 3,
+      "claim": "EM-CAVITY RADIATION_PRESSURE_FORCE MECH-MODE.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-005"
+      ],
+      "record_id": "P3-E009"
+    },
+    {
+      "id": "CLAIM-P3-E010",
+      "phase": 3,
+      "claim": "MECH-MODE MODULATE_RESONANCE EM-CAVITY.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-005"
+      ],
+      "record_id": "P3-E010"
+    },
+    {
+      "id": "CLAIM-P3-E011",
+      "phase": 3,
+      "claim": "MICROWAVE PIEZOELECTRIC_TRANSDUCE PHONON-GHZ.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-002",
+        "P3-SRC-007"
+      ],
+      "record_id": "P3-E011"
+    },
+    {
+      "id": "CLAIM-P3-E012",
+      "phase": 3,
+      "claim": "PHONON-GHZ OPTOMECHANICAL_TRANSDUCE OPTICAL-PHOTON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-006",
+        "P3-SRC-007"
+      ],
+      "record_id": "P3-E012"
+    },
+    {
+      "id": "CLAIM-P3-E013",
+      "phase": 3,
+      "claim": "MICROWAVE MEDIATED_TRANSDUCE OPTICAL-SIGNAL.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-007"
+      ],
+      "record_id": "P3-E013"
+    },
+    {
+      "id": "CLAIM-P3-E014",
+      "phase": 3,
+      "claim": "CAVITY-PHOTON HYBRIDIZE MAGNON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-008"
+      ],
+      "record_id": "P3-E014"
+    },
+    {
+      "id": "CLAIM-P3-E015",
+      "phase": 3,
+      "claim": "OPTICAL-PHOTON RAMAN_EXCITE_PROBE MAGNON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-009"
+      ],
+      "record_id": "P3-E015"
+    },
+    {
+      "id": "CLAIM-P3-E016",
+      "phase": 3,
+      "claim": "MAGNON-SPIN SPIN_PHONON_COUPLE PHONON.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-009"
+      ],
+      "record_id": "P3-E016"
+    },
+    {
+      "id": "CLAIM-P3-E017",
+      "phase": 3,
+      "claim": "ELECTRONIC-EXCITATIONS THERMALIZE_SCATTER PHONON-POPULATION.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-010"
+      ],
+      "record_id": "P3-E017"
+    },
+    {
+      "id": "CLAIM-P3-E018",
+      "phase": 3,
+      "claim": "PHONON-MODE-A ANHARMONIC_SCATTER PHONON-MODE-B.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-011"
+      ],
+      "record_id": "P3-E018"
+    },
+    {
+      "id": "CLAIM-P3-E019",
+      "phase": 3,
+      "claim": "THERMAL-MATTER THERMAL_EMIT EM-RADIATION.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-012"
+      ],
+      "record_id": "P3-E019"
+    },
+    {
+      "id": "CLAIM-P3-E020",
+      "phase": 3,
+      "claim": "EM-RADIATION ABSORB_THERMALIZE THERMAL-MATTER.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-012",
+        "P3-SRC-003",
+        "P3-SRC-004"
+      ],
+      "record_id": "P3-E020"
+    },
+    {
+      "id": "CLAIM-P3-E021",
+      "phase": 3,
+      "claim": "EM-FIELD DRIVE_RESONATE PLASMA-MODE.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-013"
+      ],
+      "record_id": "P3-E021"
+    },
+    {
+      "id": "CLAIM-P3-E022",
+      "phase": 3,
+      "claim": "GW-STRAIN READ_OUT_MODULATE INTERFEROMETER-OPTICAL-PATH.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-014"
+      ],
+      "record_id": "P3-E022"
+    },
+    {
+      "id": "CLAIM-P3-E023",
+      "phase": 3,
+      "claim": "INTERFEROMETER-OPTICAL-PATH READ_OUT PHOTODETECTOR-ELECTRICAL.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-014"
+      ],
+      "record_id": "P3-E023"
+    },
+    {
+      "id": "CLAIM-P3-E024",
+      "phase": 3,
+      "claim": "LASER-PHOTONS RADIATION_PRESSURE_FORCE LIGO-MIRROR.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-015"
+      ],
+      "record_id": "P3-E024"
+    },
+    {
+      "id": "CLAIM-P3-E025",
+      "phase": 3,
+      "claim": "TIDAL-GRAVITATIONAL-FORCING DRIVE OCEAN-TIDE.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P3-SRC-016"
+      ],
+      "record_id": "P3-E025"
+    },
+    {
+      "id": "CLAIM-P4-F001",
+      "phase": 4,
+      "claim": "dark matter identity: OPEN.",
+      "status": "OPEN",
+      "source_ids": [
+        "P4-SRC-001"
+      ],
+      "record_id": "P4-F001"
+    },
+    {
+      "id": "CLAIM-P4-F002",
+      "phase": 4,
+      "claim": "axion/ALP dark matter: MODEL-DEPENDENT.",
+      "status": "MODEL-DEPENDENT",
+      "source_ids": [
+        "P4-SRC-002",
+        "P4-SRC-003"
+      ],
+      "record_id": "P4-F002"
+    },
+    {
+      "id": "CLAIM-P4-F003",
+      "phase": 4,
+      "claim": "dark photon dark matter: MODEL-DEPENDENT.",
+      "status": "MODEL-DEPENDENT",
+      "source_ids": [
+        "P4-SRC-004"
+      ],
+      "record_id": "P4-F003"
+    },
+    {
+      "id": "CLAIM-P4-F004",
+      "phase": 4,
+      "claim": "topological-defect dark matter: MODEL-DEPENDENT.",
+      "status": "MODEL-DEPENDENT",
+      "source_ids": [
+        "P4-SRC-002"
+      ],
+      "record_id": "P4-F004"
+    },
+    {
+      "id": "CLAIM-P4-F005",
+      "phase": 4,
+      "claim": "fifth force: MODEL-DEPENDENT / OPEN SEARCH.",
+      "status": "MODEL-DEPENDENT / OPEN SEARCH",
+      "source_ids": [
+        "P4-SRC-005",
+        "P4-SRC-006"
+      ],
+      "record_id": "P4-F005"
+    },
+    {
+      "id": "CLAIM-P4-F006",
+      "phase": 4,
+      "claim": "dynamical dark energy: OPEN.",
+      "status": "OPEN",
+      "source_ids": [
+        "P4-SRC-007",
+        "P4-SRC-008"
+      ],
+      "record_id": "P4-F006"
+    },
+    {
+      "id": "CLAIM-P4-F007",
+      "phase": 4,
+      "claim": "vacuum zero-point fluctuations: ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P4-SRC-009",
+        "P4-SRC-010"
+      ],
+      "record_id": "P4-F007"
+    },
+    {
+      "id": "CLAIM-P4-F008",
+      "phase": 4,
+      "claim": "decihertz GW sensitivity gap: OPEN INSTRUMENT FRONTIER.",
+      "status": "OPEN INSTRUMENT FRONTIER",
+      "source_ids": [
+        "P4-SRC-011"
+      ],
+      "record_id": "P4-F008"
+    },
+    {
+      "id": "CLAIM-P4-F009",
+      "phase": 4,
+      "claim": "quantum nature of gravity: OPEN.",
+      "status": "OPEN",
+      "source_ids": [
+        "P4-SRC-012",
+        "P4-SRC-013"
+      ],
+      "record_id": "P4-F009"
+    },
+    {
+      "id": "CLAIM-P4-H001",
+      "phase": 4,
+      "claim": "engram retrieval: PARTLY ESTABLISHED / INCOMPLETE.",
+      "status": "PARTLY ESTABLISHED / INCOMPLETE",
+      "source_ids": [
+        "P4-SRC-014",
+        "P4-SRC-015",
+        "P4-SRC-016"
+      ],
+      "record_id": "P4-H001"
+    },
+    {
+      "id": "CLAIM-P4-H002",
+      "phase": 4,
+      "claim": "neural oscillatory coordination: ESTABLISHED PHENOMENON.",
+      "status": "ESTABLISHED PHENOMENON",
+      "source_ids": [
+        "P4-SRC-019"
+      ],
+      "record_id": "P4-H002"
+    },
+    {
+      "id": "CLAIM-P4-H003",
+      "phase": 4,
+      "claim": "GNWT/IIT and major neuroscience theories: OPEN THEORY COMPETITION.",
+      "status": "OPEN THEORY COMPETITION",
+      "source_ids": [
+        "P4-SRC-017",
+        "P4-SRC-018"
+      ],
+      "record_id": "P4-H003"
+    },
+    {
+      "id": "CLAIM-P4-H004",
+      "phase": 4,
+      "claim": "electromagnetic-field consciousness theories: MODEL-DEPENDENT / SPECULATIVE.",
+      "status": "MODEL-DEPENDENT / SPECULATIVE",
+      "source_ids": [
+        "P4-SRC-020"
+      ],
+      "record_id": "P4-H004"
+    },
+    {
+      "id": "CLAIM-P4-H005",
+      "phase": 4,
+      "claim": "Orch OR / quantum microtubule consciousness: SPECULATIVE ACTIVE HYPOTHESIS.",
+      "status": "SPECULATIVE ACTIVE HYPOTHESIS",
+      "source_ids": [
+        "P4-SRC-021",
+        "P4-SRC-022"
+      ],
+      "record_id": "P4-H005"
+    },
+    {
+      "id": "CLAIM-P4-H006",
+      "phase": 4,
+      "claim": "terminal/paradoxical lucidity: OBSERVED/REPORTED; OPEN MECHANISM.",
+      "status": "OBSERVED/REPORTED; OPEN MECHANISM",
+      "source_ids": [
+        "P4-SRC-025",
+        "P4-SRC-026"
+      ],
+      "record_id": "P4-H006"
+    },
+    {
+      "id": "CLAIM-P4-H007",
+      "phase": 4,
+      "claim": "near-death/recalled experience during resuscitation: OBSERVED PHENOMENOLOGY; OPEN MECHANISM.",
+      "status": "OBSERVED PHENOMENOLOGY; OPEN MECHANISM",
+      "source_ids": [
+        "P4-SRC-023",
+        "P4-SRC-024"
+      ],
+      "record_id": "P4-H007"
+    },
+    {
+      "id": "CLAIM-P4-H008",
+      "phase": 4,
+      "claim": "postmortem personal survival: SPECULATIVE / NOT ESTABLISHED.",
+      "status": "SPECULATIVE / NOT ESTABLISHED",
+      "source_ids": [
+        "P4-SRC-023",
+        "P4-SRC-026",
+        "P4-SRC-028"
+      ],
+      "record_id": "P4-H008"
+    },
+    {
+      "id": "CLAIM-P4-H009",
+      "phase": 4,
+      "claim": "mediumship anomalous-information claims: CONTESTED EVIDENCE.",
+      "status": "CONTESTED EVIDENCE",
+      "source_ids": [
+        "P4-SRC-027"
+      ],
+      "record_id": "P4-H009"
+    },
+    {
+      "id": "CLAIM-P4-H010",
+      "phase": 4,
+      "claim": "soul as physically interacting entity: NOT YET OPERATIONALIZED.",
+      "status": "NOT YET OPERATIONALIZED",
+      "source_ids": [
+        "P4-SRC-028"
+      ],
+      "record_id": "P4-H010"
+    },
+    {
+      "id": "CLAIM-P4-H011",
+      "phase": 4,
+      "claim": "nonlocal/external memory field: SPECULATIVE.",
+      "status": "SPECULATIVE",
+      "source_ids": [
+        "P4-SRC-014",
+        "P4-SRC-015",
+        "P4-SRC-027"
+      ],
+      "record_id": "P4-H011"
+    },
+    {
+      "id": "CLAIM-P4-T001",
+      "phase": 4,
+      "claim": "Tesla 3-6-9 quote: UNVERIFIED ATTRIBUTION.",
+      "status": "UNVERIFIED ATTRIBUTION",
+      "source_ids": [
+        "P4-SRC-029"
+      ],
+      "record_id": "P4-T001"
+    },
+    {
+      "id": "CLAIM-P4-T002",
+      "phase": 4,
+      "claim": "Tesla 'Throughout space there is energy': VERIFIED HISTORICAL STATEMENT.",
+      "status": "VERIFIED HISTORICAL STATEMENT",
+      "source_ids": [
+        "P4-SRC-030"
+      ],
+      "record_id": "P4-T002"
+    },
+    {
+      "id": "CLAIM-P4-E001",
+      "phase": 4,
+      "claim": "unlimited extractable vacuum/free energy: NOT ESTABLISHED.",
+      "status": "NOT ESTABLISHED",
+      "source_ids": [
+        "P4-SRC-009",
+        "P4-SRC-010"
+      ],
+      "record_id": "P4-E001"
+    },
+    {
+      "id": "CLAIM-P4-U001",
+      "phase": 4,
+      "claim": "unknown energy or information carrier: QUESTION NODE / NOT YET OPERATIONALIZED.",
+      "status": "QUESTION NODE / NOT YET OPERATIONALIZED",
+      "source_ids": [
+        "P4-SRC-033",
+        "P4-SRC-034"
+      ],
+      "record_id": "P4-U001"
+    },
+    {
+      "id": "CLAIM-P4-H012",
+      "phase": 4,
+      "claim": "constrained neural mind-reading / internal-speech decoding: ESTABLISHED IN CONSTRAINED SETTINGS.",
+      "status": "ESTABLISHED IN CONSTRAINED SETTINGS",
+      "source_ids": [
+        "P4-SRC-031",
+        "P4-SRC-032"
+      ],
+      "record_id": "P4-H012"
+    },
+    {
+      "id": "CLAIM-P4-H013",
+      "phase": 4,
+      "claim": "telepathy: CONTESTED EVIDENCE / CARRIER UNKNOWN.",
+      "status": "CONTESTED EVIDENCE / CARRIER UNKNOWN",
+      "source_ids": [
+        "P4-SRC-033",
+        "P4-SRC-034"
+      ],
+      "record_id": "P4-H013"
+    },
+    {
+      "id": "CLAIM-P4-H014",
+      "phase": 4,
+      "claim": "remote viewing / clairvoyance: CONTESTED EVIDENCE / MECHANISM UNKNOWN.",
+      "status": "CONTESTED EVIDENCE / MECHANISM UNKNOWN",
+      "source_ids": [
+        "P4-SRC-034"
+      ],
+      "record_id": "P4-H014"
+    },
+    {
+      "id": "CLAIM-P4-H015",
+      "phase": 4,
+      "claim": "precognition / presentiment: CONTESTED / SPECULATIVE MECHANISM.",
+      "status": "CONTESTED / SPECULATIVE MECHANISM",
+      "source_ids": [
+        "P4-SRC-034"
+      ],
+      "record_id": "P4-H015"
+    },
+    {
+      "id": "CLAIM-P4-F010",
+      "phase": 4,
+      "claim": "black holes: ESTABLISHED.",
+      "status": "ESTABLISHED",
+      "source_ids": [
+        "P4-SRC-035",
+        "P4-SRC-036"
+      ],
+      "record_id": "P4-F010"
+    },
+    {
+      "id": "CLAIM-P4-F011",
+      "phase": 4,
+      "claim": "black-hole singularity: THEORETICAL PREDICTION / OPEN PHYSICAL INTERPRETATION.",
+      "status": "THEORETICAL PREDICTION / OPEN PHYSICAL INTERPRETATION",
+      "source_ids": [
+        "P4-SRC-037"
+      ],
+      "record_id": "P4-F011"
+    },
+    {
+      "id": "CLAIM-P4-F012",
+      "phase": 4,
+      "claim": "wormholes: THEORETICAL / UNOBSERVED.",
+      "status": "THEORETICAL / UNOBSERVED",
+      "source_ids": [
+        "P4-SRC-038"
+      ],
+      "record_id": "P4-F012"
+    }
+  ]
+}
