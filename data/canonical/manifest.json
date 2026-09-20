@@ -1,6 +1,7 @@
 {
   "project": "Universal Frequency Spectrum",
   "schema_version": "1.0.0",
+  "dataset_type": "manifest",
   "canonicalized_on": "2026-09-20",
   "status": "Phase 5 canonical source of truth",
   "counts": {
