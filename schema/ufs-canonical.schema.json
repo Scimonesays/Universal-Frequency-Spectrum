@@ -1,0 +1,421 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Scimonesays/Universal-Frequency-Spectrum/schema/ufs-canonical.schema.json",
+  "title": "Universal Frequency Spectrum Canonical Data Schema",
+  "type": "object",
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": [
+        "class",
+        "label"
+      ],
+      "properties": {
+        "class": {
+          "type": "string",
+          "enum": [
+            "established",
+            "observed",
+            "model-dependent",
+            "open",
+            "speculative",
+            "contested",
+            "theoretical",
+            "unverified",
+            "not-established",
+            "other"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "spectral": {
+      "type": "object",
+      "properties": {
+        "min_hz": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max_hz": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "characteristic_hz": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "range_kind": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "energyAccounting": {
+      "type": "object",
+      "properties": {
+        "system_boundary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "target_roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "balance_state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "phase",
+        "source_file"
+      ],
+      "properties": {
+        "phase": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 7
+        },
+        "source_file": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "phenomenon": {
+      "type": "object",
+      "required": [
+        "id",
+        "claim_id",
+        "record_type",
+        "name",
+        "family",
+        "spectral",
+        "evidence",
+        "source_ids",
+        "energy_accounting",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_type": {
+          "const": "phenomenon"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "spectral": {
+          "$ref": "#/$defs/spectral"
+        },
+        "physical": {
+          "type": "object"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "energy_accounting": {
+          "$ref": "#/$defs/energyAccounting"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "additionalProperties": true
+    },
+    "interaction": {
+      "type": "object",
+      "required": [
+        "id",
+        "claim_id",
+        "record_type",
+        "source",
+        "target",
+        "source_entity_id",
+        "target_entity_id",
+        "interaction_type",
+        "evidence",
+        "source_ids",
+        "energy_accounting",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^P3-E\\d{3}$"
+        },
+        "claim_id": {
+          "type": "string"
+        },
+        "record_type": {
+          "const": "interaction"
+        },
+        "source": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "source_entity_id": {
+          "type": "string"
+        },
+        "target_entity_id": {
+          "type": "string"
+        },
+        "interaction_type": {
+          "type": "string"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "energy_accounting": {
+          "$ref": "#/$defs/energyAccounting"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "additionalProperties": true
+    },
+    "frontier": {
+      "type": "object",
+      "required": [
+        "id",
+        "claim_id",
+        "record_type",
+        "domain",
+        "name",
+        "status",
+        "evidence",
+        "source_ids",
+        "energy_accounting",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^P4-[A-Z]\\d{3}$"
+        },
+        "claim_id": {
+          "type": "string"
+        },
+        "record_type": {
+          "const": "frontier"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "energy_accounting": {
+          "$ref": "#/$defs/energyAccounting"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "phase",
+        "title",
+        "urls",
+        "source_note_file"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^P[234]-SRC-\\d{3}$"
+        },
+        "phase": {
+          "type": "integer",
+          "enum": [
+            2,
+            3,
+            4
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_note_file": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "gap": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "name",
+        "status",
+        "scope",
+        "related_ids",
+        "source_ids",
+        "meaning"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^GAP-[A-Z]+-\\d{3}$"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "instrument_gap",
+            "theory_gap",
+            "catalog_gap",
+            "constraint_gap",
+            "true_forbidden_region",
+            "visual_gap_only",
+            "energy_accounting_gap",
+            "mechanism_gap",
+            "replication_gap",
+            "operationalization_gap"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "related_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "meaning": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
