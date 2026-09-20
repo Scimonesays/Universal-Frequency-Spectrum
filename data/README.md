@@ -51,8 +51,9 @@ notes: ...
 
 - `phase2-known-spectrum.csv` — Phase 2 node/frequency catalog.
 - `phase3-couplings.csv` — Phase 3 directed interaction graph.
+- `phase4-frontier.csv` — Phase 4 frontier candidates, unresolved phenomena, contested evidence, historical claims, and question nodes.
 
-The Phase 3 edge file demonstrates that relationships also need structured metadata for interaction type, directionality, mediator, energy transfer, coherence, frequency constraints, evidence, sources, and caveats.
+The Phase 3 edge file demonstrates that relationships need structured interaction metadata. Phase 4 demonstrates that **not every research object should be forced into a physical frequency record**: question nodes require status, operationalization requirements, predicted observables, and explicit caveats.
 
 ## Planned Phase 5 outputs
 
