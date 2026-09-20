@@ -1,0 +1,30 @@
+{
+  "project": "Universal Frequency Spectrum",
+  "schema_version": "1.0.0",
+  "canonicalized_on": "2026-09-20",
+  "status": "Phase 5 canonical source of truth",
+  "counts": {
+    "phenomena": 35,
+    "interactions": 25,
+    "frontier": 31,
+    "ranges": 27,
+    "sources": 0,
+    "claims": 107,
+    "gaps": 16
+  },
+  "files": {
+    "phenomena": "phenomena.json",
+    "interactions": "interactions.json",
+    "frontier": "frontier.json",
+    "ranges": "ranges.json",
+    "sources": "sources.json",
+    "claims": "claims.json",
+    "gaps": "gaps.json"
+  },
+  "legacy_inputs": [
+    "../phase2-known-spectrum.csv",
+    "../phase3-couplings.csv",
+    "../phase4-frontier.csv",
+    "../energy-role-taxonomy.csv"
+  ]
+}
