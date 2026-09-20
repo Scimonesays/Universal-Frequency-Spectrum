@@ -74,7 +74,7 @@ The lesson here is important for the eventual visual: a material can possess **m
 |---|---:|---|---|---|
 | Molecular rotational transitions | NIST critically evaluated catalogs are primarily in **radio/microwave, MHz–GHz** regions, including centimeter and millimeter wavelengths | transition frequencies | molecular rotational quantum state | no universal molecular-rotation range |
 | Low-frequency molecular/collective vibration | commonly probed in the **terahertz** region | observed spectroscopy domain | intermolecular and intramolecular coordinates, librations, lattice-like motions | photon probe frequency matches an energy transition; photon and vibration are not the same excitation |
-| Representative NIST infrared molecular calibration spectra | **488–4400 cm^-1**, equivalent to about **1.46×10^13–1.32×10^14 Hz** | dataset / observed spectroscopy domain | molecular vibrational/electronic transition response | this is a NIST calibration-data span, not the universal molecular-vibration band |
+| Representative NIST infrared molecular calibration spectra | cited sets cover **488–3120 cm^-1** and **4000–4400 cm^-1**; the overall envelope is about **1.46×10^13–1.32×10^14 Hz** | dataset / observed spectroscopy domain | molecular vibrational/electronic transition response | the gap between the cited calibration regions is preserved; this is not a universal molecular-vibration band |
 | Molecular electronic transitions | span visible/UV and beyond depending on species and state | transition frequencies | electronic quantum state of molecule | must be cataloged species-by-species or transition-by-transition |
 
 Molecules have rotational, vibrational, electronic, spin, and sometimes tunneling structure simultaneously. They do not have one universal "molecular frequency."
@@ -331,10 +331,11 @@ That structure should drive the eventual visual design.
 - NIST molecular frequency search: https://physics.nist.gov/PhysRefData/MolSpec/freqsearch.html
 - NIST infrared calibration spectra: https://www.nist.gov/pml/wavenumbers-calibration-ir-spectrometers/wavenumbers-calibration-ir-spectrometers-atlas-and
 - NIST Atomic Spectra Database: https://physics.nist.gov/asd
+- NIST Chemistry WebBook electronic-energy-level search: https://webbook.nist.gov/chemistry/bh-ser/
 - NASA, hydrogen 21 cm line: https://imagine.gsfc.nasa.gov/educators/galaxies/imagine/hidden_objects.html
 - NIST NMR facility: https://www.nist.gov/mml/csd/biochemical-and-exposure-science-group/nuclear-magnetic-resonance-spectroscopy-nmr-facility
 - NIST ESR project: https://www.nist.gov/programs-projects/electron-spin-resonance-single-atom-level
-- NIST Fe-57 Mössbauer reference: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication260-13.pdf
+- Shakhmuratov, Vagizov & Kocharovskaya, Fe-57 14.4 keV gamma-photon context: https://doi.org/10.1103/PhysRevA.84.043820
 
 ### Electromagnetic
 - NASA/GSFC frequency/wavelength chart: https://imagine.gsfc.nasa.gov/science/toolbox/spectrum_chart.html
