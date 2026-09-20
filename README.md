@@ -14,11 +14,11 @@ This repository is intended to make those relationships visible without blurring
 
 ## Project status
 
-**Phase 2 — Known-spectrum catalog: COMPLETE**
+**Phase 3 — Coupling, conversion, resonance & bridges: COMPLETE**
 
-Phase 1 established the project charter, physics foundations, taxonomy, evidence rules, claim ledger, glossary, and seven-phase research roadmap. Phase 2 now adds the first source-backed catalog of established frequency-bearing phenomena and a provisional machine-readable dataset.
+Phase 1 established the scientific rules. Phase 2 added the first source-backed catalog of established frequency-bearing phenomena. Phase 3 now adds the first source-backed **interaction graph**: how those phenomena drive, absorb, emit, scatter, transduce, hybridize, thermalize, modulate, exert force on, or read out one another.
 
-No final visual layout is being asserted yet. Phase 2 explicitly separates physical modes, characteristic lines, conventional/biological bands, parameter-dependent frequencies, and detector windows.
+No final visual layout is being asserted yet. The research now has both spectral **nodes** and physical-interaction **edges**, with mediated paths preserved rather than hidden behind vague arrows.
 
 ## Scientific ground rules
 
@@ -49,6 +49,10 @@ No final visual layout is being asserted yet. Phase 2 explicitly separates physi
 | [Phase 2 Source Notes](research/PHASE-2-SOURCES.md) | Source-to-claim notes for Phase 2 ranges and examples |
 | [Phase 2 Provisional CSV](data/phase2-known-spectrum.csv) | Machine-readable working catalog; not yet the Phase 5 canonical dataset |
 | [Phase 2 Completion Record](docs/PHASE-2-COMPLETE.md) | Completion checklist and boundary for the known-spectrum phase |
+| [Coupling, Conversion, Resonance & Bridges](docs/08-COUPLING-CONVERSION-MAP.md) | Phase 3 interaction ontology and established coupling map |
+| [Phase 3 Source Notes](research/PHASE-3-SOURCES.md) | Source-to-edge notes for established interactions |
+| [Phase 3 Provisional Edges](data/phase3-couplings.csv) | Machine-readable working interaction graph |
+| [Phase 3 Completion Record](docs/PHASE-3-COMPLETE.md) | Completion checklist and scientific boundary for Phase 3 |
 
 ## Proposed organizing dimensions
 
