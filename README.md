@@ -30,6 +30,8 @@ No final visual layout is being asserted yet. Frontier questions are allowed int
 6. **Do not infer new physics from an empty-looking frequency interval alone.** A meaningful gap must be defined relative to a physical family, theory, observable, and detector/measurement coverage.
 7. **Established, model-dependent, open, and speculative claims must remain visibly distinct.**
 8. **Every scientific claim intended for the final atlas must be source-traceable.**
+9. **Every important energy claim must name the system boundary.** "Energy decreases," "energy is used," or "energy is produced" is incomplete until the source, destination, conversion, and losses are identified.
+10. **Do not label ordinary processes as creating energy from nothing.** Use storage, release, transfer, conversion, work, radiation, dissipation, thermalization, dispersion, or steady-state balance unless new physics is actually demonstrated.
 
 ## Repository index
 
@@ -57,6 +59,8 @@ No final visual layout is being asserted yet. Frontier questions are allowed int
 | [Phase 4 Source Notes](research/PHASE-4-SOURCES.md) | Source-to-claim notes for frontier models, consciousness, end-of-life phenomena and Tesla |
 | [Phase 4 Provisional Dataset](data/phase4-frontier.csv) | Machine-readable frontier candidates and question nodes |
 | [Phase 4 Completion Record](docs/PHASE-4-COMPLETE.md) | Completion checklist and evidence boundary for Phase 4 |
+| [Energy Accounting](docs/10-ENERGY-ACCOUNTING.md) | Cross-project rules for storage, transfer, conversion, work, dissipation, dispersion, steady state, and unknown energy behavior |
+| [Energy Role Taxonomy](data/energy-role-taxonomy.csv) | Machine-readable vocabulary for energy behavior across nodes and edges |
 
 ## Proposed organizing dimensions
 
@@ -68,6 +72,7 @@ The final representation should not be a single "low frequency → high frequenc
 - **Propagation speed / dispersion relation** — where meaningful.
 - **Wavelength / wavevector** — where meaningful.
 - **Energy relation** — only where the governing physics justifies it.
+- **Energy accounting** — system boundary, storage, gain/loss, transfer, conversion, work, emission, dissipation, dispersion, steady-state balance, and unknowns.
 - **Scale** — macroscopic, molecular, atomic, nuclear, field, cosmological.
 - **Coupling / conversion pathways** — how energy or information moves between families.
 - **Evidence status** — established, model-dependent, open, speculative.
@@ -83,6 +88,7 @@ The long-term goal is a visual and machine-readable atlas that lets a person pic
 - What theory describes it?
 - What other modes can it couple to?
 - How is it detected?
+- What happens to energy across the stated system boundary?
 - Which regions are measured, predicted, weakly constrained, or genuinely unknown?
 
 The atlas should be useful precisely because **overlap is allowed**. A 100 Hz acoustic wave, a 100 Hz electromagnetic signal, and a 100 Hz gravitational wave can share a number while belonging to fundamentally different rows.
