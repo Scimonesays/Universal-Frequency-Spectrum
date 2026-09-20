@@ -41,7 +41,8 @@ function Invoke-UfsBuild {
 
 function Get-PortListener {
   try {
-    return Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction Stop | Select-Object -First 1
+    $connection = Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction Stop | Select-Object -First 1
+    return $connection
   }
   catch {
     return $null
