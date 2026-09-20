@@ -83,12 +83,12 @@
             <select id="energy-filter"><option value="all">All roles</option></select>
           </label>
           <label>
-            <span>From 10<sup id="exp-min-label">−9</sup> Hz</span>
-            <input id="exp-min" type="range" min="-9" max="21" step="1" value="-9">
+            <span>From 10<sup id="exp-min-label">−18</sup> Hz</span>
+            <input id="exp-min" type="range" min="-18" max="23" step="1" value="-18">
           </label>
           <label>
-            <span>To 10<sup id="exp-max-label">21</sup> Hz</span>
-            <input id="exp-max" type="range" min="-8" max="22" step="1" value="21">
+            <span>To 10<sup id="exp-max-label">24</sup> Hz</span>
+            <input id="exp-max" type="range" min="-17" max="24" step="1" value="24">
           </label>
           <button id="reset-spectrum" class="button secondary" type="button">Reset</button>
         </div>
@@ -100,6 +100,12 @@
         <span><i class="legend-swatch characteristic"></i> characteristic frequency</span>
         <span><i class="legend-swatch open"></i> open-ended band</span>
         <span><i class="legend-swatch biological"></i> biological overlay</span>
+        <span>○ periodic / rotational</span>
+        <span>〰 propagating wave</span>
+        <span>◇ mode / resonance</span>
+        <span>↕ quantum transition</span>
+        <span>│ rate / inverse timescale</span>
+        <span>✦ energy-equivalent</span>
       </div>
 
       <div class="atlas-layout">
@@ -108,7 +114,7 @@
             <svg id="spectrum-chart" role="img" aria-labelledby="spectrum-chart-title spectrum-chart-desc"></svg>
             <div id="chart-empty" class="empty-state" hidden>No records match these filters.</div>
           </div>
-          <p class="chart-note">Frequency is a coordinate, not an identity. Equal frequency does not mean equal physical phenomenon. Open-ended bands are clipped to the selected viewport.</p>
+          <p class="chart-note">Frequency is a coordinate, not an identity. The lower labels show the reciprocal period T = 1/f. Symbols distinguish oscillations, waves, resonances, transitions, rates/timescales and derived energy-equivalent frequencies. Open-ended bands are clipped to the selected viewport.</p>
 
           <section class="frontier-strip" aria-labelledby="frontier-strip-title">
             <div class="frontier-strip-copy">
