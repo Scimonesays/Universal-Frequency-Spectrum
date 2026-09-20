@@ -86,9 +86,9 @@ A connection in the graph does not imply a common underlying substance.
 
 It records a specific, source-backed interaction.
 
-## Deferred to Phase 4
+## Implemented in Phase 4
 
-Phase 4 will add **frontier physics and detection space**:
+Phase 4 subsequently added **frontier physics and detection space**:
 
 - dark matter candidate fields;
 - axions / ALPs;
