@@ -14,11 +14,11 @@ This repository is intended to make those relationships visible without blurring
 
 ## Project status
 
-**Phase 1 — Scientific foundation: COMPLETE**
+**Phase 2 — Known-spectrum catalog: COMPLETE**
 
-Phase 1 establishes the project charter, physics foundations, taxonomy, evidence rules, claim ledger, glossary, and seven-phase research roadmap.
+Phase 1 established the project charter, physics foundations, taxonomy, evidence rules, claim ledger, glossary, and seven-phase research roadmap. Phase 2 now adds the first source-backed catalog of established frequency-bearing phenomena and a provisional machine-readable dataset.
 
-No final visual layout is being asserted yet. Frequency ranges in later phases will be added with explicit context, uncertainty, source quality, and definitions.
+No final visual layout is being asserted yet. Phase 2 explicitly separates physical modes, characteristic lines, conventional/biological bands, parameter-dependent frequencies, and detector windows.
 
 ## Scientific ground rules
 
@@ -45,6 +45,10 @@ No final visual layout is being asserted yet. Frequency ranges in later phases w
 | [Source Library](research/SOURCES.md) | Curated primary papers, reviews, standards, and authoritative references |
 | [Data Area](data/README.md) | Planned machine-readable source of truth for later phases |
 | [Phase 1 Completion Record](docs/PHASE-1-COMPLETE.md) | Final checklist and scientific boundary for Phase 1 |
+| [Known-Spectrum Catalog](docs/07-KNOWN-SPECTRUM-CATALOG.md) | Phase 2 catalog of established phenomena and contextual frequency information |
+| [Phase 2 Source Notes](research/PHASE-2-SOURCES.md) | Source-to-claim notes for Phase 2 ranges and examples |
+| [Phase 2 Provisional CSV](data/phase2-known-spectrum.csv) | Machine-readable working catalog; not yet the Phase 5 canonical dataset |
+| [Phase 2 Completion Record](docs/PHASE-2-COMPLETE.md) | Completion checklist and boundary for the known-spectrum phase |
 
 ## Proposed organizing dimensions
 
