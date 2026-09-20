@@ -10,9 +10,13 @@ const requiredWeb = [
   "web/index.html",
   "web/styles.css",
   "web/app.js",
+  "web/premium.css",
+  "web/ux.js",
   "_site/index.html",
   "_site/styles.css",
   "_site/app.js",
+  "_site/premium.css",
+  "_site/ux.js",
   "_site/.nojekyll",
 ];
 
@@ -35,12 +39,16 @@ for (const required of [
   'id="spectrum-chart"',
   'id="connection-graph"',
   'id="print-button"',
+  'href="./premium.css"',
   'type="module" src="./app.js"',
+  'type="module" src="./ux.js"',
 ]) {
   if (!index.includes(required)) fail.push(`index missing UI contract: ${required}`);
 }
 
 const app = fs.readFileSync(path.join(root, "web/app.js"), "utf8");
+const ux = fs.readFileSync(path.join(root, "web/ux.js"), "utf8");
+const premiumCss = fs.readFileSync(path.join(root, "web/premium.css"), "utf8");
 for (const required of [
   '"manifest"',
   '"phenomena"',
@@ -60,6 +68,29 @@ for (const required of [
   if (!app.includes(required)) fail.push(`app missing behavior contract: ${required}`);
 }
 
+for (const required of [
+  "Human Scale",
+  "Earth & Space",
+  "EM Spectrum",
+  "Biological",
+  "Quantum",
+  "resolveLabelCollisions",
+  "Related interactions",
+  "No explicit canonical frontier relationship is registered.",
+]) {
+  if (!ux.includes(required)) fail.push(`UX layer missing behavior contract: ${required}`);
+}
+
+for (const required of [
+  ".explore-panel",
+  ".preset-button",
+  ".selected-mark",
+  ".is-mobile-sheet-open",
+  "prefers-reduced-motion",
+]) {
+  if (!premiumCss.includes(required)) fail.push(`premium CSS missing presentation contract: ${required}`);
+}
+
 const bannedScientificIds = [
   "GEO-TIDE-SEMI",
   "EM-VISIBLE",
@@ -68,7 +99,7 @@ const bannedScientificIds = [
   "P4-F012",
 ];
 for (const id of bannedScientificIds) {
-  if (app.includes(id)) fail.push(`scientific record ${id} is hard-coded in web/app.js`);
+  if (app.includes(id) || ux.includes(id)) fail.push(`scientific record ${id} is hard-coded in web application code`);
 }
 
 const files = { manifest: "manifest.json", ...manifest.files };
