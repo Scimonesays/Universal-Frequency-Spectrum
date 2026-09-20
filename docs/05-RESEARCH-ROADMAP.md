@@ -182,7 +182,7 @@ A blank pixel can no longer masquerade as a scientific discovery.
 
 ## Phase 6 — Visual and interactive atlas
 
-**Status: NOT STARTED**
+**Status: COMPLETE**
 
 ### Goal
 
@@ -206,6 +206,8 @@ Build the visual representation from the canonical dataset.
 ### Exit condition
 
 The visual is useful to both curious non-specialists and technically literate readers without becoming scientifically misleading.
+
+**Completed 2026-09-20.** See [Visual & Interactive Atlas](13-VISUAL-INTERACTIVE-ATLAS.md), [Phase 6 Completion Record](PHASE-6-COMPLETE.md), and the application under [web/](../web/README.md).
 
 ---
 
