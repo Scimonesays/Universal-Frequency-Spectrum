@@ -720,6 +720,295 @@
         "https://doi.org/10.1103/PhysRevD.106.044035"
       ],
       "source_note_file": "research/PHASE-4-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-001",
+      "phase": 7,
+      "title": "NASA Earth Fact Sheet",
+      "urls": [
+        "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-002",
+      "phase": 7,
+      "title": "NASA solar rotation",
+      "urls": [
+        "https://www.nasa.gov/image-article/solar-rotation-varies-by-latitude/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-003",
+      "phase": 7,
+      "title": "NASA helioseismology",
+      "urls": [
+        "https://solarscience.msfc.nasa.gov/Helioseismology.shtml"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-004",
+      "phase": 7,
+      "title": "NASA variable-star teaching reference",
+      "urls": [
+        "https://asd.gsfc.nasa.gov/David.Davis/courses/phys315/week2/week02.pdf"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-005",
+      "phase": 7,
+      "title": "NASA/ESA pulsar timing examples",
+      "urls": [
+        "https://imagine.gsfc.nasa.gov/descriptions/pulsar.html",
+        "https://www.nasa.gov/image-article/neutron-star-undergoes-wild-behavior-changes/",
+        "https://sci.esa.int/s/AMeVYVA"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-006",
+      "phase": 7,
+      "title": "LIGO binary-black-hole ringdown reference",
+      "urls": [
+        "https://dcc.ligo.org/public/0126/P1600161/016/BBHBasicsANDPFullAuth.pdf"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-007",
+      "phase": 7,
+      "title": "NOAA ENSO overview",
+      "urls": [
+        "https://www.psl.noaa.gov/enso/enso_101.html"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-008",
+      "phase": 7,
+      "title": "NOAA seiche overview",
+      "urls": [
+        "https://oceanservice.noaa.gov/facts/seiche.html"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-009",
+      "phase": 7,
+      "title": "NOAA Rossby-wave overview",
+      "urls": [
+        "https://oceanservice.noaa.gov/facts/rossby-wave.html"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-010",
+      "phase": 7,
+      "title": "NOAA/NASA atmospheric gravity-wave references",
+      "urls": [
+        "https://repository.library.noaa.gov/view/noaa/68005",
+        "https://ntrs.nasa.gov/citations/20170012354"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-011",
+      "phase": 7,
+      "title": "NASA Schumann-resonance references",
+      "urls": [
+        "https://ntrs.nasa.gov/citations/20120000051",
+        "https://svs.gsfc.nasa.gov/10985"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-012",
+      "phase": 7,
+      "title": "NIST power-line time and frequency",
+      "urls": [
+        "https://www.nist.gov/publications/time-and-frequency-electrical-power-lines"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-013",
+      "phase": 7,
+      "title": "NIST LC resonance measurement example",
+      "urls": [
+        "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=852840"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-014",
+      "phase": 7,
+      "title": "NASA Alfvén-wave measurement reference",
+      "urls": [
+        "https://ntrs.nasa.gov/citations/19840004976"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-015",
+      "phase": 7,
+      "title": "Circadian-rhythm review",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6302373/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-016",
+      "phase": 7,
+      "title": "Adult respiration and heart-rate references",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK541062/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11933627/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-017",
+      "phase": 7,
+      "title": "Heart-rate-variability frequency bands",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3225923/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-018",
+      "phase": 7,
+      "title": "Movement Disorder Society tremor consensus",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530552/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-019",
+      "phase": 7,
+      "title": "EEG conventional frequency bands",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3458099/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6726238/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-020",
+      "phase": 7,
+      "title": "Belousov-Zhabotinsky oscillating reaction demonstration",
+      "urls": [
+        "https://www.colorado.edu/lab/lecture-demo-manual/x875-modified-belousov-zhabotinsky-reaction-oscillating-clock"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-021",
+      "phase": 7,
+      "title": "Protein conformational dynamics review",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2547409/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-022",
+      "phase": 7,
+      "title": "Enzyme turnover references",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26911/",
+        "https://goldbook.iupac.org/terms/view/T06534"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-023",
+      "phase": 7,
+      "title": "Charge-transfer dynamics review",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5745195/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-024",
+      "phase": 7,
+      "title": "Excited-state proton-transfer timescales",
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/25079251/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8434569/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-025",
+      "phase": 7,
+      "title": "OpenStax gas collision-rate context",
+      "urls": [
+        "https://openstax.org/books/chemistry-atoms-first/pages/8-4-effusion-and-diffusion-of-gases"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-026",
+      "phase": 7,
+      "title": "NIST fundamental constants and energy equivalents",
+      "urls": [
+        "https://pml.nist.gov/cuu/Constants/",
+        "https://www.physics.nist.gov/cgi-bin/cuu/Info/Constants/energy.html"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-027",
+      "phase": 7,
+      "title": "NASA COBE CMB temperature",
+      "urls": [
+        "https://science.nasa.gov/mission/cobe/science/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-028",
+      "phase": 7,
+      "title": "NIST temperature touchstones and NASA solar temperature",
+      "urls": [
+        "https://www.nist.gov/pml/owm/si-units-temperature",
+        "https://science.nasa.gov/universe/glossary/"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-029",
+      "phase": 7,
+      "title": "NIST atomic-clock resonance frequencies",
+      "urls": [
+        "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-re-ru"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-030",
+      "phase": 7,
+      "title": "Particle Data Group muon listing",
+      "urls": [
+        "https://pdg.lbl.gov/2025/listings/rpp2025-list-muon.pdf"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
+    },
+    {
+      "id": "P7-SRC-031",
+      "phase": 7,
+      "title": "NIST CODATA electron mass-energy equivalent",
+      "urls": [
+        "https://physics.nist.gov/cuu/pdf/JPCRD2022CODATA.pdf"
+      ],
+      "source_note_file": "research/PHASE-7-SOURCES.md"
     }
   ]
 }
