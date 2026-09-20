@@ -751,6 +751,8 @@ It is evidence that nature contains many degrees of freedom connected by well-de
 - NIST, *Optical Probes of 2D Magnetic Phenomena*: https://www.nist.gov/programs-projects/optical-probes-2d-magnetic-phenomena
 
 ### Thermal / phonon interactions
+- Allen, *Theory of thermal relaxation of electrons in metals*, Physical Review Letters 59, 1460 (1987): https://doi.org/10.1103/PhysRevLett.59.1460
+- Cepellotti et al., *Phonon hydrodynamics in two-dimensional materials*, Nature Communications 6, 6400 (2015): https://doi.org/10.1038/ncomms7400
 - Maldovan, *Sound and heat revolutions in phononics*, Nature 503, 209–217 (2013): https://doi.org/10.1038/nature12608
 - IUPAC Gold Book, *heat*: https://doi.org/10.1351/goldbook.H02752
 - NIST, *Heat Transfer*: https://www.nist.gov/glossary-term/24981
