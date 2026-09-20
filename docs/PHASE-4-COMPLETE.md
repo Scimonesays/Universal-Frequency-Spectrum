@@ -99,11 +99,9 @@ The project will be **open to extraordinary hypotheses but strict about category
 
 The purpose of the atlas is to make these distinctions visible.
 
-## Next phase
+## Implemented in Phase 5
 
-Proceed to **Phase 5 — Gap analysis and canonical dataset**.
-
-Phase 5 will integrate:
+**Phase 5 — Gap analysis and canonical dataset** subsequently integrated:
 
 - Phase 2 physical-spectrum nodes;
 - Phase 3 interaction edges;
