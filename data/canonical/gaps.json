@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0.0",
+  "dataset_type": "gaps",
   "records": [
     {
       "id": "GAP-INSTR-001",
