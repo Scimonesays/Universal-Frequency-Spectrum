@@ -344,77 +344,249 @@ function bindAccessibleActivation(el, fn) {
   });
 }
 
+function visualFamily(record) {
+  const family = String(record.family || "").toLowerCase();
+  if (family.includes("gravitational")) return { key: "gravitational", label: "Gravitational", sub: "SPACETIME · COSMIC EVENTS", icon: "◎", order: 7 };
+  if (family.includes("nuclear") || family.includes("particle")) return { key: "nuclear", label: "Nuclear / Particle", sub: "NUCLEI · FUNDAMENTAL PARTICLES", icon: "⊙", order: 6 };
+  if (family.includes("electromagnetic") || family.includes("plasma")) return { key: "electromagnetic", label: "Electromagnetic / Plasma", sub: "FIELDS · LIGHT · RADIATION", icon: "✦", order: 4 };
+  if (family.includes("atomic") || family.includes("molecular") || family.includes("condensed") || family.includes("quantum") || family.includes("spin")) {
+    return { key: "atomic", label: "Atomic / Molecular", sub: "ATOMS · MOLECULES · SOLID STATE", icon: "◌", order: 5 };
+  }
+  if (family.includes("biological") || family.includes("neural")) return { key: "biological", label: "Biological / Neural", sub: "LIFE · BRAINS · BODIES", icon: "⌁", order: 3 };
+  if (family.includes("acoustic") || family.includes("mechanical")) return { key: "mechanical", label: "Mechanical / Acoustic", sub: "MOTION · PRESSURE WAVES", icon: "∿", order: 2 };
+  if (family.includes("ocean") || family.includes("geophysical") || family.includes("atmospheric") || family.includes("seismic")) {
+    return { key: "geophysical", label: "Geophysical / Orbital", sub: "PLANET · OCEAN · ATMOSPHERE", icon: "◉", order: 1 };
+  }
+  return { key: "other", label: "Other Physical Systems", sub: "CANONICAL PHENOMENA", icon: "◇", order: 8 };
+}
+
+function shortenLabel(value, max = 28) {
+  const text = titleCase(value);
+  return text.length > max ? text.slice(0, max - 1) + "…" : text;
+}
+
 function renderSpectrumChart(records) {
   const svg = $("#spectrum-chart");
   svg.replaceChildren();
   const empty = $("#chart-empty");
   empty.hidden = records.length > 0;
+
   if (!records.length) {
-    svg.setAttribute("viewBox", "0 0 1100 520");
+    svg.setAttribute("viewBox", "0 0 1240 520");
     svg.setAttribute("height", "520");
     return;
   }
 
   const { minExp, maxExp } = spectrumFilters();
-  const width = 1220;
-  const left = 290;
-  const right = 35;
-  const top = 55;
-  const rowH = 30;
-  const height = top + records.length * rowH + 45;
+  const width = 1440;
+  const left = 245;
+  const right = 34;
+  const top = 72;
+  const bottom = 26;
   const plotW = width - left - right;
   const x = (hz) => left + ((Math.log10(hz) - minExp) / (maxExp - minExp)) * plotW;
+
+  const grouped = new Map();
+  for (const record of records) {
+    const family = visualFamily(record);
+    const bucket = grouped.get(family.key) || { family, records: [] };
+    bucket.records.push(record);
+    grouped.set(family.key, bucket);
+  }
+
+  const groups = [...grouped.values()].sort((a, b) => a.family.order - b.family.order);
+
+  function layoutGroup(group) {
+    const candidates = group.records.map((record) => {
+      const interval = numericInterval(record, minExp, maxExp);
+      if (!interval) return null;
+      let x1;
+      let x2;
+      if (interval.kind === "characteristic") {
+        const cx = x(interval.value);
+        x1 = cx - 42;
+        x2 = cx + 100;
+      } else {
+        const raw1 = x(interval.min);
+        const raw2 = x(interval.max);
+        const center = (raw1 + raw2) / 2;
+        const visualWidth = Math.max(34, raw2 - raw1);
+        x1 = center - Math.max(visualWidth / 2, 42);
+        x2 = center + Math.max(visualWidth / 2, 42);
+      }
+      return { record, interval, x1, x2 };
+    }).filter(Boolean).sort((a, b) => a.x1 - b.x1);
+
+    const laneEnds = [];
+    for (const item of candidates) {
+      let lane = laneEnds.findIndex((endX) => item.x1 > endX + 10);
+      if (lane < 0) {
+        lane = laneEnds.length;
+        laneEnds.push(item.x2);
+      } else {
+        laneEnds[lane] = item.x2;
+      }
+      item.lane = lane;
+    }
+    return { items: candidates, lanes: Math.max(1, laneEnds.length) };
+  }
+
+  const layouts = groups.map((group) => ({ ...group, layout: layoutGroup(group) }));
+  let cursorY = top;
+  for (const group of layouts) {
+    group.y = cursorY;
+    group.height = 38 + group.layout.lanes * 34;
+    cursorY += group.height;
+  }
+  const height = cursorY + bottom;
 
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("height", String(height));
   svg.append(
-    svgEl("title", { id: "spectrum-chart-title" }, "Universal Frequency Spectrum logarithmic atlas"),
-    svgEl("desc", { id: "spectrum-chart-desc" }, "Established phenomena displayed on a logarithmic hertz axis while remaining separated by physical family."),
+    svgEl("title", { id: "spectrum-chart-title" }, "Universal Frequency Map"),
+    svgEl("desc", { id: "spectrum-chart-desc" }, "Canonical phenomena grouped by physical family on a logarithmic hertz axis. Equal frequency does not imply equal physical identity."),
   );
 
   const defs = svgEl("defs");
-  const pattern = svgEl("pattern", { id: "openBandPattern", width: 8, height: 8, patternUnits: "userSpaceOnUse" });
-  pattern.append(svgEl("rect", { width: 8, height: 8, fill: "#183044" }), svgEl("path", { d: "M0 8 L8 0", stroke: "#69cfc9", "stroke-width": 2 }));
-  defs.append(pattern);
+
+  const openPattern = svgEl("pattern", { id: "openBandPattern", width: 8, height: 8, patternUnits: "userSpaceOnUse" });
+  openPattern.append(
+    svgEl("rect", { width: 8, height: 8, fill: "#103c54" }),
+    svgEl("path", { d: "M0 8 L8 0", stroke: "#71dcff", "stroke-width": 2 }),
+  );
+  defs.append(openPattern);
+
+  const bandGlow = svgEl("filter", { id: "bandGlow", x: "-40%", y: "-100%", width: "180%", height: "300%" });
+  bandGlow.append(svgEl("feGaussianBlur", { stdDeviation: "3.2", result: "blur" }));
+  const merge = svgEl("feMerge");
+  merge.append(svgEl("feMergeNode", { in: "blur" }), svgEl("feMergeNode", { in: "SourceGraphic" }));
+  bandGlow.append(merge);
+  defs.append(bandGlow);
+
+  const pointGlow = svgEl("filter", { id: "pointGlow", x: "-200%", y: "-200%", width: "500%", height: "500%" });
+  pointGlow.append(svgEl("feGaussianBlur", { stdDeviation: "2.7", result: "blur" }));
+  const pointMerge = svgEl("feMerge");
+  pointMerge.append(svgEl("feMergeNode", { in: "blur" }), svgEl("feMergeNode", { in: "SourceGraphic" }));
+  pointGlow.append(pointMerge);
+  defs.append(pointGlow);
+
+  const visibleGradient = svgEl("linearGradient", { id: "visibleGradient", x1: "0%", y1: "0%", x2: "100%", y2: "0%" });
+  [
+    ["0%", "#7b2cff"],
+    ["18%", "#275dff"],
+    ["38%", "#18d7ff"],
+    ["55%", "#35e86e"],
+    ["72%", "#ffe250"],
+    ["86%", "#ff8a38"],
+    ["100%", "#ff355d"],
+  ].forEach(([offset, color]) => visibleGradient.append(svgEl("stop", { offset, "stop-color": color })));
+  defs.append(visibleGradient);
+
   svg.append(defs);
 
-  const tickStep = maxExp - minExp > 20 ? 4 : maxExp - minExp > 10 ? 2 : 1;
+  const span = maxExp - minExp;
+  const tickStep = span > 25 ? 3 : span > 15 ? 2 : 1;
   for (let exp = Math.ceil(minExp / tickStep) * tickStep; exp <= maxExp; exp += tickStep) {
-    const tx = left + ((exp - minExp) / (maxExp - minExp)) * plotW;
-    svg.append(svgEl("line", { x1: tx, y1: top - 18, x2: tx, y2: height - 25, class: "axis-grid" }));
-    svg.append(svgEl("text", { x: tx, y: 24, "text-anchor": "middle", class: "axis-text" }, `10^${exp} Hz`));
+    const tx = left + ((exp - minExp) / span) * plotW;
+    svg.append(svgEl("line", { x1: tx, y1: top - 30, x2: tx, y2: height - bottom, class: "axis-grid" }));
+    svg.append(svgEl("text", { x: tx, y: 27, "text-anchor": "middle", class: "axis-text" }, `10^${exp}`));
   }
-  svg.append(svgEl("line", { x1: left, y1: top - 18, x2: width - right, y2: top - 18, class: "axis-line" }));
+  svg.append(svgEl("line", { x1: left, y1: top - 30, x2: width - right, y2: top - 30, class: "axis-line" }));
+  svg.append(svgEl("text", { x: left, y: 49, class: "axis-text", "text-anchor": "start" }, "LOWER FREQUENCY · LONGER PERIOD"));
+  svg.append(svgEl("text", { x: width - right, y: 49, class: "axis-text", "text-anchor": "end" }, "HIGHER FREQUENCY · SHORTER PERIOD"));
 
-  records.forEach((record, i) => {
-    const y = top + i * rowH;
-    const interval = numericInterval(record, minExp, maxExp);
-    if (!interval) return;
-    const label = `${record.family} · ${record.name}`;
-    svg.append(svgEl("text", { x: 12, y: y + 18, class: "family-label" }, label.length > 43 ? `${label.slice(0, 42)}…` : label));
+  for (const group of layouts) {
+    const y = group.y;
+    const rowBottom = y + group.height - 5;
+    svg.append(svgEl("rect", { x: 8, y: y - 3, width: width - 16, height: group.height - 4, rx: 14, class: "family-row-bg" }));
+    svg.append(svgEl("line", { x1: left - 12, y1: y - 3, x2: left - 12, y2: rowBottom, class: "family-row-rule" }));
 
-    const g = svgEl("g", { class: "band-hit", tabindex: 0, role: "button", "aria-label": `${record.name}, ${formatFrequency(record)}`, "data-id": record.id });
-    g.append(svgEl("title", {}, `${record.name} — ${formatFrequency(record)} — ${record.physical?.what_oscillates || ""}`));
+    const iconY = y + Math.min(37, group.height / 2);
+    svg.append(svgEl("circle", { cx: 36, cy: iconY, r: 18, class: "family-icon-ring" }));
+    svg.append(svgEl("text", { x: 36, y: iconY + 5, class: "family-icon" }, group.family.icon));
+    svg.append(svgEl("text", { x: 64, y: y + 24, class: "family-label" }, group.family.label));
+    svg.append(svgEl("text", { x: 64, y: y + 39, class: "family-sub" }, group.family.sub));
 
-    if (interval.kind === "characteristic") {
-      g.append(svgEl("circle", { cx: x(interval.value), cy: y + 14, r: 6, class: "characteristic-dot" }));
-      g.append(svgEl("line", { x1: x(interval.value), y1: y + 3, x2: x(interval.value), y2: y + 25, stroke: "#f0c96a", "stroke-width": 1, opacity: .5 }));
-    } else {
-      const x1 = x(interval.min);
-      const x2 = x(interval.max);
-      const kind = record.spectral?.range_kind || "";
-      const cls = [
-        "band-rect",
-        kind.includes("detector") ? "detector" : "",
-        kind.includes("biological") ? "biological" : "",
-        interval.openLeft || interval.openRight ? "open-band" : "",
-      ].filter(Boolean).join(" ");
-      g.append(svgEl("rect", { x: x1, y: y + 7, width: Math.max(3, x2 - x1), height: 14, class: cls }));
-      if (interval.openLeft) g.append(svgEl("path", { d: `M${x1 + 1},${y + 14} l8,-5 v10 z`, class: "open-arrow" }));
-      if (interval.openRight) g.append(svgEl("path", { d: `M${x2 - 1},${y + 14} l-8,-5 v10 z`, class: "open-arrow" }));
+    for (const item of group.layout.items) {
+      const { record, interval, lane } = item;
+      const laneY = y + 48 + lane * 34;
+      const g = svgEl("g", {
+        class: "band-hit",
+        tabindex: 0,
+        role: "button",
+        "aria-label": `${record.name}, ${formatFrequency(record)}`,
+        "data-id": record.id,
+      });
+      g.append(svgEl("title", {}, `${record.name} — ${formatFrequency(record)} — ${record.physical?.what_oscillates || ""}`));
+
+      if (interval.kind === "characteristic") {
+        const cx = x(interval.value);
+        g.append(svgEl("circle", { cx, cy: laneY, r: 6, class: "characteristic-dot" }));
+        g.append(svgEl("line", { x1: cx, y1: laneY - 11, x2: cx, y2: laneY + 11, stroke: "#ffe99a", "stroke-width": 1, opacity: .34 }));
+        g.append(svgEl("text", { x: Math.min(cx + 11, width - 185), y: laneY + 3, class: "point-label" }, shortenLabel(record.name, 31)));
+      } else {
+        const rawX1 = x(interval.min);
+        const rawX2 = x(interval.max);
+        const barX = Math.min(rawX1, rawX2);
+        const barW = Math.max(5, Math.abs(rawX2 - rawX1));
+        const kind = String(record.spectral?.range_kind || "").toLowerCase();
+        const cls = [
+          "band-rect",
+          kind.includes("detector") ? "detector" : "",
+          kind.includes("biological") ? "biological" : "",
+          interval.openLeft || interval.openRight ? "open-band" : "",
+        ].filter(Boolean).join(" ");
+        const attrs = { x: barX, y: laneY - 10, width: barW, height: 20, class: cls };
+        if (record.family === "electromagnetic" && String(record.name).toLowerCase().includes("visible")) attrs.fill = "url(#visibleGradient)";
+        g.append(svgEl("rect", attrs));
+
+        if (interval.openLeft) g.append(svgEl("path", { d: `M${barX + 1},${laneY} l9,-5 v10 z`, class: "open-arrow" }));
+        if (interval.openRight) g.append(svgEl("path", { d: `M${barX + barW - 1},${laneY} l-9,-5 v10 z`, class: "open-arrow" }));
+
+        const centerX = Math.max(left + 34, Math.min(width - right - 34, barX + barW / 2));
+        if (barW >= 86) {
+          g.append(svgEl("text", { x: centerX, y: laneY - 1, class: "band-label" }, shortenLabel(record.name, barW > 175 ? 32 : 20)));
+          if (barW >= 135) g.append(svgEl("text", { x: centerX, y: laneY + 8, class: "band-sublabel" }, formatFrequency(record)));
+        } else {
+          const labelX = Math.min(width - right - 4, barX + barW + 8);
+          g.append(svgEl("text", { x: labelX, y: laneY + 3, class: "point-label" }, shortenLabel(record.name, 23)));
+        }
+      }
+
+      bindAccessibleActivation(g, () => renderSpectrumInspector(record.id));
+      svg.append(g);
     }
-    bindAccessibleActivation(g, () => renderSpectrumInspector(record.id));
-    svg.append(g);
+  }
+}
+
+function renderSpectrumFrontierStrip() {
+  const host = $("#spectrum-frontier-strip");
+  if (!host) return;
+
+  const chosen = [];
+  const domains = new Set();
+  for (const record of state.data.frontier.records) {
+    if (record.evidence?.class === "established") continue;
+    const domain = record.domain || "frontier";
+    if (domains.has(domain)) continue;
+    domains.add(domain);
+    chosen.push(record);
+    if (chosen.length === 6) break;
+  }
+
+  host.innerHTML = chosen.map((r) => `
+    <button class="frontier-chip" type="button" data-frontier-id="${escapeHtml(r.id)}">
+      <strong>${escapeHtml(titleCase(r.name))}</strong>
+      <span>${escapeHtml(titleCase(r.evidence?.class || r.status || "open question"))}</span>
+    </button>`).join("");
+
+  $$("#spectrum-frontier-strip .frontier-chip").forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.dataset.frontierId;
+      document.querySelector('.nav-tab[data-view="frontier"]')?.click();
+      renderFrontierInspector(id);
+      $("#frontier-inspector")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 }
 
@@ -435,8 +607,8 @@ function renderSpectrumTable(records) {
 function renderSpectrum() {
   const f = spectrumFilters();
   if (f.minExp >= f.maxExp) {
-    if (document.activeElement === $("#exp-min")) $("#exp-max").value = String(Math.min(20, f.minExp + 1));
-    else $("#exp-min").value = String(Math.max(-9, f.maxExp - 1));
+    if (document.activeElement === $("#exp-min")) $("#exp-max").value = String(Math.min(Number($("#exp-max").max), f.minExp + 1));
+    else $("#exp-min").value = String(Math.max(Number($("#exp-min").min), f.maxExp - 1));
   }
   $("#exp-min-label").textContent = String($("#exp-min").value).replace("-", "−");
   $("#exp-max-label").textContent = String($("#exp-max").value).replace("-", "−");
@@ -444,6 +616,7 @@ function renderSpectrum() {
   const plottedRecords = plottableSpectrumRecords();
   renderSpectrumChart(plottedRecords);
   renderSpectrumTable(semanticRecords);
+  renderSpectrumFrontierStrip();
   const intrinsicallyNonnumeric = semanticRecords.filter((r) => {
     const s = r.spectral || {};
     return !Number.isFinite(s.min_hz) && !Number.isFinite(s.max_hz) && !Number.isFinite(s.characteristic_hz);
@@ -731,7 +904,7 @@ function setupControls() {
     $("#family-filter").value = "all";
     $("#energy-filter").value = "all";
     $("#exp-min").value = "-9";
-    $("#exp-max").value = "20";
+    $("#exp-max").value = "21";
     renderSpectrum();
   });
 
@@ -748,6 +921,12 @@ function setupControls() {
     $$(".view").forEach((el) => el.classList.toggle("active", el.id === `view-${view}`));
     history.replaceState(null, "", `#${view}`);
     if (view === "connections") renderConnections();
+  }));
+
+  $("[data-jump-view]").forEach((button) => button.addEventListener("click", () => {
+    const target = button.dataset.jumpView;
+    document.querySelector(`.nav-tab[data-view="${target}"]`)?.click();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }));
 
   $("#print-button").addEventListener("click", () => window.print());
