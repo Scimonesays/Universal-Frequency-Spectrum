@@ -140,7 +140,7 @@ Unknowns can be plotted without the viewer confusing "hypothesized" with "detect
 
 ## Phase 5 — Gap analysis and canonical dataset
 
-**Status: NOT STARTED**
+**Status: COMPLETE**
 
 ### Goal
 
@@ -172,6 +172,8 @@ Turn the research into a machine-readable source of truth and ask disciplined qu
 ### Exit condition
 
 A blank pixel can no longer masquerade as a scientific discovery.
+
+**Completed 2026-09-20.** See [Gap Analysis & Canonical Dataset](11-GAP-ANALYSIS-AND-CANONICAL-DATASET.md), [Phase 5 Completion Record](PHASE-5-COMPLETE.md), and the canonical package under [data/canonical](../data/canonical/manifest.json).
 
 ---
 
