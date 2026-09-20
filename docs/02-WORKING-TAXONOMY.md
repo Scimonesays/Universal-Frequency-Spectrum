@@ -128,6 +128,33 @@ Each family can be subdivided by:
 - nuclear;
 - subatomic / field-theoretic.
 
+### Energy behavior
+
+Energy behavior is a cross-cutting classification independent of frequency.
+
+Possible roles include:
+
+- stores;
+- carries;
+- receives/gains;
+- supplies/releases;
+- transfers;
+- converts;
+- absorbs;
+- emits/radiates;
+- does work/drives;
+- dissipates;
+- thermalizes;
+- disperses;
+- maintains steady state;
+- exchanges;
+- mediates/readout;
+- unknown.
+
+Every energy statement should also name the **system boundary**.
+
+A phenomenon may have multiple roles simultaneously. For example, an electromagnetic wave can carry energy, a molecule can absorb it, and a material can later dissipate that energy into phonons.
+
 ### Spectral meaning
 - exact eigenfrequency;
 - resonance frequency;
@@ -149,7 +176,7 @@ The current best hypothesis for the eventual visualization is:
 ```
 vertical axis   = physical family / what oscillates
 horizontal axis = logarithmic frequency
-overlays        = wavelength, energy, scale, detectors, evidence status
+overlays        = wavelength, energy, energy-role/accounting, scale, detectors, evidence status
 edges           = coupling / conversion / excitation relationships
 ```
 
