@@ -118,6 +118,28 @@
             "null"
           ]
         },
+        "semantic_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "periodic_or_rotational",
+            "propagating_wave",
+            "normal_mode_or_resonance",
+            "transition_frequency",
+            "detector_band",
+            "characteristic_inverse_timescale",
+            "characteristic_rate",
+            "energy_equivalent_frequency",
+            "classification_band",
+            "biological_sensitivity",
+            "parameter_dependent",
+            "state_dependent",
+            "other",
+            null
+          ]
+        },
         "status": {
           "type": [
             "string",
@@ -564,15 +586,12 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^P[234]-SRC-\\d{3}$"
+          "pattern": "^P[234567]-SRC-\\d{3}$"
         },
         "phase": {
           "type": "integer",
-          "enum": [
-            2,
-            3,
-            4
-          ]
+          "minimum": 2,
+          "maximum": 7
         },
         "title": {
           "type": "string",
@@ -612,7 +631,7 @@
         "phase": {
           "type": "integer",
           "minimum": 1,
-          "maximum": 4
+          "maximum": 7
         },
         "claim": {
           "type": "string",
