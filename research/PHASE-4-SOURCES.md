@@ -539,6 +539,82 @@ Project use:
 
 ---
 
+## P4-SRC-035 — black holes / event-horizon-scale evidence
+
+Event Horizon Telescope, M87* first image:
+- https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole
+
+Event Horizon Telescope, Sagittarius A* metric test:
+- https://eventhorizontelescope.org/publications/first-sagittarius-event-horizon-telescope-results-vi-testing-black-hole-metric
+
+Supports:
+- direct event-horizon-scale evidence for supermassive black holes;
+- observed ring/shadow morphology consistent with Kerr black-hole predictions;
+- Sagittarius A* observations constrain alternatives involving a material surface and support the Kerr description of the exterior spacetime.
+
+Project classification:
+- BLACK HOLES ESTABLISHED.
+
+---
+
+## P4-SRC-036 — black-hole ringdown / spectroscopy
+
+LIGO Scientific Collaboration, *Black hole spectroscopy and tests of general relativity with GW250114*:
+- https://ligo.org/science-summaries/GW250114_TGR/
+
+Additional LIGO ringdown background:
+- https://ligo.org/science-summaries/S5S6RD/
+
+Supports:
+- a perturbed black hole emits a damped gravitational-wave ringdown;
+- quasinormal-mode frequencies and damping times depend on the remnant black hole's mass and spin in GR;
+- GW250114 ringdown measurements were consistent with Kerr/GR predictions within reported uncertainties.
+
+Project use:
+- black holes have parameter-dependent ringdown spectra, not one universal frequency.
+
+---
+
+## P4-SRC-037 — singularity status
+
+NASA, *Anatomy of a Black Hole*:
+- https://science.nasa.gov/universe/black-holes/anatomy/
+
+NASA Universe glossary:
+- https://science.nasa.gov/universe/glossary/
+
+Supports:
+- classical GR predicts singular behavior in black-hole interiors;
+- the physical interpretation is uncertain;
+- NASA explicitly notes the singularity may indicate the limit of general relativity where quantum-gravity effects become important.
+
+Project classification:
+- classical singularity is a theoretical prediction, not a directly observed object.
+
+---
+
+## P4-SRC-038 — wormholes
+
+Blázquez-Salcedo et al., *Traversable Wormholes in General Relativity*, Physical Review Letters 128, 091104 (2022):
+- https://doi.org/10.1103/PhysRevLett.128.091104
+
+Supports:
+- wormholes are hypothetical spacetime geometries;
+- no wormhole has been observed;
+- theoretical work explores special traversable configurations.
+
+Terno, *Inaccessibility of traversable wormholes*, Physical Review D 106, 044035 (2022):
+- https://doi.org/10.1103/PhysRevD.106.044035
+
+Supports:
+- strong semiclassical-gravity restrictions on familiar traversable wormhole geometries under the paper's assumptions;
+- illustrates that mathematical wormhole solutions do not automatically imply realizable astrophysical objects.
+
+Project classification:
+- THEORETICAL / UNOBSERVED / MODEL-DEPENDENT.
+
+---
+
 # Phase 4 source conclusion
 
 The project now has four distinct kinds of frontier objects:
