@@ -66,6 +66,8 @@ No final visual layout is being asserted yet. Phase 6 should consume the canonic
 | [Canonical JSON Schema](schema/ufs-canonical.schema.json) | Structural contract for canonical data records |
 | [Phase 5 Completion Record](docs/PHASE-5-COMPLETE.md) | Completion checklist and canonical validation result |
 | [Post-Phase-5 Repository Audit](docs/REPOSITORY-AUDIT-2026-09-20.md) | Repo-wide integrity, provenance, link, data, and validation audit |
+| [CURV Research Validator Integration](docs/12-CURV-RESEARCH-VALIDATOR.md) | Read-only bridge from UFS frontier/question nodes into CURV falsifier-first validation |
+| [External Validation Registry](data/canonical/validations.json) | Reviewed external validation results; never changes canonical scientific status automatically |
 
 ## Proposed organizing dimensions
 
