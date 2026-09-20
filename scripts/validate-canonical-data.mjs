@@ -58,10 +58,11 @@ const eids=unique(entities,"entities");
 const sids=unique(sources,"sources");
 const cids=unique(claims,"claims");
 unique(ranges,"ranges");
-unique(gaps,"gaps");
+const gids=unique(gaps,"gaps");
 unique(validations,"validations");
 
 const allRecordIds=new Set([...pids,...iids,...fids]);
+const validValidationTargets=new Set([...allRecordIds,...gids]);
 
 for(const p of phenomena){
   const s=p.spectral||{};
@@ -91,7 +92,7 @@ for(const g of gaps){
   for(const rid of g.related_ids||[]) if(!allRecordIds.has(rid)) fail.push(`gap ${g.id}: unknown related record ${rid}`);
 }
 for(const v of validations){
-  if(!allRecordIds.has(v.target_record_id)) fail.push(`validation ${v.id}: unknown target record ${v.target_record_id}`);
+  if(!validValidationTargets.has(v.target_record_id)) fail.push(`validation ${v.id}: unknown target record ${v.target_record_id}`);
   if(v.target_claim_id && !cids.has(v.target_claim_id)) fail.push(`validation ${v.id}: unknown target claim ${v.target_claim_id}`);
   if(v.reviewed_for_canonical_ingest !== true && v.reviewed_for_canonical_ingest !== false) fail.push(`validation ${v.id}: reviewed_for_canonical_ingest must be boolean`);
 }
